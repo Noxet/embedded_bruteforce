@@ -43,7 +43,7 @@ end hash_ctrl;
 architecture Behavioral of hash_ctrl is
 
 		-- local signals here --
-		signal i_c, i_n : integer range 0 to N-1;
+		signal i_c, i_n : unsigned(N-1 downto 0);
 		-- the selection has to be delayed --
 		signal md5_sel_c, md5_sel_n : std_logic_vector(N-1 downto 0);
 		
@@ -56,7 +56,7 @@ begin
 		begin
 			if rising_edge(clk) then
 				if rstn = '0' then
-					i_c <= 0;
+					i_c <= (others => '0');
 					md5_sel_c <= (others => '0');
 					state_c <= waiting;
 				else
@@ -105,7 +105,7 @@ begin
 			o_string_halt <= '1';
 			o_cmp_hash <= (others => '0');
 			o_md5_select <= md5_sel_c;
-			i_n <= 0;
+			i_n <= (others => '0');
 			case state_c is	
 				when init =>
 					-- start the string-gen and cmp --
@@ -120,11 +120,11 @@ begin
 					-- loop through all the md5's to give them strings and start signals --
 					o_string_halt <= '0';
 					md5_sel_n <= (others => '0');
-					md5_sel_n(i_c) <= '1';
+					md5_sel_n(to_integer(i_c)) <= '1';
 					if i_c /= N then 
 						i_n <= i_c + 1;
 					else
-						i_n <= 0;
+						i_n <= (others => '0');
 					end if;
 					
 				when counting =>
@@ -132,20 +132,20 @@ begin
 						-- the first md5 is finished, start counting --
 						o_string_halt <= '0';
 						md5_sel_n <= (others => '0');
-						md5_sel_n(i_c) <= '1'; 
+						md5_sel_n(to_integer(i_c)) <= '1'; 
 						i_n <= i_c + 1;
 					else
 						if (i_c < N) and (i_c /= 0) then
 							-- we haven't started all the md5:s yet --
 							o_string_halt <= '0';
 							md5_sel_n <= (others => '0');
-							md5_sel_n(i_c) <= '1'; 
+							md5_sel_n(to_integer(i_c)) <= '1'; 
 							i_n <= i_c + 1;
 						else
 							-- just waiting for the done signal --
 							o_string_halt <= '1';
 							md5_sel_n <= (others => '0');
-							i_n <= 0;
+							i_n <= (others => '0');
 						end if;
 					end if;
 					
