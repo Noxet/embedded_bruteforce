@@ -18,7 +18,7 @@ entity md5_mux is
     );
     port (
         i_hash : in hash_array(N-1 downto 0);
-        i_select : in std_logic_vector(N-1 downto 0);
+        i_select : in std_logic_vector(N-1 downto 0); -- should be ceil(log2(N-1))
         
         o_hash : out std_logic_vector(127 downto 0)
     );
@@ -28,16 +28,7 @@ architecture Behavioral of md5_mux is
 
 begin
 
-    data_proc: process(i_hash, i_select)
-    begin
-        
-        for I in 0 to N-1 loop
-            if i_select(I) = '1' then
-                o_hash <= i_hash(I);
-            end if;
-        end loop;
-        
-    end process;
+	o_hash <= i_hash(to_integer(i_select));
 
 end Behavioral;
 
