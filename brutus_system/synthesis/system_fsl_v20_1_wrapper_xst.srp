@@ -1,0 +1,392 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:\Users\ael10jso\Xilinx\brutus\synthesis\xst_temp_dir\
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_fsl_v20_1_wrapper_xst.prj"
+Verilog Include Directory          : {"C:\Users\ael10jso\Xilinx\brutus\pcores\" "C:\Xilinx\BSP\Nexys3_AXI_BSB_Support\lib\Digilent\pcores\" "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+
+---- Target Parameters
+Target Device                      : xc6slx16csg324-3
+Output File Name                   : "../implementation/system_fsl_v20_1_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : system_fsl_v20_1_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/fsl_v20_v2_11_e/hdl/vhdl/gen_srlfifo.vhd" into library fsl_v20_v2_11_e
+Parsing entity <SRL_FIFO>.
+Parsing architecture <IMP> of entity <srl_fifo>.
+Parsing VHDL file "C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/fsl_v20_v2_11_e/hdl/vhdl/gen_sync_bram.vhd" into library fsl_v20_v2_11_e
+Parsing entity <Sync_BRAM>.
+Parsing architecture <syn> of entity <sync_bram>.
+Parsing VHDL file "C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/fsl_v20_v2_11_e/hdl/vhdl/gen_sync_dpram.vhd" into library fsl_v20_v2_11_e
+Parsing entity <Sync_DPRAM>.
+Parsing architecture <syn> of entity <sync_dpram>.
+Parsing VHDL file "C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/fsl_v20_v2_11_e/hdl/vhdl/sync_fifo.vhd" into library fsl_v20_v2_11_e
+Parsing entity <Sync_FIFO>.
+Parsing architecture <VHDL_RTL> of entity <sync_fifo>.
+Parsing VHDL file "C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/fsl_v20_v2_11_e/hdl/vhdl/async_fifo.vhd" into library fsl_v20_v2_11_e
+Parsing entity <Async_FIFO>.
+Parsing architecture <VHDL_RTL> of entity <async_fifo>.
+Parsing VHDL file "C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/fsl_v20_v2_11_e/hdl/vhdl/async_fifo_bram.vhd" into library fsl_v20_v2_11_e
+Parsing entity <Async_FIFO_BRAM>.
+Parsing architecture <IMP> of entity <async_fifo_bram>.
+Parsing VHDL file "C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/fsl_v20_v2_11_e/hdl/vhdl/fsl_v20.vhd" into library fsl_v20_v2_11_e
+Parsing entity <fsl_v20>.
+Parsing architecture <IMP> of entity <fsl_v20>.
+Parsing VHDL file "C:\Users\ael10jso\Xilinx\brutus\hdl\system_fsl_v20_1_wrapper.vhd" into library work
+Parsing entity <system_fsl_v20_1_wrapper>.
+Parsing architecture <STRUCTURE> of entity <system_fsl_v20_1_wrapper>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <system_fsl_v20_1_wrapper> (architecture <STRUCTURE>) from library <work>.
+
+Elaborating entity <fsl_v20> (architecture <IMP>) with generics from library <fsl_v20_v2_11_e>.
+
+Elaborating entity <Sync_FIFO> (architecture <VHDL_RTL>) with generics from library <fsl_v20_v2_11_e>.
+
+Elaborating entity <SRL_FIFO> (architecture <IMP>) with generics from library <fsl_v20_v2_11_e>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <system_fsl_v20_1_wrapper>.
+    Related source file is "C:\Users\ael10jso\Xilinx\brutus\hdl\system_fsl_v20_1_wrapper.vhd".
+    Summary:
+	no macro.
+Unit <system_fsl_v20_1_wrapper> synthesized.
+
+Synthesizing Unit <fsl_v20>.
+    Related source file is "C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/fsl_v20_v2_11_e/hdl/vhdl/fsl_v20.vhd".
+        C_EXT_RESET_HIGH = 1
+        C_ASYNC_CLKS = 0
+        C_IMPL_STYLE = 0
+        C_USE_CONTROL = 1
+        C_FSL_DWIDTH = 32
+        C_FSL_DEPTH = 16
+        C_READ_CLOCK_PERIOD = 0
+WARNING:Xst:647 - Input <FSL_M_Clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <FSL_S_Clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <fsl_v20> synthesized.
+
+Synthesizing Unit <Sync_FIFO>.
+    Related source file is "C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/fsl_v20_v2_11_e/hdl/vhdl/sync_fifo.vhd".
+        C_IMPL_STYLE = 0
+        WordSize = 33
+        MemSize = 16
+    Summary:
+	no macro.
+Unit <Sync_FIFO> synthesized.
+
+Synthesizing Unit <SRL_FIFO>.
+    Related source file is "C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/fsl_v20_v2_11_e/hdl/vhdl/gen_srlfifo.vhd".
+        C_DATA_BITS = 33
+        C_DEPTH = 16
+    Found 1-bit register for signal <data_Exists_I>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <SRL_FIFO> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 1
+ 1-bit register                                        : 1
+# Xors                                                 : 4
+ 1-bit xor2                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 7
+ Flip-Flops                                            : 7
+# Xors                                                 : 4
+ 1-bit xor2                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <system_fsl_v20_1_wrapper> ...
+
+Optimizing unit <SRL_FIFO> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block system_fsl_v20_1_wrapper, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 7
+ Flip-Flops                                            : 7
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : system_fsl_v20_1_wrapper.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 20
+#      GND                         : 1
+#      LUT2                        : 2
+#      LUT3                        : 3
+#      LUT4                        : 1
+#      LUT6                        : 5
+#      MUXCY_L                     : 3
+#      VCC                         : 1
+#      XORCY                       : 4
+# FlipFlops/Latches                : 7
+#      FDR                         : 1
+#      FDRE                        : 5
+#      FDS                         : 1
+# Shift Registers                  : 34
+#      SRL16                       : 1
+#      SRL16E                      : 33
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               7  out of  18224     0%  
+ Number of Slice LUTs:                   45  out of   9112     0%  
+    Number used as Logic:                11  out of   9112     0%  
+    Number used as Memory:               34  out of   2176     1%  
+       Number used as SRL:               34
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     45
+   Number with an unused Flip Flop:      38  out of     45    84%  
+   Number with an unused LUT:             0  out of     45     0%  
+   Number of fully used LUT-FF pairs:     7  out of     45    15%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                          78
+ Number of bonded IOBs:                   0  out of    232     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)   | Load  |
+-----------------------------------+-------------------------+-------+
+FSL_Clk                            | NONE(fsl_v20_1/POR_FF_I)| 41    |
+-----------------------------------+-------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.779ns (Maximum Frequency: 264.641MHz)
+   Minimum input arrival time before clock: 2.364ns
+   Maximum output required time after clock: 2.913ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'FSL_Clk'
+  Clock period: 3.779ns (frequency: 264.641MHz)
+  Total number of paths / destination ports: 283 / 183
+-------------------------------------------------------------------------
+Delay:               3.779ns (Levels of Logic = 4)
+  Source:            fsl_v20_1/Using_FIFO.Sync_FIFO_Gen.Use_Control.Sync_FIFO_I1/Sync_FIFO_I.srl_fifo_i.FSL_FIFO/Addr_Counters[3].FDRE_I (FF)
+  Destination:       fsl_v20_1/Using_FIFO.Sync_FIFO_Gen.Use_Control.Sync_FIFO_I1/Sync_FIFO_I.srl_fifo_i.FSL_FIFO/FDRE_I1 (FF)
+  Source Clock:      FSL_Clk rising
+  Destination Clock: FSL_Clk rising
+
+  Data Path: fsl_v20_1/Using_FIFO.Sync_FIFO_Gen.Use_Control.Sync_FIFO_I1/Sync_FIFO_I.srl_fifo_i.FSL_FIFO/Addr_Counters[3].FDRE_I to fsl_v20_1/Using_FIFO.Sync_FIFO_Gen.Use_Control.Sync_FIFO_I1/Sync_FIFO_I.srl_fifo_i.FSL_FIFO/FDRE_I1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            38   0.447   1.624  fsl_v20_1/Using_FIFO.Sync_FIFO_Gen.Use_Control.Sync_FIFO_I1/Sync_FIFO_I.srl_fifo_i.FSL_FIFO/Addr_Counters[3].FDRE_I (fsl_v20_1/Using_FIFO.Sync_FIFO_Gen.Use_Control.Sync_FIFO_I1/Sync_FIFO_I.srl_fifo_i.FSL_FIFO/Addr<3>)
+     LUT6:I2->O            1   0.203   0.000  fsl_v20_1/Using_FIFO.Sync_FIFO_Gen.Use_Control.Sync_FIFO_I1/Sync_FIFO_I.srl_fifo_i.FSL_FIFO/hsum_A<0>1 (fsl_v20_1/Using_FIFO.Sync_FIFO_Gen.Use_Control.Sync_FIFO_I1/Sync_FIFO_I.srl_fifo_i.FSL_FIFO/hsum_A<0>)
+     MUXCY_L:S->LO         1   0.172   0.000  fsl_v20_1/Using_FIFO.Sync_FIFO_Gen.Use_Control.Sync_FIFO_I1/Sync_FIFO_I.srl_fifo_i.FSL_FIFO/Addr_Counters[0].Used_MuxCY.MUXCY_L_I (fsl_v20_1/Using_FIFO.Sync_FIFO_Gen.Use_Control.Sync_FIFO_I1/Sync_FIFO_I.srl_fifo_i.FSL_FIFO/addr_cy<1>)
+     XORCY:CI->O           2   0.180   0.845  fsl_v20_1/Using_FIFO.Sync_FIFO_Gen.Use_Control.Sync_FIFO_I1/Sync_FIFO_I.srl_fifo_i.FSL_FIFO/Addr_Counters[1].XORCY_I (fsl_v20_1/Using_FIFO.Sync_FIFO_Gen.Use_Control.Sync_FIFO_I1/Sync_FIFO_I.srl_fifo_i.FSL_FIFO/sum_A<1>)
+     LUT4:I1->O            1   0.205   0.000  fsl_v20_1/Using_FIFO.Sync_FIFO_Gen.Use_Control.Sync_FIFO_I1/Sync_FIFO_I.srl_fifo_i.FSL_FIFO/buffer_full_early<0>1 (fsl_v20_1/Using_FIFO.Sync_FIFO_Gen.Use_Control.Sync_FIFO_I1/Sync_FIFO_I.srl_fifo_i.FSL_FIFO/buffer_full_early)
+     FDRE:D                    0.102          fsl_v20_1/Using_FIFO.Sync_FIFO_Gen.Use_Control.Sync_FIFO_I1/Sync_FIFO_I.srl_fifo_i.FSL_FIFO/FDRE_I1
+    ----------------------------------------
+    Total                      3.779ns (1.309ns logic, 2.470ns route)
+                                       (34.6% logic, 65.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'FSL_Clk'
+  Total number of paths / destination ports: 158 / 73
+-------------------------------------------------------------------------
+Offset:              2.364ns (Levels of Logic = 4)
+  Source:            FSL_S_Read (PAD)
+  Destination:       fsl_v20_1/Using_FIFO.Sync_FIFO_Gen.Use_Control.Sync_FIFO_I1/Sync_FIFO_I.srl_fifo_i.FSL_FIFO/FDRE_I1 (FF)
+  Destination Clock: FSL_Clk rising
+
+  Data Path: FSL_S_Read to fsl_v20_1/Using_FIFO.Sync_FIFO_Gen.Use_Control.Sync_FIFO_I1/Sync_FIFO_I.srl_fifo_i.FSL_FIFO/FDRE_I1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT3:I0->O            1   0.205   0.579  fsl_v20_1/Using_FIFO.Sync_FIFO_Gen.Use_Control.Sync_FIFO_I1/Sync_FIFO_I.srl_fifo_i.FSL_FIFO/valid_Write1_1 (fsl_v20_1/Using_FIFO.Sync_FIFO_Gen.Use_Control.Sync_FIFO_I1/Sync_FIFO_I.srl_fifo_i.FSL_FIFO/valid_Write1)
+     MUXCY_L:CI->LO        1   0.019   0.000  fsl_v20_1/Using_FIFO.Sync_FIFO_Gen.Use_Control.Sync_FIFO_I1/Sync_FIFO_I.srl_fifo_i.FSL_FIFO/Addr_Counters[0].Used_MuxCY.MUXCY_L_I (fsl_v20_1/Using_FIFO.Sync_FIFO_Gen.Use_Control.Sync_FIFO_I1/Sync_FIFO_I.srl_fifo_i.FSL_FIFO/addr_cy<1>)
+     XORCY:CI->O           2   0.180   0.845  fsl_v20_1/Using_FIFO.Sync_FIFO_Gen.Use_Control.Sync_FIFO_I1/Sync_FIFO_I.srl_fifo_i.FSL_FIFO/Addr_Counters[1].XORCY_I (fsl_v20_1/Using_FIFO.Sync_FIFO_Gen.Use_Control.Sync_FIFO_I1/Sync_FIFO_I.srl_fifo_i.FSL_FIFO/sum_A<1>)
+     LUT4:I1->O            1   0.205   0.000  fsl_v20_1/Using_FIFO.Sync_FIFO_Gen.Use_Control.Sync_FIFO_I1/Sync_FIFO_I.srl_fifo_i.FSL_FIFO/buffer_full_early<0>1 (fsl_v20_1/Using_FIFO.Sync_FIFO_Gen.Use_Control.Sync_FIFO_I1/Sync_FIFO_I.srl_fifo_i.FSL_FIFO/buffer_full_early)
+     FDRE:D                    0.102          fsl_v20_1/Using_FIFO.Sync_FIFO_Gen.Use_Control.Sync_FIFO_I1/Sync_FIFO_I.srl_fifo_i.FSL_FIFO/FDRE_I1
+    ----------------------------------------
+    Total                      2.364ns (0.940ns logic, 1.424ns route)
+                                       (39.8% logic, 60.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'FSL_Clk'
+  Total number of paths / destination ports: 177 / 39
+-------------------------------------------------------------------------
+Offset:              2.913ns (Levels of Logic = 2)
+  Source:            fsl_v20_1/Using_FIFO.Sync_FIFO_Gen.Use_Control.Sync_FIFO_I1/Sync_FIFO_I.srl_fifo_i.FSL_FIFO/Addr_Counters[0].FDRE_I (FF)
+  Destination:       FSL_Control_IRQ (PAD)
+  Source Clock:      FSL_Clk rising
+
+  Data Path: fsl_v20_1/Using_FIFO.Sync_FIFO_Gen.Use_Control.Sync_FIFO_I1/Sync_FIFO_I.srl_fifo_i.FSL_FIFO/Addr_Counters[0].FDRE_I to FSL_Control_IRQ
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            38   0.447   1.376  fsl_v20_1/Using_FIFO.Sync_FIFO_Gen.Use_Control.Sync_FIFO_I1/Sync_FIFO_I.srl_fifo_i.FSL_FIFO/Addr_Counters[0].FDRE_I (fsl_v20_1/Using_FIFO.Sync_FIFO_Gen.Use_Control.Sync_FIFO_I1/Sync_FIFO_I.srl_fifo_i.FSL_FIFO/Addr<0>)
+     SRL16E:A0->Q          1   0.203   0.684  fsl_v20_1/Using_FIFO.Sync_FIFO_Gen.Use_Control.Sync_FIFO_I1/Sync_FIFO_I.srl_fifo_i.FSL_FIFO/FIFO_RAM[32].SRL16E_I (FSL_S_Control)
+     LUT2:I0->O            0   0.203   0.000  fsl_v20_1/FSL_Control_IRQ1 (FSL_Control_IRQ)
+    ----------------------------------------
+    Total                      2.913ns (0.853ns logic, 2.060ns route)
+                                       (29.3% logic, 70.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock FSL_Clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+FSL_Clk        |    3.779|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.49 secs
+ 
+--> 
+
+Total memory usage is 268016 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

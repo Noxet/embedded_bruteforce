@@ -1,0 +1,403 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:\Users\ael10jso\Xilinx\brutus\synthesis\xst_temp_dir\
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_brutus_0_wrapper_xst.prj"
+Verilog Include Directory          : {"C:\Users\ael10jso\Xilinx\brutus\pcores\" "C:\Xilinx\BSP\Nexys3_AXI_BSB_Support\lib\Digilent\pcores\" "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+
+---- Target Parameters
+Target Device                      : xc6slx16csg324-3
+Output File Name                   : "../implementation/system_brutus_0_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : system_brutus_0_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:/Users/ael10jso/Xilinx/brutus/pcores/brutus_v1_00_a/hdl/vhdl/brutus.vhd" into library brutus_v1_00_a
+Parsing entity <brutus>.
+Parsing architecture <Behavioral> of entity <brutus>.
+Parsing VHDL file "C:\Users\ael10jso\Xilinx\brutus\hdl\system_brutus_0_wrapper.vhd" into library work
+Parsing entity <system_brutus_0_wrapper>.
+Parsing architecture <STRUCTURE> of entity <system_brutus_0_wrapper>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <system_brutus_0_wrapper> (architecture <STRUCTURE>) from library <work>.
+
+Elaborating entity <brutus> (architecture <Behavioral>) from library <brutus_v1_00_a>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <system_brutus_0_wrapper>.
+    Related source file is "C:\Users\ael10jso\Xilinx\brutus\hdl\system_brutus_0_wrapper.vhd".
+    Summary:
+	no macro.
+Unit <system_brutus_0_wrapper> synthesized.
+
+Synthesizing Unit <brutus>.
+    Related source file is "C:/Users/ael10jso/Xilinx/brutus/pcores/brutus_v1_00_a/hdl/vhdl/brutus.vhd".
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:647 - Input <FSL_S_Data> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <FSL_S_Clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <FSL_S_Control> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <FSL_M_Clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 2-bit register for signal <h_count_c>.
+    Found 32-bit register for signal <test>.
+    Found 2-bit register for signal <state_c>.
+    Found finite state machine <FSM_0> for signal <state_c>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 5                                              |
+    | Clock              | FSL_Clk (rising_edge)                          |
+    | Reset              | FSL_Rst (positive)                             |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 2-bit adder for signal <h_count_c[1]_GND_6_o_add_12_OUT> created at line 1241.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  34 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <brutus> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 2-bit adder                                           : 1
+# Registers                                            : 2
+ 2-bit register                                        : 1
+ 32-bit register                                       : 1
+# Multiplexers                                         : 2
+ 1-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2404 -  FFs/Latches <test<31:7>> (without init value) have a constant value of 0 in block <brutus>.
+
+Synthesizing (advanced) Unit <brutus>.
+The following registers are absorbed into counter <h_count_c>: 1 register on signal <h_count_c>.
+Unit <brutus> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 2-bit up counter                                      : 1
+# Registers                                            : 7
+ Flip-Flops                                            : 7
+# Multiplexers                                         : 2
+ 1-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <test_0> (without init value) has a constant value of 0 in block <brutus>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <test_2> (without init value) has a constant value of 0 in block <brutus>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <test_3> (without init value) has a constant value of 0 in block <brutus>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <test_4> (without init value) has a constant value of 0 in block <brutus>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <test_5> (without init value) has a constant value of 0 in block <brutus>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <test_1> in Unit <brutus> is equivalent to the following FF/Latch, which will be removed : <test_6> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <brutus_0/FSM_0> on signal <state_c[1:2]> with user encoding.
+---------------------------
+ State         | Encoding
+---------------------------
+ idle          | 00
+ read_charset  | 01
+ read_hash     | 10
+ write_outputs | 11
+---------------------------
+
+Optimizing unit <system_brutus_0_wrapper> ...
+
+Optimizing unit <brutus> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block system_brutus_0_wrapper, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 5
+ Flip-Flops                                            : 5
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : system_brutus_0_wrapper.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 8
+#      GND                         : 1
+#      LUT3                        : 3
+#      LUT5                        : 2
+#      LUT6                        : 1
+#      VCC                         : 1
+# FlipFlops/Latches                : 5
+#      FD                          : 2
+#      FDR                         : 3
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               5  out of  18224     0%  
+ Number of Slice LUTs:                    6  out of   9112     0%  
+    Number used as Logic:                 6  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     11
+   Number with an unused Flip Flop:       6  out of     11    54%  
+   Number with an unused LUT:             5  out of     11    45%  
+   Number of fully used LUT-FF pairs:     0  out of     11     0%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          74
+ Number of bonded IOBs:                   0  out of    232     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+--------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)          | Load  |
+-----------------------------------+--------------------------------+-------+
+FSL_Clk                            | NONE(brutus_0/state_c_FSM_FFd1)| 5     |
+-----------------------------------+--------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 1.633ns (Maximum Frequency: 612.276MHz)
+   Minimum input arrival time before clock: 0.670ns
+   Maximum output required time after clock: 1.499ns
+   Maximum combinational path delay: 0.434ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'FSL_Clk'
+  Clock period: 1.633ns (frequency: 612.276MHz)
+  Total number of paths / destination ports: 13 / 4
+-------------------------------------------------------------------------
+Delay:               1.633ns (Levels of Logic = 1)
+  Source:            brutus_0/h_count_c_0 (FF)
+  Destination:       brutus_0/state_c_FSM_FFd2 (FF)
+  Source Clock:      FSL_Clk rising
+  Destination Clock: FSL_Clk rising
+
+  Data Path: brutus_0/h_count_c_0 to brutus_0/state_c_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.447   0.879  brutus_0/h_count_c_0 (brutus_0/h_count_c_0)
+     LUT6:I3->O            1   0.205   0.000  brutus_0/h_count_c_1_rstpot1 (brutus_0/h_count_c_1_rstpot1)
+     FD:D                      0.102          brutus_0/h_count_c_1
+    ----------------------------------------
+    Total                      1.633ns (0.754ns logic, 0.879ns route)
+                                       (46.2% logic, 53.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'FSL_Clk'
+  Total number of paths / destination ports: 9 / 7
+-------------------------------------------------------------------------
+Offset:              0.670ns (Levels of Logic = 1)
+  Source:            FSL_S_Exists (PAD)
+  Destination:       brutus_0/h_count_c_1 (FF)
+  Destination Clock: FSL_Clk rising
+
+  Data Path: FSL_S_Exists to brutus_0/h_count_c_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT6:I0->O            1   0.203   0.000  brutus_0/h_count_c_1_rstpot1 (brutus_0/h_count_c_1_rstpot1)
+     FD:D                      0.102          brutus_0/h_count_c_1
+    ----------------------------------------
+    Total                      0.670ns (0.670ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'FSL_Clk'
+  Total number of paths / destination ports: 6 / 4
+-------------------------------------------------------------------------
+Offset:              1.499ns (Levels of Logic = 1)
+  Source:            brutus_0/state_c_FSM_FFd2 (FF)
+  Destination:       FSL_S_Read (PAD)
+  Source Clock:      FSL_Clk rising
+
+  Data Path: brutus_0/state_c_FSM_FFd2 to FSL_S_Read
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              6   0.447   0.849  brutus_0/state_c_FSM_FFd2 (brutus_0/state_c_FSM_FFd2)
+     LUT3:I1->O            0   0.203   0.000  brutus_0/Mmux_FSL_S_Read11 (FSL_S_Read)
+    ----------------------------------------
+    Total                      1.499ns (0.650ns logic, 0.849ns route)
+                                       (43.4% logic, 56.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Delay:               0.434ns (Levels of Logic = 1)
+  Source:            FSL_S_Exists (PAD)
+  Destination:       FSL_S_Read (PAD)
+
+  Data Path: FSL_S_Exists to FSL_S_Read
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT3:I0->O            0   0.205   0.000  brutus_0/Mmux_FSL_S_Read11 (FSL_S_Read)
+    ----------------------------------------
+    Total                      0.434ns (0.434ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock FSL_Clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+FSL_Clk        |    1.633|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.28 secs
+ 
+--> 
+
+Total memory usage is 266480 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   16 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

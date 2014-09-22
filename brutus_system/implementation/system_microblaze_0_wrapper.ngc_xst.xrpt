@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<document OS="nt64" product="ISE" version="14.2">
+
+  <!--The data in this file is primarily intended for consumption by Xilinx tools.
+    The structure and the elements are likely to change over the next few releases.
+    This means code written to parse this file will need to be revisited each subsequent release.-->
+
+  <application stringID="Xst" timeStamp="Mon Sep 22 11:08:26 2014">
+    <section stringID="User_Env">
+      <table stringID="User_EnvVar">
+        <column stringID="variable"/>
+        <column stringID="value"/>
+        <row stringID="row" value="0">
+          <item stringID="variable" value="PATH"/>
+          <item stringID="value" value="C:\Xilinx\14.2\ISE_DS\ISE\\lib\nt64;C:\Xilinx\14.2\ISE_DS\EDK\lib\nt64;C:\Xilinx\14.2\ISE_DS\ISE\\bin\nt64;C:\Xilinx\14.2\ISE_DS\EDK\bin\nt64;C:\Xilinx\14.2\ISE_DS\EDK\gnu\microblaze\nt64\bin;C:\Xilinx\14.2\ISE_DS\EDK\gnu\powerpc-eabi\nt64\bin;C:\Xilinx\14.2\ISE_DS\EDK\gnuwin\bin;C:\Xilinx\14.2\ISE_DS\EDK\\bin\nt64;C:\Xilinx\14.2\ISE_DS\EDK\\lib\nt64;C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64;C:\Xilinx\14.2\ISE_DS\ISE\lib\nt64;C:\Xilinx\Vivado\2012.2\bin;C:\Xilinx\14.2\ISE_DS\PlanAhead\bin;C:\Xilinx\14.2\ISE_DS\EDK\gnu\arm\nt64\bin;C:\Xilinx\14.2\ISE_DS\common\bin\nt64;C:\Xilinx\14.2\ISE_DS\common\lib\nt64;C:\Program Files (x86)\Cuminas\Document Express DjVu Plug-in\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\MATLAB\R2014a\runtime\win64;C:\Program Files\MATLAB\R2014a\bin;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files (x86)\Autodesk\Backburner\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Vc\bin;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin;C:\Program Files (x86)\scala\\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Google\Chrome\Application"/>
+        </row>
+        <row stringID="row" value="1">
+          <item stringID="variable" value="PATHEXT"/>
+          <item stringID="value" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
+        </row>
+        <row stringID="row" value="2">
+          <item stringID="variable" value="XILINX_DSP"/>
+          <item stringID="value" value="C:\Xilinx\14.2\ISE_DS\ISE"/>
+        </row>
+        <row stringID="row" value="3">
+          <item stringID="variable" value="XILINX_EDK"/>
+          <item stringID="value" value="C:\Xilinx\14.2\ISE_DS\EDK"/>
+        </row>
+        <row stringID="row" value="4">
+          <item stringID="variable" value="XILINX_PLANAHEAD"/>
+          <item stringID="value" value="C:\Xilinx\14.2\ISE_DS\PlanAhead"/>
+        </row>
+        <row stringID="row" value="5">
+          <item stringID="variable" value="XILINX_VIVADO"/>
+          <item stringID="value" value="C:\Xilinx\Vivado\2012.2"/>
+        </row>
+        <row stringID="row" value="6">
+          <item stringID="variable" value="XILINX"/>
+          <item stringID="value" value="C:\Xilinx\14.2\ISE_DS\ISE\;C:\Xilinx\14.2\ISE_DS\EDK"/>
+        </row>
+        <row stringID="row" value="7">
+          <item stringID="variable" value="XILINXD_LICENSE_FILE"/>
+          <item stringID="value" value="2100@vm05.cs.lth.se"/>
+        </row>
+      </table>
+      <item stringID="User_EnvOs" value="OS Information">
+        <item stringID="User_EnvOsname" value="Microsoft Windows 7 , 64-bit"/>
+        <item stringID="User_EnvOsrelease" value="Service Pack 1  (build 7601)"/>
+      </item>
+      <item stringID="User_EnvHost" value="NEPTUNUS-11"/>
+      <table stringID="User_EnvCpu">
+        <column stringID="arch"/>
+        <column stringID="speed"/>
+        <row stringID="row" value="0">
+          <item stringID="arch" value="Intel(R) Core(TM) i5-2500 CPU @ 3.30GHz"/>
+          <item stringID="speed" value="3292 MHz"/>
+        </row>
+      </table>
+    </section>
+    <section stringID="XST_OPTION_SUMMARY">
+      <item DEFAULT="Speed" label="-opt_mode" stringID="XST_OPTMODE" value="speed"/>
+      <item DEFAULT="As_Optimized" label="-netlist_hierarchy" stringID="XST_NETLISTHIERARCHY" value="as_optimized"/>
+      <item DEFAULT="1" label="-opt_level" stringID="XST_OPTLEVEL" value="1"/>
+      <item DEFAULT="" label="-p" stringID="XST_P" value="xc6slx16csg324-3"/>
+      <item DEFAULT="" label="-top" stringID="XST_TOP" value="system_microblaze_0_wrapper"/>
+      <item DEFAULT="Mixed" label="-ifmt" stringID="XST_IFMT" value="MIXED"/>
+      <item DEFAULT="" label="-ifn" stringID="XST_IFN" value="system_microblaze_0_wrapper_xst.prj"/>
+      <item DEFAULT="" label="-ofn" stringID="XST_OFN" value="../implementation/system_microblaze_0_wrapper.ngc"/>
+      <item DEFAULT="/" stringID="XST_HIERARCHYSEPARATOR" value="/"/>
+      <item DEFAULT="Yes" label="-iobuf" stringID="XST_IOBUF" value="NO"/>
+      <item DEFAULT="" label="-sd" stringID="XST_SD" value="{../implementation}"/>
+      <item DEFAULT="" label="-vlgincdir" stringID="XST_VLGINCDIR" value="{&quot;C:\Users\ael10jso\Xilinx\brutus\pcores\&quot; &quot;C:\Xilinx\BSP\Nexys3_AXI_BSB_Support\lib\Digilent\pcores\&quot; &quot;C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\&quot; &quot;C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\&quot; }"/>
+    </section>
+    <section stringID="XST_UNISIM_SUMMARY">
+      <item dataType="int" stringID="XST_NUM_AND2B1L" value="1"/>
+      <item dataType="int" stringID="XST_NUM_DSP48A" value="3"/>
+      <item dataType="int" stringID="XST_NUM_FDE" value="32"/>
+      <item dataType="int" stringID="XST_NUM_FDR" value="126"/>
+      <item dataType="int" stringID="XST_NUM_FDRE" value="77"/>
+      <item dataType="int" stringID="XST_NUM_FDS" value="1"/>
+      <item dataType="int" stringID="XST_NUM_LUT3" value="1"/>
+      <item dataType="int" stringID="XST_NUM_LUT4" value="1"/>
+      <item dataType="int" stringID="XST_NUM_LUT6" value="55"/>
+      <item dataType="int" stringID="XST_NUM_MUXCY" value="1"/>
+      <item dataType="int" stringID="XST_NUM_MUXF7" value="1"/>
+      <item dataType="int" stringID="XST_NUM_RAM32M" value="16"/>
+      <item dataType="int" stringID="XST_NUM_SRL16E" value="7"/>
+      <item dataType="int" stringID="XST_NUM_SRLC16E" value="1"/>
+      <item dataType="int" stringID="XST_NUM_XORCY" value="1"/>
+    </section>
+    <section stringID="XST_HDL_SYNTHESIS_REPORT">
+      <item dataType="int" stringID="XST_RAMS" value="3"></item>
+      <item dataType="int" stringID="XST_ADDERSSUBTRACTORS" value="2">
+        <item dataType="int" stringID="XST_2BIT_SUBTRACTOR" value="1"/>
+        <item dataType="int" stringID="XST_8BIT_ADDER" value="1"/>
+      </item>
+      <item dataType="int" stringID="XST_REGISTERS" value="333">
+        <item dataType="int" stringID="XST_1BIT_REGISTER" value="256"/>
+        <item dataType="int" stringID="XST_10BIT_REGISTER" value="1"/>
+        <item dataType="int" stringID="XST_16BIT_REGISTER" value="3"/>
+        <item dataType="int" stringID="XST_2BIT_REGISTER" value="12"/>
+        <item dataType="int" stringID="XST_28BIT_REGISTER" value="1"/>
+        <item dataType="int" stringID="XST_3BIT_REGISTER" value="3"/>
+        <item dataType="int" stringID="XST_32BIT_REGISTER" value="32"/>
+        <item dataType="int" stringID="XST_4BIT_REGISTER" value="6"/>
+        <item dataType="int" stringID="XST_43BIT_REGISTER" value="4"/>
+        <item dataType="int" stringID="XST_5BIT_REGISTER" value="4"/>
+        <item dataType="int" stringID="XST_6BIT_REGISTER" value="1"/>
+        <item dataType="int" stringID="XST_7BIT_REGISTER" value="2"/>
+        <item dataType="int" stringID="XST_8BIT_REGISTER" value="1"/>
+      </item>
+      <item dataType="int" stringID="XST_COMPARATORS" value="9"></item>
+      <item dataType="int" stringID="XST_MULTIPLEXERS" value="283">
+        <item dataType="int" stringID="XST_1BIT_2TO1_MULTIPLEXER" value="159"/>
+        <item dataType="int" stringID="XST_1BIT_4TO1_MULTIPLEXER" value="46"/>
+        <item dataType="int" stringID="XST_16BIT_2TO1_MULTIPLEXER" value="2"/>
+        <item dataType="int" stringID="XST_2BIT_2TO1_MULTIPLEXER" value="10"/>
+        <item dataType="int" stringID="XST_3BIT_2TO1_MULTIPLEXER" value="3"/>
+        <item dataType="int" stringID="XST_32BIT_2TO1_MULTIPLEXER" value="19"/>
+        <item dataType="int" stringID="XST_32BIT_4TO1_MULTIPLEXER" value="4"/>
+        <item dataType="int" stringID="XST_4BIT_2TO1_MULTIPLEXER" value="2"/>
+        <item dataType="int" stringID="XST_43BIT_4TO1_MULTIPLEXER" value="1"/>
+        <item dataType="int" stringID="XST_5BIT_2TO1_MULTIPLEXER" value="5"/>
+        <item dataType="int" stringID="XST_6BIT_2TO1_MULTIPLEXER" value="4"/>
+        <item dataType="int" stringID="XST_8BIT_2TO1_MULTIPLEXER" value="6"/>
+        <item dataType="int" stringID="XST_8BIT_4TO1_MULTIPLEXER" value="2"/>
+      </item>
+      <item dataType="int" stringID="XST_XORS" value="39">
+        <item dataType="int" stringID="XST_1BIT_XOR2" value="38"/>
+      </item>
+    </section>
+    <section stringID="XST_ADVANCED_HDL_SYNTHESIS_REPORT">
+      <item dataType="int" stringID="XST_RAMS" value="3"></item>
+      <item dataType="int" stringID="XST_COUNTERS" value="2">
+        <item dataType="int" stringID="XST_2BIT_DOWN_COUNTER" value="1"/>
+      </item>
+      <item dataType="int" stringID="XST_REGISTERS" value="5787">
+        <item dataType="int" stringID="XST_FLIPFLOPS" value="5787"/>
+      </item>
+      <item dataType="int" stringID="XST_SHIFT_REGISTERS" value="75"></item>
+      <item dataType="int" stringID="XST_COMPARATORS" value="9"></item>
+      <item dataType="int" stringID="XST_MULTIPLEXERS" value="276">
+        <item dataType="int" stringID="XST_1BIT_2TO1_MULTIPLEXER" value="156"/>
+        <item dataType="int" stringID="XST_1BIT_4TO1_MULTIPLEXER" value="46"/>
+        <item dataType="int" stringID="XST_16BIT_2TO1_MULTIPLEXER" value="2"/>
+        <item dataType="int" stringID="XST_2BIT_2TO1_MULTIPLEXER" value="9"/>
+        <item dataType="int" stringID="XST_3BIT_2TO1_MULTIPLEXER" value="3"/>
+        <item dataType="int" stringID="XST_32BIT_2TO1_MULTIPLEXER" value="19"/>
+        <item dataType="int" stringID="XST_32BIT_4TO1_MULTIPLEXER" value="3"/>
+        <item dataType="int" stringID="XST_4BIT_2TO1_MULTIPLEXER" value="2"/>
+        <item dataType="int" stringID="XST_5BIT_2TO1_MULTIPLEXER" value="5"/>
+        <item dataType="int" stringID="XST_6BIT_2TO1_MULTIPLEXER" value="4"/>
+        <item dataType="int" stringID="XST_8BIT_2TO1_MULTIPLEXER" value="5"/>
+        <item dataType="int" stringID="XST_8BIT_4TO1_MULTIPLEXER" value="2"/>
+      </item>
+      <item dataType="int" stringID="XST_XORS" value="39">
+        <item dataType="int" stringID="XST_1BIT_XOR2" value="38"/>
+      </item>
+    </section>
+    <section stringID="XST_FINAL_REGISTER_REPORT">
+      <item dataType="int" stringID="XST_REGISTERS" value="1651">
+        <item dataType="int" stringID="XST_FLIPFLOPS" value="1651"/>
+      </item>
+    </section>
+    <section stringID="XST_PARTITION_REPORT">
+      <section stringID="XST_PARTITION_IMPLEMENTATION_STATUS">
+        <section stringID="XST_NO_PARTITIONS_WERE_FOUND_IN_THIS_DESIGN"/>
+      </section>
+    </section>
+    <section stringID="XST_DESIGN_SUMMARY">
+      <section stringID="XST_">
+        <item stringID="XST_TOP_LEVEL_OUTPUT_FILE_NAME" value="system_microblaze_0_wrapper.ngc"/>
+      </section>
+      <section stringID="XST_PRIMITIVE_AND_BLACK_BOX_USAGE">
+        <item dataType="int" stringID="XST_BELS" value="1872">
+          <item dataType="int" stringID="XST_GND" value="1"/>
+          <item dataType="int" stringID="XST_INV" value="10"/>
+          <item dataType="int" stringID="XST_LUT1" value="35"/>
+          <item dataType="int" stringID="XST_LUT2" value="82"/>
+          <item dataType="int" stringID="XST_LUT3" value="338"/>
+          <item dataType="int" stringID="XST_LUT4" value="162"/>
+          <item dataType="int" stringID="XST_LUT5" value="235"/>
+          <item dataType="int" stringID="XST_LUT6" value="527"/>
+          <item dataType="int" stringID="XST_MULTAND" value="2"/>
+          <item dataType="int" stringID="XST_MUXCY" value="16"/>
+          <item dataType="int" stringID="XST_MUXF7" value="117"/>
+          <item dataType="int" stringID="XST_VCC" value="1"/>
+          <item dataType="int" stringID="XST_XORCY" value="102"/>
+        </item>
+        <item dataType="int" stringID="XST_FLIPFLOPSLATCHES" value="1651">
+          <item dataType="int" stringID="XST_FD" value="88"/>
+          <item dataType="int" stringID="XST_FDC" value="1"/>
+          <item dataType="int" stringID="XST_FDCE" value="7"/>
+          <item dataType="int" stringID="XST_FDE" value="281"/>
+          <item dataType="int" stringID="XST_FDR" value="615"/>
+          <item dataType="int" stringID="XST_FDRE" value="620"/>
+          <item dataType="int" stringID="XST_FDS" value="2"/>
+          <item dataType="int" stringID="XST_FDSE" value="37"/>
+        </item>
+        <item dataType="int" stringID="XST_RAMS" value="16"></item>
+        <item dataType="int" stringID="XST_SHIFT_REGISTERS" value="87">
+          <item dataType="int" stringID="XST_SRL16E" value="14"/>
+          <item dataType="int" stringID="XST_SRLC16E" value="73"/>
+        </item>
+        <item dataType="int" stringID="XST_OTHERS" value="1"></item>
+      </section>
+    </section>
+    <section stringID="XST_DEVICE_UTILIZATION_SUMMARY">
+      <item stringID="XST_SELECTED_DEVICE" value="6slx16csg324-3"/>
+      <item AVAILABLE="18224" dataType="int" label="Number of Slice Registers" stringID="XST_NUMBER_OF_SLICE_REGISTERS" value="1651"/>
+      <item AVAILABLE="9112" dataType="int" label="Number of Slice LUTs" stringID="XST_NUMBER_OF_SLICE_LUTS" value="1636"/>
+      <item AVAILABLE="9112" dataType="int" label="Number used as Logic" stringID="XST_NUMBER_USED_AS_LOGIC" value="1485"/>
+      <item AVAILABLE="2176" dataType="int" stringID="XST_NUMBER_USED_AS_MEMORY" value="151"/>
+      <item dataType="int" stringID="XST_NUMBER_USED_AS_SRL" value="87"/>
+      <item dataType="int" label="Number of LUT Flip Flop pairs used" stringID="XST_NUMBER_OF_LUT_FLIP_FLOP_PAIRS_USED" value="2500"/>
+      <item AVAILABLE="2500" dataType="int" label="Number with an unused Flip Flop" stringID="XST_NUMBER_WITH_AN_UNUSED_FLIP_FLOP" value="849"/>
+      <item AVAILABLE="2500" dataType="int" label="Number with an unused LUT" stringID="XST_NUMBER_WITH_AN_UNUSED_LUT" value="864"/>
+      <item AVAILABLE="2500" dataType="int" label="Number of fully used LUT-FF pairs" stringID="XST_NUMBER_OF_FULLY_USED_LUTFF_PAIRS" value="787"/>
+      <item dataType="int" label="Number of unique control sets" stringID="XST_NUMBER_OF_UNIQUE_CONTROL_SETS" value="46"/>
+      <item dataType="int" label="Number of IOs" stringID="XST_NUMBER_OF_IOS" value="16360"/>
+      <item AVAILABLE="232" dataType="int" label="Number of bonded IOBs" stringID="XST_NUMBER_OF_BONDED_IOBS" value="0"/>
+    </section>
+    <section stringID="XST_PARTITION_RESOURCE_SUMMARY">
+      <section stringID="XST_NO_PARTITIONS_WERE_FOUND_IN_THIS_DESIGN"/>
+    </section>
+    <section stringID="XST_ERRORS_STATISTICS">
+      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_ERRORS" value="0"/>
+      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_WARNINGS" value="4611"/>
+      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_INFOS" value="128"/>
+    </section>
+  </application>
+
+</document>

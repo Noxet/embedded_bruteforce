@@ -1,0 +1,16 @@
+##############################################################################
+## Filename:          C:\Users\ael10jso\Xilinx\brutus\drivers/brutus_v1_00_a/data/brutus_v2_1_0.mdd
+## Description:       Microprocessor Driver Definition
+## Date:              Fri Sep 19 16:14:59 2014 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+OPTION psf_version = 2.1.0;
+
+BEGIN DRIVER brutus_v1_00_a
+
+  OPTION supported_peripherals = (brutus_v1_00_a);
+  OPTION depends = (common_v1_00_a);
+  OPTION DESC = Brute force core;
+  OPTION copyfiles = all;
+
+END DRIVER

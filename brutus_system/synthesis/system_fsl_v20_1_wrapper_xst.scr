@@ -1,0 +1,14 @@
+set -tmpdir C:\Users\ael10jso\Xilinx\brutus\synthesis\xst_temp_dir\
+run
+-opt_mode speed
+-netlist_hierarchy as_optimized
+-opt_level 1
+-p xc6slx16csg324-3
+-top system_fsl_v20_1_wrapper
+-ifmt MIXED
+-ifn system_fsl_v20_1_wrapper_xst.prj
+-ofn ../implementation/system_fsl_v20_1_wrapper.ngc
+-hierarchy_separator /
+-iobuf NO
+-sd {../implementation}
+-vlgincdir {"C:\Users\ael10jso\Xilinx\brutus\pcores\" "C:\Xilinx\BSP\Nexys3_AXI_BSB_Support\lib\Digilent\pcores\" "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }

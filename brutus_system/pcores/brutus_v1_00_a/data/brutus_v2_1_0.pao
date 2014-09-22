@@ -1,0 +1,7 @@
+##############################################################################
+## Filename:          C:\Users\ael10jso\Xilinx\brutus\pcores/brutus_v1_00_a/data/brutus_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Fri Sep 19 16:14:59 2014 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib brutus_v1_00_a brutus vhdl

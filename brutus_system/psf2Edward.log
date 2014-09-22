@@ -1,0 +1,44 @@
+
+Checking platform configuration ...
+IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - 1 master(s) : 1 slave(s) 
+IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - 1 master(s) : 1 slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 5 slave(s) 
+IPNAME: fsl_v20, INSTANCE: fsl_v20_0 - 1 master(s) : 1 slave(s) 
+IPNAME: fsl_v20, INSTANCE: fsl_v20_1 - 1 master(s) : 1 slave(s) 
+
+Checking port drivers...
+WARNING:EDK:4180 - PORT: FSL_S_Clk, CONNECTOR: fsl_v20_1_FSL_S_Clk - No driver
+   found. Port will be driven to GND -
+   C:\Users\ael10jso\Xilinx\brutus\pcores\brutus_v1_00_a\data\brutus_v2_1_0.mpd
+   line 22 
+WARNING:EDK:4180 - PORT: FSL_M_Clk, CONNECTOR: fsl_v20_0_FSL_M_Clk - No driver
+   found. Port will be driven to GND -
+   C:\Users\ael10jso\Xilinx\brutus\pcores\brutus_v1_00_a\data\brutus_v2_1_0.mpd
+   line 27 
+WARNING:EDK:4181 - PORT: FSL0_S_CLK, CONNECTOR: fsl_v20_0_FSL_S_Clk - floating
+   connection -
+   C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_40_a\d
+   ata\microblaze_v2_1_0.mpd line 698 
+WARNING:EDK:4181 - PORT: FSL0_M_CLK, CONNECTOR: fsl_v20_1_FSL_M_Clk - floating
+   connection -
+   C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_40_a\d
+   ata\microblaze_v2_1_0.mpd line 703 
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+
+INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi4lite_0.
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+Conversion to XML complete.

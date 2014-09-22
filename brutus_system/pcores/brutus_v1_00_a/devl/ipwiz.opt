@@ -1,0 +1,13 @@
+-batch 
+-create brutus 
+-ver 1.00.a 
+-dir C:\Users\ael10jso\Xilinx\brutus\ 
+-lang vhdl 
+-bus fsl ms 
+-xps 
+-driver 
+-totalin 1
+-totalout 1
+-argin 1
+-argout 1
+-desc "Brute force core"
