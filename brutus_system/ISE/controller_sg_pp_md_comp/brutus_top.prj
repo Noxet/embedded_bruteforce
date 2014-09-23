@@ -1,6 +1,0 @@
-vhdl work "../../../vhdl/string_generator.vhd"
-vhdl work "../../../vhdl/pre_process.vhd"
-vhdl work "../../../vhdl/md5_working.vhd"
-vhdl work "../../../vhdl/controller.vhd"
-vhdl work "../../../vhdl/comp.vhd"
-vhdl work "../../../vhdl/brutus_top.vhd"
