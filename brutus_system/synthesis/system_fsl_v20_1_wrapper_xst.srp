@@ -1,6 +1,6 @@
 Release 14.2 - xst P.28xd (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to C:\Users\ael10jso\Xilinx\brutus\synthesis\xst_temp_dir\
+--> Parameter TMPDIR set to C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\synthesis\xst_temp_dir\
 
 
 Total REAL time to Xst completion: 0.00 secs
@@ -35,7 +35,7 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "system_fsl_v20_1_wrapper_xst.prj"
-Verilog Include Directory          : {"C:\Users\ael10jso\Xilinx\brutus\pcores\" "C:\Xilinx\BSP\Nexys3_AXI_BSB_Support\lib\Digilent\pcores\" "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+Verilog Include Directory          : {"C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\pcores\" "C:\Xilinx\BSP\Nexys3_AXI_BSB_Support\lib\Digilent\pcores\" "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
 
 ---- Target Parameters
 Target Device                      : xc6slx16csg324-3
@@ -83,7 +83,7 @@ Parsing architecture <IMP> of entity <async_fifo_bram>.
 Parsing VHDL file "C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/fsl_v20_v2_11_e/hdl/vhdl/fsl_v20.vhd" into library fsl_v20_v2_11_e
 Parsing entity <fsl_v20>.
 Parsing architecture <IMP> of entity <fsl_v20>.
-Parsing VHDL file "C:\Users\ael10jso\Xilinx\brutus\hdl\system_fsl_v20_1_wrapper.vhd" into library work
+Parsing VHDL file "C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\hdl\system_fsl_v20_1_wrapper.vhd" into library work
 Parsing entity <system_fsl_v20_1_wrapper>.
 Parsing architecture <STRUCTURE> of entity <system_fsl_v20_1_wrapper>.
 
@@ -104,7 +104,7 @@ Elaborating entity <SRL_FIFO> (architecture <IMP>) with generics from library <f
 =========================================================================
 
 Synthesizing Unit <system_fsl_v20_1_wrapper>.
-    Related source file is "C:\Users\ael10jso\Xilinx\brutus\hdl\system_fsl_v20_1_wrapper.vhd".
+    Related source file is "C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\hdl\system_fsl_v20_1_wrapper.vhd".
     Summary:
 	no macro.
 Unit <system_fsl_v20_1_wrapper> synthesized.
@@ -379,12 +379,12 @@ FSL_Clk        |    3.779|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.49 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.37 secs
  
 --> 
 
-Total memory usage is 268016 kilobytes
+Total memory usage is 268392 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    2 (   0 filtered)

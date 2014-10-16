@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/fuck_vga/vga_ctrl.xst" -ofn "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/fuck_vga/vga_ctrl.syr" 

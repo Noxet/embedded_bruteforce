@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/controller_sg_pp_md_comp/controller.xst" -ofn "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/controller_sg_pp_md_comp/controller.syr" 

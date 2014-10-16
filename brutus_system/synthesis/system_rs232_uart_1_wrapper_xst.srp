@@ -1,6 +1,6 @@
 Release 14.2 - xst P.28xd (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to C:\Users\ael10jso\Xilinx\brutus\synthesis\xst_temp_dir\
+--> Parameter TMPDIR set to C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\synthesis\xst_temp_dir\
 
 
 Total REAL time to Xst completion: 0.00 secs
@@ -35,7 +35,7 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "system_rs232_uart_1_wrapper_xst.prj"
-Verilog Include Directory          : {"C:\Users\ael10jso\Xilinx\brutus\pcores\" "C:\Xilinx\BSP\Nexys3_AXI_BSB_Support\lib\Digilent\pcores\" "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+Verilog Include Directory          : {"C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\pcores\" "C:\Xilinx\BSP\Nexys3_AXI_BSB_Support\lib\Digilent\pcores\" "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
 
 ---- Target Parameters
 Target Device                      : xc6slx16csg324-3
@@ -442,7 +442,7 @@ Parsing architecture <RTL> of entity <uartlite_core>.
 Parsing VHDL file "C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_uartlite_v1_02_a/hdl/vhdl/axi_uartlite.vhd" into library axi_uartlite_v1_02_a
 Parsing entity <axi_uartlite>.
 Parsing architecture <RTL> of entity <axi_uartlite>.
-Parsing VHDL file "C:\Users\ael10jso\Xilinx\brutus\hdl\system_rs232_uart_1_wrapper.vhd" into library work
+Parsing VHDL file "C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\hdl\system_rs232_uart_1_wrapper.vhd" into library work
 Parsing entity <system_rs232_uart_1_wrapper>.
 Parsing architecture <STRUCTURE> of entity <system_rs232_uart_1_wrapper>.
 
@@ -499,7 +499,7 @@ INFO:HDLCompiler:679 - "C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores
 =========================================================================
 
 Synthesizing Unit <system_rs232_uart_1_wrapper>.
-    Related source file is "C:\Users\ael10jso\Xilinx\brutus\hdl\system_rs232_uart_1_wrapper.vhd".
+    Related source file is "C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\hdl\system_rs232_uart_1_wrapper.vhd".
     Summary:
 	no macro.
 Unit <system_rs232_uart_1_wrapper> synthesized.
@@ -507,7 +507,7 @@ Unit <system_rs232_uart_1_wrapper> synthesized.
 Synthesizing Unit <axi_uartlite>.
     Related source file is "C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_uartlite_v1_02_a/hdl/vhdl/axi_uartlite.vhd".
         C_FAMILY = "spartan6"
-        C_S_AXI_ACLK_FREQ_HZ = 100000000
+        C_S_AXI_ACLK_FREQ_HZ = 50000000
         C_S_AXI_ADDR_WIDTH = 4
         C_S_AXI_DATA_WIDTH = 32
         C_BAUDRATE = 9600
@@ -527,7 +527,7 @@ Unit <axi_uartlite> synthesized.
 Synthesizing Unit <uartlite_core>.
     Related source file is "C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_uartlite_v1_02_a/hdl/vhdl/uartlite_core.vhd".
         C_FAMILY = "spartan6"
-        C_S_AXI_ACLK_FREQ_HZ = 100000000
+        C_S_AXI_ACLK_FREQ_HZ = 50000000
         C_BAUDRATE = 9600
         C_DATA_BITS = 8
         C_USE_PARITY = 0
@@ -550,13 +550,13 @@ Unit <uartlite_core> synthesized.
 
 Synthesizing Unit <baudrate>.
     Related source file is "C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_uartlite_v1_02_a/hdl/vhdl/baudrate.vhd".
-        C_RATIO = 651
+        C_RATIO = 326
     Found 1-bit register for signal <EN_16x_Baud>.
-    Found 10-bit register for signal <count>.
-    Found 10-bit subtractor for signal <GND_11_o_GND_11_o_sub_2_OUT<9:0>> created at line 165.
+    Found 9-bit register for signal <count>.
+    Found 9-bit subtractor for signal <GND_11_o_GND_11_o_sub_2_OUT<8:0>> created at line 165.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred  11 D-type flip-flop(s).
+	inferred  10 D-type flip-flop(s).
 Unit <baudrate> synthesized.
 
 Synthesizing Unit <uartlite_rx>.
@@ -846,15 +846,15 @@ HDL Synthesis Report
 
 Macro Statistics
 # Adders/Subtractors                                   : 2
- 10-bit subtractor                                     : 1
  3-bit subtractor                                      : 1
+ 9-bit subtractor                                      : 1
 # Registers                                            : 125
  1-bit register                                        : 88
- 10-bit register                                       : 1
  2-bit register                                        : 2
  3-bit register                                        : 1
  32-bit register                                       : 1
  8-bit register                                        : 32
+ 9-bit register                                        : 1
 # Comparators                                          : 2
  5-bit comparator lessequal                            : 2
 # Multiplexers                                         : 18
@@ -898,8 +898,8 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # Counters                                             : 2
- 10-bit down counter                                   : 1
  3-bit down counter                                    : 1
+ 9-bit down counter                                    : 1
 # Registers                                            : 134
  Flip-Flops                                            : 134
 # Shift Registers                                      : 16
@@ -977,8 +977,8 @@ Unit <system_rs232_uart_1_wrapper> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 88
- Flip-Flops                                            : 88
+# Registers                                            : 87
+ Flip-Flops                                            : 87
 # Shift Registers                                      : 2
  15-bit shift register                                 : 1
  16-bit shift register                                 : 1
@@ -1004,22 +1004,22 @@ Top Level Output File Name         : system_rs232_uart_1_wrapper.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 147
+# BELS                             : 143
 #      GND                         : 1
-#      INV                         : 11
+#      INV                         : 10
 #      LUT1                        : 1
-#      LUT2                        : 18
+#      LUT2                        : 17
 #      LUT3                        : 12
-#      LUT4                        : 16
-#      LUT5                        : 27
+#      LUT4                        : 17
+#      LUT5                        : 26
 #      LUT6                        : 20
-#      MUXCY                       : 9
+#      MUXCY                       : 8
 #      MUXCY_L                     : 10
 #      MUXF7                       : 1
 #      VCC                         : 1
-#      XORCY                       : 20
-# FlipFlops/Latches                : 90
-#      FD                          : 20
+#      XORCY                       : 19
+# FlipFlops/Latches                : 89
+#      FD                          : 19
 #      FDE                         : 3
 #      FDR                         : 21
 #      FDRE                        : 30
@@ -1035,17 +1035,17 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              90  out of  18224     0%  
- Number of Slice LUTs:                  123  out of   9112     1%  
-    Number used as Logic:               105  out of   9112     1%  
+ Number of Slice Registers:              89  out of  18224     0%  
+ Number of Slice LUTs:                  121  out of   9112     1%  
+    Number used as Logic:               103  out of   9112     1%  
     Number used as Memory:               18  out of   2176     0%  
        Number used as SRL:               18
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    136
-   Number with an unused Flip Flop:      46  out of    136    33%  
-   Number with an unused LUT:            13  out of    136     9%  
-   Number of fully used LUT-FF pairs:    77  out of    136    56%  
+ Number of LUT Flip Flop pairs used:    134
+   Number with an unused Flip Flop:      45  out of    134    33%  
+   Number with an unused LUT:            13  out of    134     9%  
+   Number of fully used LUT-FF pairs:    76  out of    134    56%  
    Number of unique control sets:        11
 
 IO Utilization: 
@@ -1075,7 +1075,7 @@ Clock Information:
 -----------------------------------+---------------------------------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                                               | Load  |
 -----------------------------------+---------------------------------------------------------------------+-------+
-S_AXI_ACLK                         | NONE(RS232_Uart_1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1)| 108   |
+S_AXI_ACLK                         | NONE(RS232_Uart_1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1)| 107   |
 -----------------------------------+---------------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -1099,7 +1099,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'S_AXI_ACLK'
   Clock period: 3.730ns (frequency: 268.079MHz)
-  Total number of paths / destination ports: 1019 / 253
+  Total number of paths / destination ports: 989 / 252
 -------------------------------------------------------------------------
 Delay:               3.730ns (Levels of Logic = 5)
   Source:            RS232_Uart_1/UARTLITE_CORE_I/UARTLITE_RX_I/valid_rx (FF)
@@ -1124,7 +1124,7 @@ Delay:               3.730ns (Levels of Logic = 5)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'S_AXI_ACLK'
-  Total number of paths / destination ports: 148 / 100
+  Total number of paths / destination ports: 147 / 99
 -------------------------------------------------------------------------
 Offset:              1.913ns (Levels of Logic = 1)
   Source:            S_AXI_ARESETN (PAD)
@@ -1177,11 +1177,11 @@ S_AXI_ACLK     |    3.730|         |         |         |
 
 
 Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.79 secs
+Total CPU time to Xst completion: 6.32 secs
  
 --> 
 
-Total memory usage is 282032 kilobytes
+Total memory usage is 283432 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   18 (   0 filtered)

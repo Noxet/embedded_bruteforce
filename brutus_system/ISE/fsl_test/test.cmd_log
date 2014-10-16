@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/fsl_test/test.xst" -ofn "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/fsl_test/test.syr" 
+xst -intstyle ise -ifn "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/fsl_test/test.xst" -ofn "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/fsl_test/test.syr" 
+xst -intstyle ise -ifn "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/fsl_test/test.xst" -ofn "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/fsl_test/test.syr" 
+xst -intstyle ise -ifn "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/fsl_test/test.xst" -ofn "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/fsl_test/test.syr" 
+vhdtdtfi -lib work ../../pcores/test_v1_00_a/hdl/vhdl/test.vhd -prj fsl_test -o test.spl -module test -template C:/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 test.spl C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/fsl_test/test.sym 

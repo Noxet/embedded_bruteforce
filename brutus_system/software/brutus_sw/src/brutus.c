@@ -21,6 +21,7 @@
  */
 
 #include <stdio.h>
+#include <math.h>
 #include "platform.h"
 #include "xparameters.h"
 #include "xuartlite_l.h"
@@ -34,25 +35,123 @@
 
 void print(char *str);
 
+int ctox(char c)
+{
+	unsigned num;
+
+	switch (c) {
+	case '0':
+		num = 0;
+		break;
+	case '1':
+		num = 1;
+		break;
+	case '2':
+		num = 2;
+		break;
+	case '3':
+		num = 3;
+		break;
+	case '4':
+		num = 4;
+		break;
+	case '5':
+		num = 5;
+		break;
+	case '6':
+		num = 6;
+		break;
+	case '7':
+		num = 7;
+		break;
+	case '8':
+		num = 8;
+		break;
+	case '9':
+		num = 9;
+		break;
+	case 'a':
+	case 'A':
+		num = 10;
+		break;
+	case 'b':
+	case 'B':
+		num = 11;
+		break;
+	case 'c':
+	case 'C':
+		num = 12;
+		break;
+	case 'd':
+	case 'D':
+		num = 13;
+		break;
+	case 'e':
+	case 'E':
+		num = 14;
+		break;
+	case 'f':
+	case 'F':
+		num = 15;
+		break;
+	}
+
+	return num;
+}
+
 int main()
 {
     init_platform();
 
-    while (1) {
-		char recv = XUartLite_RecvByte(STDIN_BASEADDRESS);
-		unsigned num = 0;
+    xil_printf("%s\n\r", "Welcome to Brutus cracker system!");
 
-		while (recv >= '0' && recv <= '9') {
-			num = num*10 + (recv-'0');
+    while (1) {
+    	xil_printf("%s\n\r", "Enter hash: ");
+		char recv = XUartLite_RecvByte(STDIN_BASEADDRESS); // read first char
+
+
+		/* Read password hash */
+		char buff[32];
+		int idx_buff = 0;
+		while (recv != '\r') {
+			buff[idx_buff++] = recv;
 			recv = XUartLite_RecvByte(STDIN_BASEADDRESS);
 		}
 
-		putfsl(num, 0);
+		unsigned int i_buff[4] = {0};
+		unsigned num = 0;
 
-		char resp;
+		for (int i = 0; i < 4; i++) {
+			for (int j = 0; j < 8; j++) {
+				num = ctox(buff[j + i*8]);
+				i_buff[i] += (pow(16, 7-j) * num);
+			}
+			//xil_printf("%x\n\r", i_buff[i]);
+		}
+
+		//xil_printf("%u\n\r", i_buff[0]);
+
+
+		putfsl(i_buff[0], 0);
+		putfsl(i_buff[1], 0);
+		putfsl(i_buff[2], 0);
+		putfsl(i_buff[3], 0);
+		xil_printf("Cracking...\n\r");
+
+		unsigned int resp;
+		char *str = &resp; // c-magic
+
 		getfsl(resp, 0);
-
-		xil_printf("ans: %d", resp);
+		unsigned i;
+		xil_printf("password: ");
+		for (i = 0; i < 4; i++) {
+			xil_printf("%c", *(str+i));
+		}
+		getfsl(resp, 0);
+		for (i = 0; i < 4; i++) {
+			xil_printf("%c", *(str+i));
+		}
+		xil_printf("\n\r");
     }
     cleanup_platform();
 

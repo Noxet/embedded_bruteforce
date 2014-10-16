@@ -1,0 +1,784 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: brutus_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "brutus_top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "brutus_top"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : brutus_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\ael10jso\Xilinx\embedded_bruteforce\vhdl\string_generator.vhd" into library work
+Parsing entity <string_generator>.
+Parsing architecture <Behavioral> of entity <string_generator>.
+Parsing VHDL file "C:\Users\ael10jso\Xilinx\embedded_bruteforce\vhdl\pre_process.vhd" into library work
+Parsing entity <pre_process>.
+Parsing architecture <Behavioral> of entity <pre_process>.
+Parsing VHDL file "C:\Users\ael10jso\Xilinx\embedded_bruteforce\vhdl\md5_working.vhd" into library work
+Parsing entity <MD5>.
+Parsing architecture <Behavioral> of entity <md5>.
+Parsing VHDL file "C:\Users\ael10jso\Xilinx\embedded_bruteforce\vhdl\controller.vhd" into library work
+Parsing entity <controller>.
+Parsing architecture <Behavioral> of entity <controller>.
+Parsing VHDL file "C:\Users\ael10jso\Xilinx\embedded_bruteforce\vhdl\comp.vhd" into library work
+Parsing entity <comp>.
+Parsing architecture <Behavioral> of entity <comp>.
+Parsing VHDL file "C:\Users\ael10jso\Xilinx\embedded_bruteforce\vhdl\brutus_top.vhd" into library work
+Parsing entity <brutus_top>.
+Parsing architecture <Behavioral> of entity <brutus_top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <brutus_top> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <controller> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <comp> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <string_generator> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\ael10jso\Xilinx\embedded_bruteforce\vhdl\string_generator.vhd" Line 189. Case statement is complete. others clause is never selected
+
+Elaborating entity <pre_process> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <MD5> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <brutus_top>.
+    Related source file is "C:\Users\ael10jso\Xilinx\embedded_bruteforce\vhdl\brutus_top.vhd".
+        M = 1
+INFO:Xst:3210 - "C:\Users\ael10jso\Xilinx\embedded_bruteforce\vhdl\brutus_top.vhd" line 140: Output port <o_passwd_hash> of the instance <controller_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\ael10jso\Xilinx\embedded_bruteforce\vhdl\brutus_top.vhd" line 140: Output port <o_demux_sel> of the instance <controller_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\ael10jso\Xilinx\embedded_bruteforce\vhdl\brutus_top.vhd" line 140: Output port <o_mux_sel> of the instance <controller_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\ael10jso\Xilinx\embedded_bruteforce\vhdl\brutus_top.vhd" line 180: Output port <o_md5_start> of the instance <sg_inst> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <brutus_top> synthesized.
+
+Synthesizing Unit <controller>.
+    Related source file is "C:\Users\ael10jso\Xilinx\embedded_bruteforce\vhdl\controller.vhd".
+        N = 1
+WARNING:Xst:647 - Input <i_sg_done> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <dm_count_c>.
+    Found 1-bit register for signal <m_count_c>.
+    Found 48-bit register for signal <pw_buff_c<0>>.
+    Found 3-bit register for signal <state_c>.
+INFO:Xst:1799 - State send_fsl is never reached in FSM <state_c>.
+    Found finite state machine <FSM_0> for signal <state_c>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 13                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rstn_INV_3_o (positive)                        |
+    | Reset type         | synchronous                                    |
+    | Reset State        | wait_fsl                                       |
+    | Power Up State     | wait_fsl                                       |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit adder for signal <dm_count_c[0]_PWR_5_o_add_5_OUT<0>> created at line 1241.
+    Found 1-bit adder for signal <m_count_c[0]_PWR_5_o_add_11_OUT<0>> created at line 1241.
+    Found 8x1-bit Read Only RAM for signal <o_start_md5>
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  50 D-type flip-flop(s).
+	inferred  14 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <controller> synthesized.
+
+Synthesizing Unit <comp>.
+    Related source file is "C:\Users\ael10jso\Xilinx\embedded_bruteforce\vhdl\comp.vhd".
+    Found 1-bit register for signal <eq_c>.
+    Found 128-bit register for signal <cmp_hash_c>.
+    Found 128-bit comparator equal for signal <eq_n> created at line 93
+    Summary:
+	inferred 129 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <comp> synthesized.
+
+Synthesizing Unit <string_generator>.
+    Related source file is "C:\Users\ael10jso\Xilinx\embedded_bruteforce\vhdl\string_generator.vhd".
+    Found 8-bit register for signal <chr0_c>.
+    Found 8-bit register for signal <chr1_c>.
+    Found 8-bit register for signal <chr2_c>.
+    Found 8-bit register for signal <chr3_c>.
+    Found 8-bit register for signal <chr4_c>.
+    Found 8-bit register for signal <chr5_c>.
+    Found 3-bit register for signal <len_c>.
+    Found 3-bit register for signal <state_c>.
+    Found finite state machine <FSM_1> for signal <state_c>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 21                                             |
+    | Inputs             | 8                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rstn_INV_12_o (positive)                       |
+    | Reset type         | synchronous                                    |
+    | Reset State        | init                                           |
+    | Power Up State     | init                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit adder for signal <chr0_c[7]_GND_7_o_add_17_OUT> created at line 1241.
+    Found 8-bit adder for signal <chr1_c[7]_GND_7_o_add_25_OUT> created at line 1241.
+    Found 8-bit adder for signal <chr2_c[7]_GND_7_o_add_33_OUT> created at line 1241.
+    Found 8-bit adder for signal <chr3_c[7]_GND_7_o_add_41_OUT> created at line 1241.
+    Found 8-bit adder for signal <chr4_c[7]_GND_7_o_add_49_OUT> created at line 1241.
+    Found 8-bit adder for signal <chr5_c[7]_GND_7_o_add_57_OUT> created at line 1241.
+    Found 3-bit adder for signal <len_c[2]_GND_7_o_add_59_OUT> created at line 1241.
+    Found 3-bit 7-to-1 multiplexer for signal <state_c[2]_X_7_o_wide_mux_71_OUT> created at line 84.
+    Summary:
+	inferred   7 Adder/Subtractor(s).
+	inferred  51 D-type flip-flop(s).
+	inferred  28 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <string_generator> synthesized.
+
+Synthesizing Unit <pre_process>.
+    Related source file is "C:\Users\ael10jso\Xilinx\embedded_bruteforce\vhdl\pre_process.vhd".
+    Found 8x8-bit Read Only RAM for signal <o_length>
+    Found 32-bit 7-to-1 multiplexer for signal <o_data_0> created at line 35.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   5 Multiplexer(s).
+Unit <pre_process> synthesized.
+
+Synthesizing Unit <MD5>.
+    Related source file is "C:\Users\ael10jso\Xilinx\embedded_bruteforce\vhdl\md5_working.vhd".
+    Found 6-bit register for signal <i_c>.
+    Found 32-bit register for signal <a_c>.
+    Found 32-bit register for signal <b_c>.
+    Found 32-bit register for signal <c_c>.
+    Found 32-bit register for signal <d_c>.
+    Found 3-bit register for signal <state_c>.
+INFO:Xst:1799 - State set_output is never reached in FSM <state_c>.
+    Found finite state machine <FSM_2> for signal <state_c>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 16                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rstn (negative)                                |
+    | Reset type         | synchronous                                    |
+    | Reset State        | waiting                                        |
+    | Power Up State     | stage_1                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit adder for signal <n0143> created at line 404.
+    Found 32-bit adder for signal <n0146> created at line 404.
+    Found 32-bit adder for signal <a_c[31]_f[31]_add_26_OUT> created at line 404.
+    Found 32-bit adder for signal <b_c[31]_a_c[31]_add_29_OUT> created at line 404.
+    Found 6-bit adder for signal <i_c[5]_GND_9_o_add_31_OUT> created at line 408.
+    Found 9-bit adder for signal <n0126> created at line 426.
+    Found 8-bit adder for signal <n0130> created at line 429.
+    Found 32-bit adder for signal <GND_9_o_a_c[31]_add_51_OUT> created at line 435.
+    Found 32-bit adder for signal <PWR_10_o_b_c[31]_add_52_OUT> created at line 436.
+    Found 32-bit adder for signal <PWR_10_o_c_c[31]_add_53_OUT> created at line 437.
+    Found 32-bit adder for signal <GND_9_o_d_c[31]_add_54_OUT> created at line 438.
+    Found 32-bit shifter rotate left for signal <n0150> created at line 2993
+    Found 3x6-bit multiplier for signal <n0154> created at line 426.
+    Found 2x6-bit multiplier for signal <n0156> created at line 429.
+    Found 3x6-bit multiplier for signal <n0134> created at line 432.
+    Found 64x40-bit Read Only RAM for signal <_n0276>
+    Found 32-bit 5-to-1 multiplexer for signal <f> created at line 413.
+    Found 1-bit 5-to-1 multiplexer for signal <g<3>> created at line 404.
+    Found 1-bit 5-to-1 multiplexer for signal <g<2>> created at line 404.
+    Found 1-bit 5-to-1 multiplexer for signal <g<1>> created at line 404.
+    Found 1-bit 5-to-1 multiplexer for signal <g<0>> created at line 404.
+    Found 6-bit comparator lessequal for signal <i_c[5]_PWR_10_o_LessThan_31_o> created at line 407
+    Summary:
+	inferred   1 RAM(s).
+	inferred   3 Multiplier(s).
+	inferred  11 Adder/Subtractor(s).
+	inferred 134 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  25 Multiplexer(s).
+	inferred   1 Combinational logic shifter(s).
+	inferred   1 Finite State Machine(s).
+Unit <MD5> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 64x40-bit single-port Read Only RAM                   : 1
+ 8x1-bit single-port Read Only RAM                     : 1
+ 8x8-bit single-port Read Only RAM                     : 1
+# Multipliers                                          : 3
+ 6x2-bit multiplier                                    : 1
+ 6x3-bit multiplier                                    : 2
+# Adders/Subtractors                                   : 20
+ 1-bit adder                                           : 2
+ 3-bit adder                                           : 1
+ 32-bit adder                                          : 8
+ 6-bit adder                                           : 1
+ 8-bit adder                                           : 7
+ 9-bit adder                                           : 1
+# Registers                                            : 16
+ 1-bit register                                        : 3
+ 128-bit register                                      : 1
+ 3-bit register                                        : 1
+ 32-bit register                                       : 2
+ 48-bit register                                       : 1
+ 6-bit register                                        : 1
+ 64-bit register                                       : 1
+ 8-bit register                                        : 6
+# Comparators                                          : 2
+ 128-bit comparator equal                              : 1
+ 6-bit comparator lessequal                            : 1
+# Multiplexers                                         : 72
+ 1-bit 2-to-1 multiplexer                              : 14
+ 1-bit 5-to-1 multiplexer                              : 4
+ 3-bit 2-to-1 multiplexer                              : 6
+ 3-bit 7-to-1 multiplexer                              : 1
+ 32-bit 2-to-1 multiplexer                             : 23
+ 32-bit 5-to-1 multiplexer                             : 1
+ 32-bit 7-to-1 multiplexer                             : 1
+ 48-bit 2-to-1 multiplexer                             : 3
+ 6-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 18
+# Logic shifters                                       : 1
+ 32-bit shifter rotate left                            : 1
+# FSMs                                                 : 3
+# Xors                                                 : 3
+ 32-bit xor2                                           : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <MD5>.
+The following registers are absorbed into counter <i_c>: 1 register on signal <i_c>.
+	The following adders/subtractors are grouped into adder tree <Madd_a_c[31]_f[31]_add_26_OUT1> :
+ 	<Madd_n0143> in block <MD5>, 	<Madd_n0146> in block <MD5>, 	<Madd_a_c[31]_f[31]_add_26_OUT> in block <MD5>.
+	Multiplier <Mmult_n0156> in block <MD5> and adder/subtractor <Madd_n0130_Madd> in block <MD5> are combined into a MAC<Maddsub_n0156>.
+	Multiplier <Mmult_n0154> in block <MD5> and adder/subtractor <Madd_n0126_Madd> in block <MD5> are combined into a MAC<Maddsub_n0154>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0276> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 40-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <i_c>           |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <MD5> synthesized (advanced).
+
+Synthesizing (advanced) Unit <controller>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_o_start_md5> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 1-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <("0",state_c)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <o_start_md5>   |          |
+    -----------------------------------------------------------------------
+Unit <controller> synthesized (advanced).
+
+Synthesizing (advanced) Unit <pre_process>.
+INFO:Xst:3231 - The small RAM <Mram_o_length> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 8-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <i_length>      |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <o_length>      |          |
+    -----------------------------------------------------------------------
+Unit <pre_process> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 64x40-bit single-port distributed Read Only RAM       : 1
+ 8x1-bit single-port distributed Read Only RAM         : 1
+ 8x8-bit single-port distributed Read Only RAM         : 1
+# MACs                                                 : 2
+ 6x2-to-4-bit MAC                                      : 1
+ 6x3-to-4-bit MAC                                      : 1
+# Multipliers                                          : 1
+ 6x3-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 14
+ 1-bit adder                                           : 2
+ 3-bit adder                                           : 1
+ 32-bit adder                                          : 5
+ 8-bit adder                                           : 6
+# Adder Trees                                          : 1
+ 32-bit / 4-inputs adder tree                          : 1
+# Counters                                             : 1
+ 6-bit up counter                                      : 1
+# Registers                                            : 358
+ Flip-Flops                                            : 358
+# Comparators                                          : 2
+ 128-bit comparator equal                              : 1
+ 6-bit comparator lessequal                            : 1
+# Multiplexers                                         : 71
+ 1-bit 2-to-1 multiplexer                              : 14
+ 1-bit 5-to-1 multiplexer                              : 4
+ 3-bit 2-to-1 multiplexer                              : 6
+ 3-bit 7-to-1 multiplexer                              : 1
+ 32-bit 2-to-1 multiplexer                             : 23
+ 32-bit 5-to-1 multiplexer                             : 1
+ 32-bit 7-to-1 multiplexer                             : 1
+ 48-bit 2-to-1 multiplexer                             : 3
+ 8-bit 2-to-1 multiplexer                              : 18
+# Logic shifters                                       : 1
+ 32-bit shifter rotate left                            : 1
+# FSMs                                                 : 3
+# Xors                                                 : 3
+ 32-bit xor2                                           : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <controller_inst/FSM_0> on signal <state_c[1:2]> with sequential encoding.
+----------------------
+ State    | Encoding
+----------------------
+ wait_fsl | 00
+ calc_md5 | 01
+ wait_md5 | 10
+ comp_md5 | 11
+ send_fsl | unreached
+----------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <sg_inst/FSM_1> on signal <state_c[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ init  | 000
+ c0    | 001
+ c1    | 010
+ c2    | 011
+ c3    | 100
+ c4    | 101
+ c5    | 110
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <MD5_inst/FSM_2> on signal <state_c[1:3]> with user encoding.
+------------------------
+ State      | Encoding
+------------------------
+ stage_1    | 000
+ stage_2    | 001
+ stage_3    | 010
+ stage_4    | 011
+ waiting    | 100
+ finished   | 101
+ set_output | unreached
+------------------------
+WARNING:Xst:1710 - FF/Latch <dm_count_c_0> (without init value) has a constant value of 0 in block <controller>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <brutus_top> ...
+
+Optimizing unit <controller> ...
+
+Optimizing unit <comp> ...
+
+Optimizing unit <string_generator> ...
+
+Optimizing unit <MD5> ...
+WARNING:Xst:1710 - FF/Latch <sg_inst/chr5_c_7> (without init value) has a constant value of 0 in block <brutus_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sg_inst/chr3_c_7> (without init value) has a constant value of 0 in block <brutus_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sg_inst/chr2_c_7> (without init value) has a constant value of 0 in block <brutus_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sg_inst/chr4_c_7> (without init value) has a constant value of 0 in block <brutus_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sg_inst/chr0_c_7> (without init value) has a constant value of 0 in block <brutus_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sg_inst/chr1_c_7> (without init value) has a constant value of 0 in block <brutus_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <controller_inst/pw_buff_c_0_47> (without init value) has a constant value of 0 in block <brutus_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <controller_inst/pw_buff_c_0_39> (without init value) has a constant value of 0 in block <brutus_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <controller_inst/pw_buff_c_0_31> (without init value) has a constant value of 0 in block <brutus_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <controller_inst/pw_buff_c_0_23> (without init value) has a constant value of 0 in block <brutus_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <controller_inst/pw_buff_c_0_15> (without init value) has a constant value of 0 in block <brutus_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <controller_inst/pw_buff_c_0_7> (without init value) has a constant value of 0 in block <brutus_top>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <sg_inst/chr4_c_6> in Unit <brutus_top> is equivalent to the following FF/Latch, which will be removed : <sg_inst/chr4_c_5> 
+INFO:Xst:2261 - The FF/Latch <sg_inst/chr0_c_6> in Unit <brutus_top> is equivalent to the following FF/Latch, which will be removed : <sg_inst/chr0_c_5> 
+INFO:Xst:2261 - The FF/Latch <sg_inst/chr5_c_6> in Unit <brutus_top> is equivalent to the following FF/Latch, which will be removed : <sg_inst/chr5_c_5> 
+INFO:Xst:2261 - The FF/Latch <sg_inst/chr1_c_6> in Unit <brutus_top> is equivalent to the following FF/Latch, which will be removed : <sg_inst/chr1_c_5> 
+INFO:Xst:2261 - The FF/Latch <sg_inst/chr2_c_6> in Unit <brutus_top> is equivalent to the following FF/Latch, which will be removed : <sg_inst/chr2_c_5> 
+INFO:Xst:2261 - The FF/Latch <controller_inst/pw_buff_c_0_14> in Unit <brutus_top> is equivalent to the following FF/Latch, which will be removed : <controller_inst/pw_buff_c_0_13> 
+INFO:Xst:2261 - The FF/Latch <controller_inst/pw_buff_c_0_22> in Unit <brutus_top> is equivalent to the following FF/Latch, which will be removed : <controller_inst/pw_buff_c_0_21> 
+INFO:Xst:2261 - The FF/Latch <sg_inst/chr3_c_6> in Unit <brutus_top> is equivalent to the following FF/Latch, which will be removed : <sg_inst/chr3_c_5> 
+INFO:Xst:2261 - The FF/Latch <controller_inst/pw_buff_c_0_30> in Unit <brutus_top> is equivalent to the following FF/Latch, which will be removed : <controller_inst/pw_buff_c_0_29> 
+INFO:Xst:2261 - The FF/Latch <controller_inst/pw_buff_c_0_38> in Unit <brutus_top> is equivalent to the following FF/Latch, which will be removed : <controller_inst/pw_buff_c_0_37> 
+INFO:Xst:2261 - The FF/Latch <controller_inst/pw_buff_c_0_46> in Unit <brutus_top> is equivalent to the following FF/Latch, which will be removed : <controller_inst/pw_buff_c_0_45> 
+INFO:Xst:2261 - The FF/Latch <controller_inst/pw_buff_c_0_6> in Unit <brutus_top> is equivalent to the following FF/Latch, which will be removed : <controller_inst/pw_buff_c_0_5> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block brutus_top, actual ratio is 13.
+FlipFlop MD5_inst/i_c_0 has been replicated 2 time(s)
+FlipFlop MD5_inst/i_c_1 has been replicated 1 time(s)
+FlipFlop MD5_inst/state_c_FSM_FFd1 has been replicated 2 time(s)
+FlipFlop MD5_inst/state_c_FSM_FFd2 has been replicated 2 time(s)
+FlipFlop MD5_inst/state_c_FSM_FFd3 has been replicated 2 time(s)
+FlipFlop sg_inst/len_c_1 has been replicated 1 time(s)
+FlipFlop sg_inst/len_c_2 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 358
+ Flip-Flops                                            : 358
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : brutus_top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1479
+#      GND                         : 1
+#      INV                         : 65
+#      LUT1                        : 62
+#      LUT2                        : 28
+#      LUT3                        : 81
+#      LUT4                        : 112
+#      LUT5                        : 227
+#      LUT6                        : 368
+#      MUXCY                       : 263
+#      MUXF7                       : 41
+#      VCC                         : 1
+#      XORCY                       : 230
+# FlipFlops/Latches                : 358
+#      FD                          : 131
+#      FDR                         : 12
+#      FDRE                        : 215
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 179
+#      IBUF                        : 130
+#      OBUF                        : 49
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             358  out of  18224     1%  
+ Number of Slice LUTs:                  943  out of   9112    10%  
+    Number used as Logic:               943  out of   9112    10%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1055
+   Number with an unused Flip Flop:     697  out of   1055    66%  
+   Number with an unused LUT:           112  out of   1055    10%  
+   Number of fully used LUT-FF pairs:   246  out of   1055    23%  
+   Number of unique control sets:        12
+
+IO Utilization: 
+ Number of IOs:                         180
+ Number of bonded IOBs:                 180  out of    232    77%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 358   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 13.529ns (Maximum Frequency: 73.916MHz)
+   Minimum input arrival time before clock: 5.873ns
+   Maximum output required time after clock: 5.622ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 13.529ns (frequency: 73.916MHz)
+  Total number of paths / destination ports: 2223821374 / 445
+-------------------------------------------------------------------------
+Delay:               13.529ns (Levels of Logic = 38)
+  Source:            MD5_inst/i_c_2 (FF)
+  Destination:       MD5_inst/b_c_31 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: MD5_inst/i_c_2 to MD5_inst/b_c_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            50   0.447   1.548  MD5_inst/i_c_2 (MD5_inst/i_c_2)
+     LUT2:I1->O            1   0.205   0.000  MD5_inst/Maddsub_n0156_Madd1_lut<2>1 (MD5_inst/Maddsub_n0156_Madd1_lut<2>1)
+     XORCY:LI->O          10   0.136   0.857  MD5_inst/Maddsub_n0156_Madd1_xor<2> (MD5_inst/Maddsub_n0156_2)
+     LUT5:I4->O           13   0.205   0.933  MD5_inst/Mmux_g<2>12 (MD5_inst/Mmux_g<2>11)
+     LUT6:I5->O            9   0.205   0.830  MD5_inst/Mmux_g<2>13_2 (MD5_inst/Mmux_g<2>131)
+     LUT6:I5->O            4   0.205   0.684  MD5_inst/Mmux__n020724 (MD5_inst/_n0207<30>)
+     LUT3:I2->O            1   0.205   0.000  MD5_inst/ADDERTREE_INTERNAL_Madd1_lut<29> (MD5_inst/ADDERTREE_INTERNAL_Madd1_lut<29>)
+     MUXCY:S->O            1   0.172   0.000  MD5_inst/ADDERTREE_INTERNAL_Madd1_cy<29> (MD5_inst/ADDERTREE_INTERNAL_Madd1_cy<29>)
+     XORCY:CI->O           2   0.180   0.617  MD5_inst/ADDERTREE_INTERNAL_Madd1_xor<30> (MD5_inst/ADDERTREE_INTERNAL_Madd_301)
+     LUT3:I2->O            1   0.205   0.580  MD5_inst/ADDERTREE_INTERNAL_Madd230 (MD5_inst/ADDERTREE_INTERNAL_Madd230)
+     LUT4:I3->O            0   0.205   0.000  MD5_inst/ADDERTREE_INTERNAL_Madd2_lut<0>31 (MD5_inst/ADDERTREE_INTERNAL_Madd2_lut<0>31)
+     XORCY:LI->O           8   0.136   1.031  MD5_inst/ADDERTREE_INTERNAL_Madd2_xor<0>_30 (MD5_inst/ADDERTREE_INTERNAL_Madd_312)
+     LUT6:I3->O            1   0.205   0.000  MD5_inst/Sh4211_G (N688)
+     MUXF7:I1->O           6   0.140   0.745  MD5_inst/Sh4211 (MD5_inst/Sh421)
+     LUT5:I4->O            1   0.205   0.827  MD5_inst/Sh741_SW0_SW0 (N342)
+     LUT6:I2->O            1   0.203   0.000  MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_lut<10> (MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_lut<10>)
+     MUXCY:S->O            1   0.172   0.000  MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<10> (MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<11> (MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<12> (MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<13> (MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<14> (MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<15> (MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<16> (MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<17> (MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<17>)
+     MUXCY:CI->O           1   0.019   0.000  MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<18> (MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<19> (MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<19>)
+     MUXCY:CI->O           1   0.019   0.000  MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<20> (MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<21> (MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<22> (MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<22>)
+     MUXCY:CI->O           1   0.019   0.000  MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<23> (MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<23>)
+     MUXCY:CI->O           1   0.019   0.000  MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<24> (MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<24>)
+     MUXCY:CI->O           1   0.019   0.000  MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<25> (MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<25>)
+     MUXCY:CI->O           1   0.019   0.000  MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<26> (MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<26>)
+     MUXCY:CI->O           1   0.019   0.000  MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<27> (MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<27>)
+     MUXCY:CI->O           1   0.019   0.000  MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<28> (MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<28>)
+     MUXCY:CI->O           1   0.019   0.000  MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<29> (MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<29>)
+     MUXCY:CI->O           0   0.019   0.000  MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<30> (MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_cy<30>)
+     XORCY:CI->O           1   0.180   0.580  MD5_inst/Madd_b_c[31]_a_c[31]_add_29_OUT_xor<31> (MD5_inst/b_c[31]_a_c[31]_add_29_OUT<31>)
+     LUT5:I4->O            1   0.205   0.000  MD5_inst/Mmux_b_n[31]_PWR_10_o_mux_3_OUT251 (MD5_inst/b_n[31]_PWR_10_o_mux_3_OUT<31>)
+     FD:D                      0.102          MD5_inst/b_c_31
+    ----------------------------------------
+    Total                     13.529ns (4.298ns logic, 9.231ns route)
+                                       (31.8% logic, 68.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 616 / 616
+-------------------------------------------------------------------------
+Offset:              5.873ns (Levels of Logic = 2)
+  Source:            rstn (PAD)
+  Destination:       controller_inst/state_c_FSM_FFd1 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rstn to controller_inst/state_c_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           130   1.222   1.955  rstn_IBUF (rstn_IBUF)
+     INV:I->O            227   0.206   2.060  controller_inst/rstn_inv1_INV_0 (MD5_inst/rstn_0)
+     FDR:R                     0.430          MD5_inst/state_c_FSM_FFd2
+    ----------------------------------------
+    Total                      5.873ns (1.858ns logic, 4.015ns route)
+                                       (31.6% logic, 68.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 171 / 43
+-------------------------------------------------------------------------
+Offset:              5.622ns (Levels of Logic = 2)
+  Source:            controller_inst/state_c_FSM_FFd1 (FF)
+  Destination:       o_passwd<46> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: controller_inst/state_c_FSM_FFd1 to o_passwd<46>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             51   0.447   1.783  controller_inst/state_c_FSM_FFd1 (controller_inst/state_c_FSM_FFd1)
+     LUT4:I1->O            2   0.205   0.616  controller_inst/Mmux_o_passwd451 (o_passwd_5_OBUF)
+     OBUF:I->O                 2.571          o_passwd_5_OBUF (o_passwd<5>)
+    ----------------------------------------
+    Total                      5.622ns (3.223ns logic, 2.399ns route)
+                                       (57.3% logic, 42.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   13.529|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 14.22 secs
+ 
+--> 
+
+Total memory usage is 265000 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   14 (   0 filtered)
+Number of infos    :   21 (   0 filtered)
+

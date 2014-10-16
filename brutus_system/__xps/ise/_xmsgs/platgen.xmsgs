@@ -38,16 +38,16 @@
 <msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">bram_block</arg>, INSTANCE:<arg fmt="%s" index="2">microblaze_0_bram_block</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_MEMSIZE</arg> value to <arg fmt="%s" index="6">0x8000</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bram_block_v2_1_0.mpd line 77</arg> 
 </msg>
 
-<msg type="warning" file="EDK" num="4180" delta="new" >PORT: <arg fmt="%s" index="1">FSL_S_Clk</arg>, CONNECTOR: <arg fmt="%s" index="2">fsl_v20_1_FSL_S_Clk</arg> - No driver found. Port will be driven to <arg fmt="%s" index="3">GND</arg> - <arg fmt="%s" index="4">C:\Users\ael10jso\Xilinx\brutus\pcores\brutus_v1_00_a\data\brutus_v2_1_0.mpd line 22</arg> 
+<msg type="warning" file="EDK" num="4180" delta="new" >PORT: <arg fmt="%s" index="1">FSL_S_Clk</arg>, CONNECTOR: <arg fmt="%s" index="2">fsl_v20_0_FSL_S_Clk</arg> - No driver found. Port will be driven to <arg fmt="%s" index="3">GND</arg> - <arg fmt="%s" index="4">C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\pcores\bajsd_v1_00_a\data\bajsd_v2_1_0.mpd line 22</arg> 
 </msg>
 
-<msg type="warning" file="EDK" num="4180" delta="new" >PORT: <arg fmt="%s" index="1">FSL_M_Clk</arg>, CONNECTOR: <arg fmt="%s" index="2">fsl_v20_0_FSL_M_Clk</arg> - No driver found. Port will be driven to <arg fmt="%s" index="3">GND</arg> - <arg fmt="%s" index="4">C:\Users\ael10jso\Xilinx\brutus\pcores\brutus_v1_00_a\data\brutus_v2_1_0.mpd line 27</arg> 
+<msg type="warning" file="EDK" num="4180" delta="new" >PORT: <arg fmt="%s" index="1">FSL_M_Clk</arg>, CONNECTOR: <arg fmt="%s" index="2">fsl_v20_1_FSL_M_Clk</arg> - No driver found. Port will be driven to <arg fmt="%s" index="3">GND</arg> - <arg fmt="%s" index="4">C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\pcores\bajsd_v1_00_a\data\bajsd_v2_1_0.mpd line 27</arg> 
 </msg>
 
-<msg type="warning" file="EDK" num="4181" delta="new" >PORT: <arg fmt="%s" index="1">FSL0_S_CLK</arg>, CONNECTOR: <arg fmt="%s" index="2">fsl_v20_0_FSL_S_Clk</arg> - floating connection - <arg fmt="%s" index="3">C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_40_a\data\microblaze_v2_1_0.mpd line 698</arg> 
+<msg type="warning" file="EDK" num="4181" delta="new" >PORT: <arg fmt="%s" index="1">FSL0_S_CLK</arg>, CONNECTOR: <arg fmt="%s" index="2">fsl_v20_1_FSL_S_Clk</arg> - floating connection - <arg fmt="%s" index="3">C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_40_a\data\microblaze_v2_1_0.mpd line 698</arg> 
 </msg>
 
-<msg type="warning" file="EDK" num="4181" delta="new" >PORT: <arg fmt="%s" index="1">FSL0_M_CLK</arg>, CONNECTOR: <arg fmt="%s" index="2">fsl_v20_1_FSL_M_Clk</arg> - floating connection - <arg fmt="%s" index="3">C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_40_a\data\microblaze_v2_1_0.mpd line 703</arg> 
+<msg type="warning" file="EDK" num="4181" delta="new" >PORT: <arg fmt="%s" index="1">FSL0_M_CLK</arg>, CONNECTOR: <arg fmt="%s" index="2">fsl_v20_0_FSL_M_Clk</arg> - floating connection - <arg fmt="%s" index="3">C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_40_a\data\microblaze_v2_1_0.mpd line 703</arg> 
 </msg>
 
 <msg type="info" file="EDK" num="4060" delta="new" >INSTANCE: <arg fmt="%s" index="1">fsl_v20_0</arg>, PARAMETER: <arg fmt="%s" index="2">C_READ_CLOCK_PERIOD</arg> - Did not implement clock DRCs for the parameter. Top-level frequency could not be propagated to this IP. Please make sure that you have specified the frequency of the top-level clock port, and that the clocks are properly connected.

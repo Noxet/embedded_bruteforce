@@ -1,0 +1,28 @@
+Command line:
+   tb_fsl_test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  61902
+
+Mon Sep 29 15:34:29 2014
+
+
+ Elaboration Time: 0.0312 sec
+
+ Current Memory Usage: 825.131 Meg
+
+ Total Signals          : 28
+ Total Nets             : 109
+ Total Signal Drivers   : 11
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 9
+ Total Traceable Variables  : 18
+ Total Scalar Nets and Variables : 597
+
+ Total Simulation Time: 0.0312 sec
+
+ Current Memory Usage: 667.845 Meg
+
+Mon Sep 29 15:40:06 2014
+

@@ -1,0 +1,12 @@
+-batch 
+-create ready4hood 
+-ver 1.00.a 
+-dir C:\Users\ael10jso.STUDENT\Xilinx\embedded_bruteforce\brutus_system\ 
+-lang vhdl 
+-bus fsl ms 
+-xps 
+-totalin 4
+-totalout 1
+-argin 1
+-argout 1
+-desc "new FSL core"

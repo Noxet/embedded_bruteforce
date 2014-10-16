@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.2 (64-bit)
+# Build 194362 by xbuild on Fri Jul 20 18:52:11 MDT 2012
+# Start of session at: Wed Oct 15 12:41:41 2014
+# Process ID: 2420
+# Log file: C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/test_vga/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/test_vga/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/test_vga/pa.fromHdl.tcl

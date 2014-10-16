@@ -1,0 +1,28 @@
+Command line:
+   tb_brutus_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52396
+
+Wed Oct 15 20:33:48 2014
+
+
+ Elaboration Time: 0.0312 sec
+
+ Current Memory Usage: 829.342 Meg
+
+ Total Signals          : 141
+ Total Nets             : 2214
+ Total Signal Drivers   : 75
+ Total Blocks           : 12
+ Total Primitive Blocks : 10
+ Total Processes        : 25
+ Total Traceable Variables  : 26
+ Total Scalar Nets and Variables : 5406
+
+ Total Simulation Time: 0.561603 sec
+
+ Current Memory Usage: 1143.91 Meg
+
+Wed Oct 15 20:34:26 2014
+

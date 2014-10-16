@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="test">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2014-9-29T13:33:42</timestamp>
+    <pin polarity="Input" x="0" y="-480" name="FSL_Clk" />
+    <pin polarity="Input" x="0" y="-416" name="FSL_Rst" />
+    <pin polarity="Input" x="0" y="-352" name="FSL_S_Clk" />
+    <pin polarity="Input" x="0" y="-288" name="FSL_S_Control" />
+    <pin polarity="Input" x="0" y="-224" name="FSL_S_Exists" />
+    <pin polarity="Input" x="0" y="-160" name="FSL_M_Clk" />
+    <pin polarity="Input" x="0" y="-96" name="FSL_M_Full" />
+    <pin polarity="Input" x="0" y="-32" name="FSL_S_Data(0:31)" />
+    <pin polarity="Output" x="528" y="-480" name="FSL_S_Read" />
+    <pin polarity="Output" x="528" y="-336" name="FSL_M_Write" />
+    <pin polarity="Output" x="528" y="-192" name="FSL_M_Control" />
+    <pin polarity="Output" x="528" y="-48" name="FSL_M_Data(0:31)" />
+    <graph>
+        <rect width="400" x="64" y="-512" height="512" />
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="264" y="-520" type="symbol" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-480" type="pin FSL_Clk" />
+        <line x2="0" y1="-480" y2="-480" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-416" type="pin FSL_Rst" />
+        <line x2="0" y1="-416" y2="-416" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-352" type="pin FSL_S_Clk" />
+        <line x2="0" y1="-352" y2="-352" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-288" type="pin FSL_S_Control" />
+        <line x2="0" y1="-288" y2="-288" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-224" type="pin FSL_S_Exists" />
+        <line x2="0" y1="-224" y2="-224" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-160" type="pin FSL_M_Clk" />
+        <line x2="0" y1="-160" y2="-160" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-96" type="pin FSL_M_Full" />
+        <line x2="0" y1="-96" y2="-96" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin FSL_S_Data(0:31)" />
+        <rect width="64" x="0" y="-44" height="24" />
+        <line x2="0" y1="-32" y2="-32" x1="64" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="456" y="-480" type="pin FSL_S_Read" />
+        <line x2="528" y1="-480" y2="-480" x1="464" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="456" y="-336" type="pin FSL_M_Write" />
+        <line x2="528" y1="-336" y2="-336" x1="464" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="456" y="-192" type="pin FSL_M_Control" />
+        <line x2="528" y1="-192" y2="-192" x1="464" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="456" y="-48" type="pin FSL_M_Data(0:31)" />
+        <rect width="64" x="464" y="-60" height="24" />
+        <line x2="528" y1="-48" y2="-48" x1="464" />
+    </graph>
+</symbol>

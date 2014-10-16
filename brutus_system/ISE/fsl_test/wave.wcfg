@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/fsl_test/tb_fsl_brutus_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="tb_fsl_brutus" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="22" />
+   <wvobject fp_name="/tb_fsl_brutus/fsl_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fsl_clk</obj_property>
+      <obj_property name="ObjectShortName">fsl_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsl_brutus/fsl_rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fsl_rst</obj_property>
+      <obj_property name="ObjectShortName">fsl_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsl_brutus/fsl_s_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fsl_s_clk</obj_property>
+      <obj_property name="ObjectShortName">fsl_s_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsl_brutus/fsl_s_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">fsl_s_data[0:31]</obj_property>
+      <obj_property name="ObjectShortName">fsl_s_data[0:31]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsl_brutus/fsl_s_control" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fsl_s_control</obj_property>
+      <obj_property name="ObjectShortName">fsl_s_control</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsl_brutus/fsl_s_exists" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fsl_s_exists</obj_property>
+      <obj_property name="ObjectShortName">fsl_s_exists</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsl_brutus/fsl_m_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fsl_m_clk</obj_property>
+      <obj_property name="ObjectShortName">fsl_m_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsl_brutus/fsl_m_full" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fsl_m_full</obj_property>
+      <obj_property name="ObjectShortName">fsl_m_full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsl_brutus/fsl_s_read" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fsl_s_read</obj_property>
+      <obj_property name="ObjectShortName">fsl_s_read</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsl_brutus/fsl_m_write" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fsl_m_write</obj_property>
+      <obj_property name="ObjectShortName">fsl_m_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsl_brutus/fsl_m_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">fsl_m_data[0:31]</obj_property>
+      <obj_property name="ObjectShortName">fsl_m_data[0:31]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsl_brutus/fsl_m_control" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fsl_m_control</obj_property>
+      <obj_property name="ObjectShortName">fsl_m_control</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsl_brutus/uut/state_c" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">state_c</obj_property>
+      <obj_property name="ObjectShortName">state_c</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsl_brutus/uut/state_n" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">state_n</obj_property>
+      <obj_property name="ObjectShortName">state_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsl_brutus/uut/r_count_c" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">r_count_c[1:0]</obj_property>
+      <obj_property name="ObjectShortName">r_count_c[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsl_brutus/uut/r_count_n" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">r_count_n[1:0]</obj_property>
+      <obj_property name="ObjectShortName">r_count_n[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsl_brutus/uut/w_count_c" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">w_count_c[0:0]</obj_property>
+      <obj_property name="ObjectShortName">w_count_c[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsl_brutus/uut/w_count_n" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">w_count_n[0:0]</obj_property>
+      <obj_property name="ObjectShortName">w_count_n[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsl_brutus/uut/hash_c" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">hash_c[127:0]</obj_property>
+      <obj_property name="ObjectShortName">hash_c[127:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsl_brutus/uut/hash_n" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">hash_n[127:0]</obj_property>
+      <obj_property name="ObjectShortName">hash_n[127:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsl_brutus/uut/password_c" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">password_c[31:0]</obj_property>
+      <obj_property name="ObjectShortName">password_c[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fsl_brutus/uut/password_n" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">password_n[31:0]</obj_property>
+      <obj_property name="ObjectShortName">password_n[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>

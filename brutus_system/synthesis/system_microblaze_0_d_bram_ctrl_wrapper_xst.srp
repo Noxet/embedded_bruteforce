@@ -1,9 +1,9 @@
 Release 14.2 - xst P.28xd (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to C:\Users\ael10jso\Xilinx\brutus\synthesis\xst_temp_dir\
+--> Parameter TMPDIR set to C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\synthesis\xst_temp_dir\
 
 
-Total REAL time to Xst completion: 1.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.08 secs
  
 --> 
@@ -35,7 +35,7 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "system_microblaze_0_d_bram_ctrl_wrapper_xst.prj"
-Verilog Include Directory          : {"C:\Users\ael10jso\Xilinx\brutus\pcores\" "C:\Xilinx\BSP\Nexys3_AXI_BSB_Support\lib\Digilent\pcores\" "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+Verilog Include Directory          : {"C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\pcores\" "C:\Xilinx\BSP\Nexys3_AXI_BSB_Support\lib\Digilent\pcores\" "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
 
 ---- Target Parameters
 Target Device                      : xc6slx16csg324-3
@@ -98,7 +98,7 @@ Parsing architecture <imp> of entity <lmb_mux>.
 Parsing VHDL file "C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_10_a/hdl/vhdl/lmb_bram_if_cntlr.vhd" into library lmb_bram_if_cntlr_v3_10_a
 Parsing entity <lmb_bram_if_cntlr>.
 Parsing architecture <imp> of entity <lmb_bram_if_cntlr>.
-Parsing VHDL file "C:\Users\ael10jso\Xilinx\brutus\hdl\system_microblaze_0_d_bram_ctrl_wrapper.vhd" into library work
+Parsing VHDL file "C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\hdl\system_microblaze_0_d_bram_ctrl_wrapper.vhd" into library work
 Parsing entity <system_microblaze_0_d_bram_ctrl_wrapper>.
 Parsing architecture <STRUCTURE> of entity <system_microblaze_0_d_bram_ctrl_wrapper>.
 
@@ -119,7 +119,7 @@ Elaborating entity <pselect_mask> (architecture <imp>) with generics from librar
 =========================================================================
 
 Synthesizing Unit <system_microblaze_0_d_bram_ctrl_wrapper>.
-    Related source file is "C:\Users\ael10jso\Xilinx\brutus\hdl\system_microblaze_0_d_bram_ctrl_wrapper.vhd".
+    Related source file is "C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\hdl\system_microblaze_0_d_bram_ctrl_wrapper.vhd".
     Summary:
 	no macro.
 Unit <system_microblaze_0_d_bram_ctrl_wrapper> synthesized.
@@ -448,12 +448,12 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
+Total REAL time to Xst completion: 4.00 secs
 Total CPU time to Xst completion: 4.48 secs
  
 --> 
 
-Total memory usage is 270896 kilobytes
+Total memory usage is 271592 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   57 (   0 filtered)

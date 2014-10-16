@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-09-23T16:50:19</DateModified>
+  <DateModified>2014-10-16T01:13:17</DateModified>
   <ModuleName>brutus_top</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2014-10-16T00:58:53</SummaryTimeStamp>
   <SavedFilePath>C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/controller_sg_pp_md_comp/iseconfig/brutus_top.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/controller_sg_pp_md_comp</ImplementationReportsDirectory>
-  <DateInitialized>2014-09-23T16:50:19</DateInitialized>
+  <ImplementationReportsDirectory>C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/controller_sg_pp_md_comp\</ImplementationReportsDirectory>
+  <DateInitialized>2014-10-15T23:54:41</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

@@ -1,0 +1,15 @@
+[Inputs]
+FSL_Clk
+FSL_Rst
+FSL_S_Clk
+FSL_S_Control
+FSL_S_Exists
+FSL_M_Clk
+FSL_M_Full
+=FSL_S_Data[0:31]=
+[Outputs]
+FSL_S_Read
+FSL_M_Write
+FSL_M_Control
+=FSL_M_Data[0:31]=
+[BiDir]

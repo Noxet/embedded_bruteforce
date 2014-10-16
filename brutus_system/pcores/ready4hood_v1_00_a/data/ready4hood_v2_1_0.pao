@@ -1,0 +1,13 @@
+##############################################################################
+## Filename:          C:\Users\ael10jso.STUDENT\Xilinx\embedded_bruteforce\brutus_system\pcores/ready4hood_v1_00_a/data/ready4hood_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Thu Oct 09 10:49:20 2014 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib ready4hood_v1_00_a controller vhdl
+lib ready4hood_v1_00_a comp vhdl
+lib ready4hood_v1_00_a pre_process vhdl
+lib ready4hood_v1_00_a string_generator vhdl
+lib ready4hood_v1_00_a MD5 vhdl
+lib ready4hood_v1_00_a brutus_top vhdl
+lib ready4hood_v1_00_a ready4hood vhdl

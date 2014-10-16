@@ -1,10 +1,10 @@
 Release 14.2 - xst P.28xd (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to C:\Users\ael10jso\Xilinx\brutus\synthesis\xst_temp_dir\
+--> Parameter TMPDIR set to C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\synthesis\xst_temp_dir\
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> 
 TABLE OF CONTENTS
@@ -35,7 +35,7 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "system_brutus_0_wrapper_xst.prj"
-Verilog Include Directory          : {"C:\Users\ael10jso\Xilinx\brutus\pcores\" "C:\Xilinx\BSP\Nexys3_AXI_BSB_Support\lib\Digilent\pcores\" "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+Verilog Include Directory          : {"C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\pcores\" "C:\Xilinx\BSP\Nexys3_AXI_BSB_Support\lib\Digilent\pcores\" "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
 
 ---- Target Parameters
 Target Device                      : xc6slx16csg324-3
@@ -62,10 +62,10 @@ Cores Search Directories           : {../implementation}
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:/Users/ael10jso/Xilinx/brutus/pcores/brutus_v1_00_a/hdl/vhdl/brutus.vhd" into library brutus_v1_00_a
+Parsing VHDL file "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/pcores/brutus_v1_00_a/hdl/vhdl/brutus.vhd" into library brutus_v1_00_a
 Parsing entity <brutus>.
 Parsing architecture <Behavioral> of entity <brutus>.
-Parsing VHDL file "C:\Users\ael10jso\Xilinx\brutus\hdl\system_brutus_0_wrapper.vhd" into library work
+Parsing VHDL file "C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\hdl\system_brutus_0_wrapper.vhd" into library work
 Parsing entity <system_brutus_0_wrapper>.
 Parsing architecture <STRUCTURE> of entity <system_brutus_0_wrapper>.
 
@@ -82,13 +82,13 @@ Elaborating entity <brutus> (architecture <Behavioral>) from library <brutus_v1_
 =========================================================================
 
 Synthesizing Unit <system_brutus_0_wrapper>.
-    Related source file is "C:\Users\ael10jso\Xilinx\brutus\hdl\system_brutus_0_wrapper.vhd".
+    Related source file is "C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\hdl\system_brutus_0_wrapper.vhd".
     Summary:
 	no macro.
 Unit <system_brutus_0_wrapper> synthesized.
 
 Synthesizing Unit <brutus>.
-    Related source file is "C:/Users/ael10jso/Xilinx/brutus/pcores/brutus_v1_00_a/hdl/vhdl/brutus.vhd".
+    Related source file is "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/pcores/brutus_v1_00_a/hdl/vhdl/brutus.vhd".
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
@@ -99,15 +99,17 @@ WARNING:Xst:647 - Input <FSL_S_Data> is never used. This port will be preserved 
 WARNING:Xst:647 - Input <FSL_S_Clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <FSL_S_Control> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <FSL_M_Clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 2-bit register for signal <h_count_c>.
-    Found 32-bit register for signal <test>.
+    Found 2-bit register for signal <r_count_c>.
+    Found 1-bit register for signal <w_count_c>.
+    Found 32-bit register for signal <password_c>.
     Found 2-bit register for signal <state_c>.
+INFO:Xst:1799 - State read_charset is never reached in FSM <state_c>.
     Found finite state machine <FSM_0> for signal <state_c>.
     -----------------------------------------------------------------------
     | States             | 4                                              |
-    | Transitions        | 8                                              |
-    | Inputs             | 2                                              |
-    | Outputs            | 5                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 4                                              |
     | Clock              | FSL_Clk (rising_edge)                          |
     | Reset              | FSL_Rst (positive)                             |
     | Reset type         | synchronous                                    |
@@ -116,10 +118,12 @@ WARNING:Xst:647 - Input <FSL_M_Clk> is never used. This port will be preserved a
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 2-bit adder for signal <h_count_c[1]_GND_6_o_add_12_OUT> created at line 1241.
+    Found 2-bit adder for signal <r_count_c[1]_GND_6_o_add_12_OUT> created at line 1241.
+    Found 1-bit adder for signal <w_count_c[0]_PWR_6_o_add_24_OUT<0>> created at line 1241.
+    Found 32-bit adder for signal <password_c[31]_GND_6_o_add_25_OUT> created at line 1241.
     Summary:
-	inferred   1 Adder/Subtractor(s).
-	inferred  34 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred  35 D-type flip-flop(s).
 	inferred   2 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <brutus> synthesized.
@@ -128,9 +132,12 @@ Unit <brutus> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 1
+# Adders/Subtractors                                   : 3
+ 1-bit adder                                           : 1
  2-bit adder                                           : 1
-# Registers                                            : 2
+ 32-bit adder                                          : 1
+# Registers                                            : 3
+ 1-bit register                                        : 1
  2-bit register                                        : 1
  32-bit register                                       : 1
 # Multiplexers                                         : 2
@@ -143,20 +150,22 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-WARNING:Xst:2404 -  FFs/Latches <test<31:7>> (without init value) have a constant value of 0 in block <brutus>.
 
 Synthesizing (advanced) Unit <brutus>.
-The following registers are absorbed into counter <h_count_c>: 1 register on signal <h_count_c>.
+The following registers are absorbed into counter <w_count_c_0>: 1 register on signal <w_count_c_0>.
+The following registers are absorbed into accumulator <password_c>: 1 register on signal <password_c>.
+The following registers are absorbed into counter <r_count_c>: 1 register on signal <r_count_c>.
 Unit <brutus> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Counters                                             : 1
+# Counters                                             : 2
+ 1-bit up counter                                      : 1
  2-bit up counter                                      : 1
-# Registers                                            : 7
- Flip-Flops                                            : 7
+# Accumulators                                         : 1
+ 32-bit up accumulator                                 : 1
 # Multiplexers                                         : 2
  1-bit 2-to-1 multiplexer                              : 2
 # FSMs                                                 : 1
@@ -166,19 +175,13 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1710 - FF/Latch <test_0> (without init value) has a constant value of 0 in block <brutus>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <test_2> (without init value) has a constant value of 0 in block <brutus>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <test_3> (without init value) has a constant value of 0 in block <brutus>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <test_4> (without init value) has a constant value of 0 in block <brutus>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <test_5> (without init value) has a constant value of 0 in block <brutus>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <test_1> in Unit <brutus> is equivalent to the following FF/Latch, which will be removed : <test_6> 
 Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <brutus_0/FSM_0> on signal <state_c[1:2]> with user encoding.
 ---------------------------
  State         | Encoding
 ---------------------------
  idle          | 00
- read_charset  | 01
+ read_charset  | unreached
  read_hash     | 10
  write_outputs | 11
 ---------------------------
@@ -186,6 +189,37 @@ Optimizing FSM <brutus_0/FSM_0> on signal <state_c[1:2]> with user encoding.
 Optimizing unit <system_brutus_0_wrapper> ...
 
 Optimizing unit <brutus> ...
+WARNING:Xst:1710 - FF/Latch <brutus_0/password_c_1> (without init value) has a constant value of 0 in block <system_brutus_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <brutus_0/password_c_5> (without init value) has a constant value of 0 in block <system_brutus_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <brutus_0/password_c_3> (without init value) has a constant value of 0 in block <system_brutus_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <brutus_0/password_c_4> (without init value) has a constant value of 1 in block <system_brutus_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <brutus_0/password_c_6> (without init value) has a constant value of 0 in block <system_brutus_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <brutus_0/password_c_7> (without init value) has a constant value of 0 in block <system_brutus_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <brutus_0/password_c_10> (without init value) has a constant value of 0 in block <system_brutus_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <brutus_0/password_c_8> (without init value) has a constant value of 0 in block <system_brutus_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <brutus_0/password_c_9> (without init value) has a constant value of 0 in block <system_brutus_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <brutus_0/password_c_11> (without init value) has a constant value of 0 in block <system_brutus_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <brutus_0/password_c_12> (without init value) has a constant value of 0 in block <system_brutus_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <brutus_0/password_c_15> (without init value) has a constant value of 0 in block <system_brutus_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <brutus_0/password_c_13> (without init value) has a constant value of 0 in block <system_brutus_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <brutus_0/password_c_14> (without init value) has a constant value of 0 in block <system_brutus_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <brutus_0/password_c_18> (without init value) has a constant value of 0 in block <system_brutus_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <brutus_0/password_c_16> (without init value) has a constant value of 0 in block <system_brutus_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <brutus_0/password_c_17> (without init value) has a constant value of 0 in block <system_brutus_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <brutus_0/password_c_21> (without init value) has a constant value of 0 in block <system_brutus_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <brutus_0/password_c_19> (without init value) has a constant value of 0 in block <system_brutus_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <brutus_0/password_c_20> (without init value) has a constant value of 0 in block <system_brutus_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <brutus_0/password_c_22> (without init value) has a constant value of 0 in block <system_brutus_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <brutus_0/password_c_23> (without init value) has a constant value of 0 in block <system_brutus_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <brutus_0/password_c_26> (without init value) has a constant value of 0 in block <system_brutus_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <brutus_0/password_c_24> (without init value) has a constant value of 0 in block <system_brutus_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <brutus_0/password_c_25> (without init value) has a constant value of 0 in block <system_brutus_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <brutus_0/password_c_27> (without init value) has a constant value of 0 in block <system_brutus_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <brutus_0/password_c_28> (without init value) has a constant value of 0 in block <system_brutus_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <brutus_0/password_c_31> (without init value) has a constant value of 0 in block <system_brutus_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <brutus_0/password_c_29> (without init value) has a constant value of 0 in block <system_brutus_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <brutus_0/password_c_30> (without init value) has a constant value of 0 in block <system_brutus_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <brutus_0/password_c_2> in Unit <system_brutus_0_wrapper> is equivalent to the following 2 FFs/Latches, which will be removed : <brutus_0/w_count_c_0> <brutus_0/password_c_0> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -221,12 +255,16 @@ Top Level Output File Name         : system_brutus_0_wrapper.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 8
+# BELS                             : 11
 #      GND                         : 1
-#      LUT3                        : 3
+#      INV                         : 1
+#      LUT2                        : 1
+#      LUT3                        : 1
+#      LUT4                        : 1
 #      LUT5                        : 2
-#      LUT6                        : 1
+#      LUT6                        : 2
 #      VCC                         : 1
+#      XORCY                       : 1
 # FlipFlops/Latches                : 5
 #      FD                          : 2
 #      FDR                         : 3
@@ -239,14 +277,14 @@ Selected Device : 6slx16csg324-3
 
 Slice Logic Utilization: 
  Number of Slice Registers:               5  out of  18224     0%  
- Number of Slice LUTs:                    6  out of   9112     0%  
-    Number used as Logic:                 6  out of   9112     0%  
+ Number of Slice LUTs:                    8  out of   9112     0%  
+    Number used as Logic:                 8  out of   9112     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     11
-   Number with an unused Flip Flop:       6  out of     11    54%  
-   Number with an unused LUT:             5  out of     11    45%  
-   Number of fully used LUT-FF pairs:     0  out of     11     0%  
+ Number of LUT Flip Flop pairs used:     13
+   Number with an unused Flip Flop:       8  out of     13    61%  
+   Number with an unused LUT:             5  out of     13    38%  
+   Number of fully used LUT-FF pairs:     0  out of     13     0%  
    Number of unique control sets:         2
 
 IO Utilization: 
@@ -288,10 +326,10 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 1.633ns (Maximum Frequency: 612.276MHz)
+   Minimum period: 2.358ns (Maximum Frequency: 424.016MHz)
    Minimum input arrival time before clock: 0.670ns
-   Maximum output required time after clock: 1.499ns
-   Maximum combinational path delay: 0.434ns
+   Maximum output required time after clock: 1.654ns
+   Maximum combinational path delay: 0.206ns
 
 Timing Details:
 ---------------
@@ -299,50 +337,52 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'FSL_Clk'
-  Clock period: 1.633ns (frequency: 612.276MHz)
-  Total number of paths / destination ports: 13 / 4
+  Clock period: 2.358ns (frequency: 424.016MHz)
+  Total number of paths / destination ports: 19 / 5
 -------------------------------------------------------------------------
-Delay:               1.633ns (Levels of Logic = 1)
-  Source:            brutus_0/h_count_c_0 (FF)
-  Destination:       brutus_0/state_c_FSM_FFd2 (FF)
+Delay:               2.358ns (Levels of Logic = 3)
+  Source:            brutus_0/password_c_2 (FF)
+  Destination:       brutus_0/password_c_2 (FF)
   Source Clock:      FSL_Clk rising
   Destination Clock: FSL_Clk rising
 
-  Data Path: brutus_0/h_count_c_0 to brutus_0/state_c_FSM_FFd2
+  Data Path: brutus_0/password_c_2 to brutus_0/password_c_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               3   0.447   0.879  brutus_0/h_count_c_0 (brutus_0/h_count_c_0)
-     LUT6:I3->O            1   0.205   0.000  brutus_0/h_count_c_1_rstpot1 (brutus_0/h_count_c_1_rstpot1)
-     FD:D                      0.102          brutus_0/h_count_c_1
+     FDR:C->Q              4   0.447   0.683  brutus_0/password_c_2 (brutus_0/password_c_2)
+     INV:I->O              0   0.206   0.000  brutus_0/Maccum_password_c_lut<2>_INV_0 (brutus_0/Maccum_password_c_lut<2>)
+     XORCY:LI->O           1   0.136   0.580  brutus_0/Maccum_password_c_xor<2> (brutus_0/Result<2>)
+     LUT5:I4->O            1   0.205   0.000  brutus_0/password_c_2_rstpot (brutus_0/password_c_2_rstpot)
+     FDR:D                     0.102          brutus_0/password_c_2
     ----------------------------------------
-    Total                      1.633ns (0.754ns logic, 0.879ns route)
-                                       (46.2% logic, 53.8% route)
+    Total                      2.358ns (1.096ns logic, 1.262ns route)
+                                       (46.5% logic, 53.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'FSL_Clk'
-  Total number of paths / destination ports: 9 / 7
+  Total number of paths / destination ports: 10 / 8
 -------------------------------------------------------------------------
 Offset:              0.670ns (Levels of Logic = 1)
   Source:            FSL_S_Exists (PAD)
-  Destination:       brutus_0/h_count_c_1 (FF)
+  Destination:       brutus_0/state_c_FSM_FFd2 (FF)
   Destination Clock: FSL_Clk rising
 
-  Data Path: FSL_S_Exists to brutus_0/h_count_c_1
+  Data Path: FSL_S_Exists to brutus_0/state_c_FSM_FFd2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LUT6:I0->O            1   0.203   0.000  brutus_0/h_count_c_1_rstpot1 (brutus_0/h_count_c_1_rstpot1)
-     FD:D                      0.102          brutus_0/h_count_c_1
+     LUT6:I0->O            1   0.203   0.000  brutus_0/state_c_FSM_FFd2-In1 (brutus_0/state_c_FSM_FFd2-In)
+     FDR:D                     0.102          brutus_0/state_c_FSM_FFd2
     ----------------------------------------
     Total                      0.670ns (0.670ns logic, 0.000ns route)
                                        (100.0% logic, 0.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'FSL_Clk'
-  Total number of paths / destination ports: 6 / 4
+  Total number of paths / destination ports: 5 / 4
 -------------------------------------------------------------------------
-Offset:              1.499ns (Levels of Logic = 1)
+Offset:              1.654ns (Levels of Logic = 1)
   Source:            brutus_0/state_c_FSM_FFd2 (FF)
   Destination:       FSL_S_Read (PAD)
   Source Clock:      FSL_Clk rising
@@ -351,17 +391,17 @@ Offset:              1.499ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              6   0.447   0.849  brutus_0/state_c_FSM_FFd2 (brutus_0/state_c_FSM_FFd2)
-     LUT3:I1->O            0   0.203   0.000  brutus_0/Mmux_FSL_S_Read11 (FSL_S_Read)
+     FDR:C->Q              7   0.447   1.002  brutus_0/state_c_FSM_FFd2 (brutus_0/state_c_FSM_FFd2)
+     LUT3:I0->O            0   0.205   0.000  brutus_0/state_c_FSM_FFd2-In111 (FSL_S_Read)
     ----------------------------------------
-    Total                      1.499ns (0.650ns logic, 0.849ns route)
-                                       (43.4% logic, 56.6% route)
+    Total                      1.654ns (0.652ns logic, 1.002ns route)
+                                       (39.4% logic, 60.6% route)
 
 =========================================================================
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
-Delay:               0.434ns (Levels of Logic = 1)
+Delay:               0.206ns (Levels of Logic = 1)
   Source:            FSL_S_Exists (PAD)
   Destination:       FSL_S_Read (PAD)
 
@@ -369,9 +409,9 @@ Delay:               0.434ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LUT3:I0->O            0   0.205   0.000  brutus_0/Mmux_FSL_S_Read11 (FSL_S_Read)
+     LUT3:I2->O            0   0.205   0.000  brutus_0/state_c_FSM_FFd2-In111 (FSL_S_Read)
     ----------------------------------------
-    Total                      0.434ns (0.434ns logic, 0.000ns route)
+    Total                      0.206ns (0.206ns logic, 0.000ns route)
                                        (100.0% logic, 0.0% route)
 
 =========================================================================
@@ -384,20 +424,20 @@ Clock to Setup on destination clock FSL_Clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-FSL_Clk        |    1.633|         |         |         |
+FSL_Clk        |    2.358|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.28 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.59 secs
  
 --> 
 
-Total memory usage is 266480 kilobytes
+Total memory usage is 267888 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   16 (   0 filtered)
-Number of infos    :    2 (   0 filtered)
+Number of warnings :   40 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
 

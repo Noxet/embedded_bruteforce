@@ -1,0 +1,10 @@
+-batch 
+-create myvga 
+-ver 1.00.a 
+-dir C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\ 
+-lang vhdl 
+-bus fsl s 
+-xps 
+-totalin 8
+-argin 1
+-desc "new FSL core"

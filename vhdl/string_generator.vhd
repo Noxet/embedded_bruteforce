@@ -157,6 +157,7 @@ begin
 
                 when c4 =>
                     chr4_n <= chr4_c + 1;
+						  state_n <= c0;
                     o_md5_start <= '1';
 
                     if chr4_c = 0 then

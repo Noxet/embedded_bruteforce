@@ -1,0 +1,6 @@
+work	"../../../vhdl/brutus_top.vhd"
+work	"../../../vhdl/comp.vhd"
+work	"../../../vhdl/controller.vhd"
+work	"../../../vhdl/md5_working.vhd"
+work	"../../../vhdl/pre_process.vhd"
+work	"../../../vhdl/string_generator.vhd"

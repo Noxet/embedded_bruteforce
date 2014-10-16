@@ -6,8 +6,8 @@ xc6slx16csg324-3 -intstyle silent -i -sd .. system_microblaze_0_ilmb_wrapper.ngc
 ../system_microblaze_0_ilmb_wrapper
 
 Reading NGO file
-"C:/Users/ael10jso/Xilinx/brutus/implementation/microblaze_0_ilmb_wrapper/system
-_microblaze_0_ilmb_wrapper.ngc" ...
+"C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/implementation/micro
+blaze_0_ilmb_wrapper/system_microblaze_0_ilmb_wrapper.ngc" ...
 
 Partition Implementation Status
 -------------------------------
@@ -20,10 +20,10 @@ NGCBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 155988 kilobytes
+Total memory usage is 155916 kilobytes
 
 Writing NGC file "../system_microblaze_0_ilmb_wrapper.ngc" ...
-Total REAL time to NGCBUILD completion:  3 sec
+Total REAL time to NGCBUILD completion:  2 sec
 Total CPU time to NGCBUILD completion:   2 sec
 
 Writing NGCBUILD log file "../system_microblaze_0_ilmb_wrapper.blc"...

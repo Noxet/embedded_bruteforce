@@ -1,0 +1,41 @@
+
+----------------------------------------------------------------------------
+--                            File Generation                             --
+----------------------------------------------------------------------------
+No ProjNavigator support files will be generated at this time ...
+No XST project files will be generated at this time ...
+No driver support files will be generated at this time ...
+
+----------------------------------------------------------------------------
+--                              Final Report                              --
+----------------------------------------------------------------------------
+Thank you for using Create and Import Peripheral Wizard!
+
+Peripheral summary
+
+  top name       : ready4hood
+  version        : 1.00.a
+  type           : FSL master slave
+  features       : 
+
+File Summary
+
+  - HDL source -
+C:\Users\ael10jso.STUDENT\Xilinx\embedded_bruteforce\brutus_system\pcores\ready4
+hood_v1_00_a\hdl\vhdl
+  top level      : ready4hood.vhd
+
+  - XPS interface -
+C:\Users\ael10jso.STUDENT\Xilinx\embedded_bruteforce\brutus_system\pcores\ready4
+hood_v1_00_a\data
+  mpd            : ready4hood_v2_1_0.mpd
+  pao            : ready4hood_v2_1_0.pao
+
+  - Misc file -
+C:\Users\ael10jso.STUDENT\Xilinx\embedded_bruteforce\brutus_system\pcores\ready4
+hood_v1_00_a\devl
+  help           : README.txt
+  option         : ipwiz.opt
+  log            : ipwiz.log
+
+

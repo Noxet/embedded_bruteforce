@@ -1,0 +1,10 @@
+Command line:
+   tb_fsl_brutus_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  61867
+
+Mon Sep 29 15:28:40 2014
+
+
+ Elaboration Time: 0.015601 sec

@@ -6,7 +6,7 @@ Command Line: platgen -p xc6slx16csg324-3 -lang vhdl -intstyle default -lp
 C:/Xilinx/BSP/Nexys3_AXI_BSB_Support/lib/ -msg __xps/ise/xmsgprops.lst
 system.mhs 
 
-Parse C:/Users/ael10jso/Xilinx/brutus/system.mhs ...
+Parse C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/system.mhs ...
 
 Read MPD definitions ...
 
@@ -78,19 +78,19 @@ IPNAME: fsl_v20, INSTANCE: fsl_v20_0 - 1 master(s) : 1 slave(s)
 IPNAME: fsl_v20, INSTANCE: fsl_v20_1 - 1 master(s) : 1 slave(s) 
 
 Checking port drivers...
-WARNING:EDK:4180 - PORT: FSL_S_Clk, CONNECTOR: fsl_v20_1_FSL_S_Clk - No driver
+WARNING:EDK:4180 - PORT: FSL_S_Clk, CONNECTOR: fsl_v20_0_FSL_S_Clk - No driver
    found. Port will be driven to GND -
-   C:\Users\ael10jso\Xilinx\brutus\pcores\brutus_v1_00_a\data\brutus_v2_1_0.mpd
-   line 22 
-WARNING:EDK:4180 - PORT: FSL_M_Clk, CONNECTOR: fsl_v20_0_FSL_M_Clk - No driver
+   C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\pcores\bajsd_v1_00
+   _a\data\bajsd_v2_1_0.mpd line 22 
+WARNING:EDK:4180 - PORT: FSL_M_Clk, CONNECTOR: fsl_v20_1_FSL_M_Clk - No driver
    found. Port will be driven to GND -
-   C:\Users\ael10jso\Xilinx\brutus\pcores\brutus_v1_00_a\data\brutus_v2_1_0.mpd
-   line 27 
-WARNING:EDK:4181 - PORT: FSL0_S_CLK, CONNECTOR: fsl_v20_0_FSL_S_Clk - floating
+   C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\pcores\bajsd_v1_00
+   _a\data\bajsd_v2_1_0.mpd line 27 
+WARNING:EDK:4181 - PORT: FSL0_S_CLK, CONNECTOR: fsl_v20_1_FSL_S_Clk - floating
    connection -
    C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_40_a\d
    ata\microblaze_v2_1_0.mpd line 698 
-WARNING:EDK:4181 - PORT: FSL0_M_CLK, CONNECTOR: fsl_v20_1_FSL_M_Clk - floating
+WARNING:EDK:4181 - PORT: FSL0_M_CLK, CONNECTOR: fsl_v20_0_FSL_M_Clk - floating
    connection -
    C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_40_a\d
    ata\microblaze_v2_1_0.mpd line 703 
@@ -194,9 +194,11 @@ Managing cache ...
 
 Elaborating instances ...
 IPNAME:bram_block INSTANCE:microblaze_0_bram_block -
-C:\Users\ael10jso\Xilinx\brutus\system.mhs line 68 - elaborating IP
+C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\system.mhs line 68 -
+elaborating IP
 IPNAME:clock_generator INSTANCE:clock_generator_0 -
-C:\Users\ael10jso\Xilinx\brutus\system.mhs line 114 - elaborating IP
+C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\system.mhs line 114 -
+elaborating IP
 ClkGen elaborate status: PASSED
 ----------------------------------------
 ----------------------------------------
@@ -220,56 +222,80 @@ Running XST synthesis ...
 INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
    IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
    synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
-INSTANCE:proc_sys_reset_0 - C:\Users\ael10jso\Xilinx\brutus\system.mhs line 23 -
+INSTANCE:proc_sys_reset_0 -
+C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\system.mhs line 23 -
 Running XST synthesis
-INSTANCE:microblaze_0_ilmb - C:\Users\ael10jso\Xilinx\brutus\system.mhs line 36
-- Running XST synthesis
-INSTANCE:microblaze_0_i_bram_ctrl - C:\Users\ael10jso\Xilinx\brutus\system.mhs
-line 43 - Running XST synthesis
-INSTANCE:microblaze_0_dlmb - C:\Users\ael10jso\Xilinx\brutus\system.mhs line 52
-- Running XST synthesis
-INSTANCE:microblaze_0_d_bram_ctrl - C:\Users\ael10jso\Xilinx\brutus\system.mhs
-line 59 - Running XST synthesis
-INSTANCE:microblaze_0_bram_block - C:\Users\ael10jso\Xilinx\brutus\system.mhs
-line 68 - Running XST synthesis
-INSTANCE:microblaze_0 - C:\Users\ael10jso\Xilinx\brutus\system.mhs line 75 -
+INSTANCE:microblaze_0_ilmb -
+C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\system.mhs line 36 -
 Running XST synthesis
-INSTANCE:debug_module - C:\Users\ael10jso\Xilinx\brutus\system.mhs line 101 -
+INSTANCE:microblaze_0_i_bram_ctrl -
+C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\system.mhs line 43 -
 Running XST synthesis
-INSTANCE:clock_generator_0 - C:\Users\ael10jso\Xilinx\brutus\system.mhs line 114
-- Running XST synthesis
-INSTANCE:axi4lite_0 - C:\Users\ael10jso\Xilinx\brutus\system.mhs line 126 -
+INSTANCE:microblaze_0_dlmb -
+C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\system.mhs line 52 -
 Running XST synthesis
-INSTANCE:rs232_uart_1 - C:\Users\ael10jso\Xilinx\brutus\system.mhs line 134 -
+INSTANCE:microblaze_0_d_bram_ctrl -
+C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\system.mhs line 59 -
 Running XST synthesis
-INSTANCE:push_buttons_4bits - C:\Users\ael10jso\Xilinx\brutus\system.mhs line
-149 - Running XST synthesis
-INSTANCE:leds_8bits - C:\Users\ael10jso\Xilinx\brutus\system.mhs line 163 -
+INSTANCE:microblaze_0_bram_block -
+C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\system.mhs line 68 -
 Running XST synthesis
-INSTANCE:dip_switches_8bits - C:\Users\ael10jso\Xilinx\brutus\system.mhs line
-177 - Running XST synthesis
-INSTANCE:brutus_0 - C:\Users\ael10jso\Xilinx\brutus\system.mhs line 191 -
+INSTANCE:microblaze_0 -
+C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\system.mhs line 75 -
 Running XST synthesis
-INSTANCE:fsl_v20_0 - C:\Users\ael10jso\Xilinx\brutus\system.mhs line 198 -
+INSTANCE:debug_module -
+C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\system.mhs line 101 -
 Running XST synthesis
-INSTANCE:fsl_v20_1 - C:\Users\ael10jso\Xilinx\brutus\system.mhs line 205 -
+INSTANCE:clock_generator_0 -
+C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\system.mhs line 114 -
+Running XST synthesis
+INSTANCE:axi4lite_0 -
+C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\system.mhs line 126 -
+Running XST synthesis
+INSTANCE:rs232_uart_1 -
+C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\system.mhs line 134 -
+Running XST synthesis
+INSTANCE:push_buttons_4bits -
+C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\system.mhs line 149 -
+Running XST synthesis
+INSTANCE:leds_8bits -
+C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\system.mhs line 163 -
+Running XST synthesis
+INSTANCE:dip_switches_8bits -
+C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\system.mhs line 177 -
+Running XST synthesis
+INSTANCE:fsl_v20_0 -
+C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\system.mhs line 191 -
+Running XST synthesis
+INSTANCE:fsl_v20_1 -
+C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\system.mhs line 198 -
+Running XST synthesis
+INSTANCE:bajsd_0 -
+C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\system.mhs line 205 -
 Running XST synthesis
 
 Running NGCBUILD ...
 IPNAME:system_microblaze_0_ilmb_wrapper INSTANCE:microblaze_0_ilmb -
-C:\Users\ael10jso\Xilinx\brutus\system.mhs line 36 - Running NGCBUILD
+C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\system.mhs line 36 -
+Running NGCBUILD
 IPNAME:system_microblaze_0_dlmb_wrapper INSTANCE:microblaze_0_dlmb -
-C:\Users\ael10jso\Xilinx\brutus\system.mhs line 52 - Running NGCBUILD
+C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\system.mhs line 52 -
+Running NGCBUILD
 IPNAME:system_microblaze_0_wrapper INSTANCE:microblaze_0 -
-C:\Users\ael10jso\Xilinx\brutus\system.mhs line 75 - Running NGCBUILD
+C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\system.mhs line 75 -
+Running NGCBUILD
 IPNAME:system_clock_generator_0_wrapper INSTANCE:clock_generator_0 -
-C:\Users\ael10jso\Xilinx\brutus\system.mhs line 114 - Running NGCBUILD
+C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\system.mhs line 114 -
+Running NGCBUILD
 IPNAME:system_axi4lite_0_wrapper INSTANCE:axi4lite_0 -
-C:\Users\ael10jso\Xilinx\brutus\system.mhs line 126 - Running NGCBUILD
+C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\system.mhs line 126 -
+Running NGCBUILD
 IPNAME:system_fsl_v20_0_wrapper INSTANCE:fsl_v20_0 -
-C:\Users\ael10jso\Xilinx\brutus\system.mhs line 198 - Running NGCBUILD
+C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\system.mhs line 191 -
+Running NGCBUILD
 IPNAME:system_fsl_v20_1_wrapper INSTANCE:fsl_v20_1 -
-C:\Users\ael10jso\Xilinx\brutus\system.mhs line 205 - Running NGCBUILD
+C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\system.mhs line 198 -
+Running NGCBUILD
 INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
    If any constraint needs to be overridden, this should be done by modifying
    the data/system.ucf file.

@@ -25,6 +25,7 @@ NET Push_Buttons_4Bits_TRI_I[3] LOC = "D9"  |  IOSTANDARD = "LVCMOS33";
 NET RESET LOC = "B8"  |  IOSTANDARD = "LVCMOS33"  |  TIG;
 NET RS232_Uart_1_sin LOC = "N17"  |  IOSTANDARD = "LVCMOS33";
 NET RS232_Uart_1_sout LOC = "N18"  |  IOSTANDARD = "LVCMOS33";
+
 #
 # additional constraints
 #

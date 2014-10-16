@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/fsl_test/tb_fsl_test_isim_beh.exe" -prj "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/fsl_test/tb_fsl_test_beh.prj" "work.tb_fsl_test" 

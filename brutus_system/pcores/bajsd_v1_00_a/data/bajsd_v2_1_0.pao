@@ -1,0 +1,16 @@
+##############################################################################
+## Filename:          C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\pcores/bajsd_v1_00_a/data/bajsd_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Wed Oct 08 12:10:49 2014 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib bajsd_v1_00_a hash_array_pkg vhdl
+lib bajsd_v1_00_a md5_demux vhdl
+lib bajsd_v1_00_a md5_mux vhdl
+lib bajsd_v1_00_a string_generator vhdl
+lib bajsd_v1_00_a pre_process vhdl
+lib bajsd_v1_00_a md5_working vhdl
+lib bajsd_v1_00_a comp vhdl
+lib bajsd_v1_00_a controller vhdl
+lib bajsd_v1_00_a brutus_top vhdl
+lib bajsd_v1_00_a bajsd vhdl

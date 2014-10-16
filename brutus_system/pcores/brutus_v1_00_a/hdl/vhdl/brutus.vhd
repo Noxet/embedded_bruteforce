@@ -87,9 +87,12 @@ architecture Behavioral of brutus is
   type states is (idle, read_charset, read_hash, write_outputs);
   signal state_c, state_n : states;
 
-  signal h_count_c, h_count_n : unsigned(1 downto 0); -- hash counter, 4 pieces
+  signal r_count_c, r_count_n : unsigned(1 downto 0); -- read hash counter, 4 pieces
+  signal w_count_c, w_count_n : unsigned(0 downto 0); -- write hash counter, 2 pieces
+  
+  signal hash_c, hash_n : std_logic_vector(31 downto 0);
 
-  signal test : std_logic_vector(31 downto 0);
+  signal password_c, password_n : unsigned(31 downto 0);
 
 
 begin
@@ -98,63 +101,89 @@ begin
   -- consistent with the sequence they are written and read in the
   -- driver's brutus.c file
 
-  FSL_S_Read  <= FSL_S_Exists   when (state_c = read_charset or state_c = read_hash) else '0';
-  FSL_M_Write <= not FSL_M_Full when state_c = Write_Outputs else '0';
+  FSL_S_Read  <= FSL_S_Exists   when state_c = read_hash else '0'; -- DONT FORGET TO ADD OTHER STATES HERE IF NECESSARY
+  FSL_M_Write <= not FSL_M_Full when state_c = write_outputs else '0';
 
-  FSL_M_Data <= test;
+  FSL_M_Data <= std_logic_vector(password_c);
 
   clk_proc : process (FSL_Clk) is
   begin  -- process The_SW_accelerator
     if rising_edge(FSL_Clk) then     -- Rising clock edge
       if FSL_Rst = '1' then              -- Synchronous reset (active high)
         state_c <= idle;
-        h_count_c <= (others => '0');
-        test <= (others => '0');
+        r_count_c <= (others => '0');
+        w_count_c <= (others => '0');
+		  password_c <= (others => '0');
+		  hash_c <= (others => '0');
       else
         state_c <= state_n;
-        h_count_c <= h_count_n;
-        test <= x"00000042";
+        r_count_c <= r_count_n;
+        w_count_c <= w_count_n;
+		  password_c <= password_n;
+		  hash_c <= hash_n;
       end if;
     end if;
   end process;
 
-  fsm_proc: process(state_c, h_count_c, FSL_S_Exists, FSL_S_Data, FSL_M_Full)
+  fsm_proc: process(state_c, r_count_c, w_count_c, FSL_S_Exists, FSL_S_Data, FSL_M_Full, hash_c, password_c) is
   begin
 
     -- defaults --
-    h_count_n <= h_count_c;
+    r_count_n <= r_count_c;
+    w_count_n <= w_count_c;
     state_n <= state_c;
-    
+	 password_n <= password_c;
+	 hash_n <= hash_c;
+	 
     case state_c is
       when idle =>
         if (FSL_S_Exists = '1') then
-          state_n <= read_charset; -- which characters to include
+          state_n <= read_hash; --read_charset; -- which characters to include
         end if;
 
-      when read_charset =>
-        if FSL_S_Exists = '1' then
-          state_n <= read_hash;
-        end if;
+--      when read_charset =>
+--        if FSL_S_Exists = '1' then
+--          state_n <= read_hash;
+--        end if;
 
       when read_hash =>
         if (FSL_S_Exists = '1') then
-          h_count_n <= h_count_c + 1;
-			 --test <= FSL_S_Data;
-          
-          if h_count_c = 3 then
-            h_count_n <= (others => '0');
-            state_n <= write_outputs;
-          end if;
+		  
+				if FSL_S_Data = x"12345678" then
+					hash_n(31 downto 0) <= x"12345678"; --FSL_S_Data;
+				end if;
+				state_n <= write_outputs;
+--          r_count_n <= r_count_c + 1;
+--			 
+--			
+--			 if r_count_c = 0 then
+--				hash_n(127 downto 96) <= FSL_S_Data;
+--			 elsif r_count_c = 1 then
+--				hash_n(95 downto 64) <= FSL_S_Data;
+--			 elsif r_count_c = 2 then
+--				hash_n(63 downto 32) <= FSL_S_Data;
+--			 else
+--				hash_n(31 downto 0) <= FSL_S_Data;
+--			 end if;
+--          
+--          if r_count_c = 3 then
+--            r_count_n <= (others => '0');
+--            state_n <= write_outputs;
+--          end if;
         end if;
 
       when write_outputs =>
-        if (0 = 0) then
+        if (w_count_c = 1) then
           state_n <= idle;
-        else
-          if (FSL_M_Full = '0') then
-            --nr_of_writes <= nr_of_writes - 1;
-          end if;
+			 w_count_n <= (others => '0');
+		  elsif (FSL_M_Full = '0') then
+            w_count_n <= w_count_c + 1;
+				password_n <= password_c + 5;
         end if;
+		  
+		when others =>
+			null;
+			
     end case;
 end process;
 

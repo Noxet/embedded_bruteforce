@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/controller_sg_pp_md_comp/tb_brutus_dual_isim_beh.exe" -prj "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/controller_sg_pp_md_comp/tb_brutus_dual_beh.prj" "work.tb_brutus_dual" 

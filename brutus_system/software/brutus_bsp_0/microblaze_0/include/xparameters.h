@@ -18,7 +18,7 @@
 /******************************************************************/
 
 
-/* Definitions for peripheral BRUTUS_0 */
+/* Definitions for peripheral BAJSD_0 */
 
 
 /******************************************************************/
@@ -171,22 +171,22 @@
 /******************************************************************/
 
 /* Definitions for bus frequencies */
-#define XPAR_CPU_M_AXI_DP_FREQ_HZ 100000000
+#define XPAR_CPU_M_AXI_DP_FREQ_HZ 50000000
 /******************************************************************/
 
 /* Canonical definitions for bus frequencies */
-#define XPAR_PROC_BUS_0_FREQ_HZ 100000000
+#define XPAR_PROC_BUS_0_FREQ_HZ 50000000
 /******************************************************************/
 
-#define XPAR_CPU_CORE_CLOCK_FREQ_HZ 100000000
-#define XPAR_MICROBLAZE_CORE_CLOCK_FREQ_HZ 100000000
+#define XPAR_CPU_CORE_CLOCK_FREQ_HZ 50000000
+#define XPAR_MICROBLAZE_CORE_CLOCK_FREQ_HZ 50000000
 
 /******************************************************************/
 
 
 /* Definitions for peripheral MICROBLAZE_0 */
 #define XPAR_MICROBLAZE_0_SCO 0
-#define XPAR_MICROBLAZE_0_FREQ 100000000
+#define XPAR_MICROBLAZE_0_FREQ 50000000
 #define XPAR_MICROBLAZE_0_DATA_SIZE 32
 #define XPAR_MICROBLAZE_0_DYNAMIC_BUS_SIZING 1
 #define XPAR_MICROBLAZE_0_AVOID_PRIMITIVES 0
@@ -407,7 +407,7 @@
 #define XPAR_CPU_ID 0
 #define XPAR_MICROBLAZE_ID 0
 #define XPAR_MICROBLAZE_SCO 0
-#define XPAR_MICROBLAZE_FREQ 100000000
+#define XPAR_MICROBLAZE_FREQ 50000000
 #define XPAR_MICROBLAZE_DATA_SIZE 32
 #define XPAR_MICROBLAZE_DYNAMIC_BUS_SIZING 1
 #define XPAR_MICROBLAZE_AVOID_PRIMITIVES 0

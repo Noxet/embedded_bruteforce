@@ -1,0 +1,41 @@
+
+----------------------------------------------------------------------------
+--                            File Generation                             --
+----------------------------------------------------------------------------
+No ProjNavigator support files will be generated at this time ...
+No XST project files will be generated at this time ...
+No driver support files will be generated at this time ...
+
+----------------------------------------------------------------------------
+--                              Final Report                              --
+----------------------------------------------------------------------------
+Thank you for using Create and Import Peripheral Wizard!
+
+Peripheral summary
+
+  top name       : test
+  version        : 1.00.a
+  type           : FSL master slave
+  features       : 
+
+File Summary
+
+  - HDL source -
+C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\pcores\test_v1_00_a\h
+dl\vhdl
+  top level      : test.vhd
+
+  - XPS interface -
+C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\pcores\test_v1_00_a\d
+ata
+  mpd            : test_v2_1_0.mpd
+  pao            : test_v2_1_0.pao
+
+  - Misc file -
+C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\pcores\test_v1_00_a\d
+evl
+  help           : README.txt
+  option         : ipwiz.opt
+  log            : ipwiz.log
+
+

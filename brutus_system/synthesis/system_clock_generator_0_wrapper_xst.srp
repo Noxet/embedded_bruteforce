@@ -1,6 +1,6 @@
 Release 14.2 - xst P.28xd (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to C:\Users\ael10jso\Xilinx\brutus\synthesis\xst_temp_dir\
+--> Parameter TMPDIR set to C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\synthesis\xst_temp_dir\
 
 
 Total REAL time to Xst completion: 0.00 secs
@@ -35,7 +35,7 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "system_clock_generator_0_wrapper_xst.prj"
-Verilog Include Directory          : {"C:\Users\ael10jso\Xilinx\brutus\pcores\" "C:\Xilinx\BSP\Nexys3_AXI_BSB_Support\lib\Digilent\pcores\" "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+Verilog Include Directory          : {"C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\pcores\" "C:\Xilinx\BSP\Nexys3_AXI_BSB_Support\lib\Digilent\pcores\" "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
 
 ---- Target Parameters
 Target Device                      : xc6slx16csg324-3
@@ -74,10 +74,10 @@ Parsing architecture <STRUCT> of entity <mmcm_module>.
 Parsing VHDL file "C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/plle2_module.vhd" into library clock_generator_v4_03_a
 Parsing entity <plle2_module>.
 Parsing architecture <STRUCT> of entity <plle2_module>.
-Parsing VHDL file "C:/Users/ael10jso/Xilinx/brutus/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" into library clock_generator_0_v4_03_a
+Parsing VHDL file "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" into library clock_generator_0_v4_03_a
 Parsing entity <clock_generator>.
 Parsing architecture <STRUCTURE> of entity <clock_generator>.
-Parsing VHDL file "C:\Users\ael10jso\Xilinx\brutus\hdl\system_clock_generator_0_wrapper.vhd" into library work
+Parsing VHDL file "C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\hdl\system_clock_generator_0_wrapper.vhd" into library work
 Parsing entity <system_clock_generator_0_wrapper>.
 Parsing architecture <STRUCTURE> of entity <system_clock_generator_0_wrapper>.
 
@@ -88,28 +88,28 @@ Parsing architecture <STRUCTURE> of entity <system_clock_generator_0_wrapper>.
 Elaborating entity <system_clock_generator_0_wrapper> (architecture <STRUCTURE>) from library <work>.
 
 Elaborating entity <clock_generator> (architecture <STRUCTURE>) with generics from library <clock_generator_0_v4_03_a>.
-WARNING:HDLCompiler:1127 - "C:/Users/ael10jso/Xilinx/brutus/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 260: Assignment to net_gnd0 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:/Users/ael10jso/Xilinx/brutus/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 264: Assignment to net_vdd0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 260: Assignment to net_gnd0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 264: Assignment to net_vdd0 ignored, since the identifier is never used
 
 Elaborating entity <pll_module> (architecture <STRUCT>) with generics from library <clock_generator_v4_03_a>.
-WARNING:HDLCompiler:1127 - "C:/Users/ael10jso/Xilinx/brutus/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 371: Assignment to sig_pll0_clkout1_buf ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:/Users/ael10jso/Xilinx/brutus/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 377: Assignment to sig_pll0_clkout2_buf ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:/Users/ael10jso/Xilinx/brutus/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 383: Assignment to sig_pll0_clkout3_buf ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:/Users/ael10jso/Xilinx/brutus/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 389: Assignment to sig_pll0_clkout4_buf ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:/Users/ael10jso/Xilinx/brutus/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 395: Assignment to sig_pll0_clkout5_buf ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 371: Assignment to sig_pll0_clkout1_buf ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 377: Assignment to sig_pll0_clkout2_buf ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 383: Assignment to sig_pll0_clkout3_buf ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 389: Assignment to sig_pll0_clkout4_buf ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 395: Assignment to sig_pll0_clkout5_buf ignored, since the identifier is never used
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <system_clock_generator_0_wrapper>.
-    Related source file is "C:\Users\ael10jso\Xilinx\brutus\hdl\system_clock_generator_0_wrapper.vhd".
+    Related source file is "C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\hdl\system_clock_generator_0_wrapper.vhd".
     Summary:
 	no macro.
 Unit <system_clock_generator_0_wrapper> synthesized.
 
 Synthesizing Unit <clock_generator>.
-    Related source file is "C:/Users/ael10jso/Xilinx/brutus/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd".
+    Related source file is "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd".
         C_FAMILY = "spartan6"
         C_DEVICE = "6slx16"
         C_PACKAGE = "csg324"
@@ -119,18 +119,18 @@ WARNING:Xst:647 - Input <CLKFBIN> is never used. This port will be preserved and
 WARNING:Xst:647 - Input <PSCLK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <PSEN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <PSINCDEC> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:/Users/ael10jso/Xilinx/brutus/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKFBDCM> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:/Users/ael10jso/Xilinx/brutus/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUT1> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:/Users/ael10jso/Xilinx/brutus/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUT2> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:/Users/ael10jso/Xilinx/brutus/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUT3> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:/Users/ael10jso/Xilinx/brutus/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUT4> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:/Users/ael10jso/Xilinx/brutus/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUT5> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:/Users/ael10jso/Xilinx/brutus/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUTDCM0> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:/Users/ael10jso/Xilinx/brutus/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUTDCM1> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:/Users/ael10jso/Xilinx/brutus/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUTDCM2> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:/Users/ael10jso/Xilinx/brutus/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUTDCM3> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:/Users/ael10jso/Xilinx/brutus/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUTDCM4> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:/Users/ael10jso/Xilinx/brutus/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUTDCM5> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKFBDCM> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUT1> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUT2> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUT3> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUT4> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUT5> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUTDCM0> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUTDCM1> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUTDCM2> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUTDCM3> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUTDCM4> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" line 279: Output port <CLKOUTDCM5> of the instance <PLL0_INST> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <clock_generator> synthesized.
@@ -141,7 +141,7 @@ Synthesizing Unit <pll_module>.
         C_CLKFBOUT_MULT = 10
         C_CLKFBOUT_PHASE = 0.0
         C_CLKIN1_PERIOD = 10.0
-        C_CLKOUT0_DIVIDE = 10
+        C_CLKOUT0_DIVIDE = 20
         C_CLKOUT0_DUTY_CYCLE = 0.5
         C_CLKOUT0_PHASE = 0.0
         C_CLKOUT1_DIVIDE = 1
@@ -315,12 +315,12 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.27 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.40 secs
  
 --> 
 
-Total memory usage is 267056 kilobytes
+Total memory usage is 266600 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   11 (   0 filtered)

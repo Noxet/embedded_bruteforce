@@ -1,6 +1,6 @@
 Release 14.2 - xst P.28xd (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to C:\Users\ael10jso\Xilinx\brutus\synthesis\xst_temp_dir\
+--> Parameter TMPDIR set to C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\synthesis\xst_temp_dir\
 
 
 Total REAL time to Xst completion: 0.00 secs
@@ -35,7 +35,7 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "system_dip_switches_8bits_wrapper_xst.prj"
-Verilog Include Directory          : {"C:\Users\ael10jso\Xilinx\brutus\pcores\" "C:\Xilinx\BSP\Nexys3_AXI_BSB_Support\lib\Digilent\pcores\" "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+Verilog Include Directory          : {"C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\pcores\" "C:\Xilinx\BSP\Nexys3_AXI_BSB_Support\lib\Digilent\pcores\" "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
 
 ---- Target Parameters
 Target Device                      : xc6slx16csg324-3
@@ -614,7 +614,7 @@ Parsing architecture <IMP> of entity <gpio_core>.
 Parsing VHDL file "C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_gpio_v1_01_b/hdl/vhdl/axi_gpio.vhd" into library axi_gpio_v1_01_b
 Parsing entity <axi_gpio>.
 Parsing architecture <imp> of entity <axi_gpio>.
-Parsing VHDL file "C:\Users\ael10jso\Xilinx\brutus\hdl\system_dip_switches_8bits_wrapper.vhd" into library work
+Parsing VHDL file "C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\hdl\system_dip_switches_8bits_wrapper.vhd" into library work
 Parsing entity <system_dip_switches_8bits_wrapper>.
 Parsing architecture <STRUCTURE> of entity <system_dip_switches_8bits_wrapper>.
 
@@ -651,7 +651,7 @@ WARNING:HDLCompiler:634 - "C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pco
 =========================================================================
 
 Synthesizing Unit <system_dip_switches_8bits_wrapper>.
-    Related source file is "C:\Users\ael10jso\Xilinx\brutus\hdl\system_dip_switches_8bits_wrapper.vhd".
+    Related source file is "C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\hdl\system_dip_switches_8bits_wrapper.vhd".
     Summary:
 	no macro.
 Unit <system_dip_switches_8bits_wrapper> synthesized.
@@ -1189,11 +1189,11 @@ S_AXI_ACLK     |    2.669|         |         |         |
 
 
 Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.79 secs
+Total CPU time to Xst completion: 6.63 secs
  
 --> 
 
-Total memory usage is 282224 kilobytes
+Total memory usage is 282408 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   74 (   0 filtered)

@@ -1,6 +1,6 @@
 Release 14.2 - xst P.28xd (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to C:\Users\ael10jso\Xilinx\brutus\synthesis\xst_temp_dir\
+--> Parameter TMPDIR set to C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\synthesis\xst_temp_dir\
 
 
 Total REAL time to Xst completion: 0.00 secs
@@ -35,7 +35,7 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "system_microblaze_0_wrapper_xst.prj"
-Verilog Include Directory          : {"C:\Users\ael10jso\Xilinx\brutus\pcores\" "C:\Xilinx\BSP\Nexys3_AXI_BSB_Support\lib\Digilent\pcores\" "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+Verilog Include Directory          : {"C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\pcores\" "C:\Xilinx\BSP\Nexys3_AXI_BSB_Support\lib\Digilent\pcores\" "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.2\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
 
 ---- Target Parameters
 Target Device                      : xc6slx16csg324-3
@@ -358,7 +358,7 @@ Parsing architecture <IMP> of entity <microblaze_core>.
 Parsing VHDL file "C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_40_a/hdl/vhdl/microblaze.vhd" into library microblaze_v8_40_a
 Parsing entity <MicroBlaze>.
 Parsing architecture <IMP> of entity <microblaze>.
-Parsing VHDL file "C:\Users\ael10jso\Xilinx\brutus\hdl\system_microblaze_0_wrapper.vhd" into library work
+Parsing VHDL file "C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\hdl\system_microblaze_0_wrapper.vhd" into library work
 Parsing entity <system_microblaze_0_wrapper>.
 Parsing architecture <STRUCTURE> of entity <system_microblaze_0_wrapper>.
 
@@ -491,7 +491,7 @@ WARNING:HDLCompiler:634 - "C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pco
 =========================================================================
 
 Synthesizing Unit <system_microblaze_0_wrapper>.
-    Related source file is "C:\Users\ael10jso\Xilinx\brutus\hdl\system_microblaze_0_wrapper.vhd".
+    Related source file is "C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\hdl\system_microblaze_0_wrapper.vhd".
     Summary:
 	no macro.
 Unit <system_microblaze_0_wrapper> synthesized.
@@ -499,7 +499,7 @@ Unit <system_microblaze_0_wrapper> synthesized.
 Synthesizing Unit <MicroBlaze>.
     Related source file is "C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_40_a/hdl/vhdl/microblaze.vhd".
         C_SCO = 0
-        C_FREQ = 100000000
+        C_FREQ = 50000000
         C_USE_CONFIG_RESET = 0
         C_FAULT_TOLERANT = 0
         C_ECC_USE_CE_EXCEPTION = 0
@@ -678,7 +678,7 @@ Unit <MicroBlaze> synthesized.
 Synthesizing Unit <MicroBlaze_Core>.
     Related source file is "C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_40_a/hdl/vhdl/microblaze_core.vhd".
         C_SCO = 0
-        C_FREQ = 100000000
+        C_FREQ = 50000000
         C_USE_CONFIG_RESET = 0
         C_FAULT_TOLERANT = 0
         C_ECC_USE_CE_EXCEPTION = 0
@@ -7470,12 +7470,12 @@ DCACHE_FSL_OUT_CLK|    7.048|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 31.00 secs
-Total CPU time to Xst completion: 30.92 secs
+Total REAL time to Xst completion: 30.00 secs
+Total CPU time to Xst completion: 29.49 secs
  
 --> 
 
-Total memory usage is 402032 kilobytes
+Total memory usage is 368488 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings : 4611 (   0 filtered)

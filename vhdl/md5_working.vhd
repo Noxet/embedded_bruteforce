@@ -259,7 +259,7 @@ architecture Behavioral of MD5 is
   
     -- the array with the init values --
 	 type w_array is array(15 downto 0) of unsigned(31 downto 0);
-	 signal w : w_array; --w_n 
+	 signal w_c, w_n : w_array; --w_n 
 
     -- loop signals --
     signal a_c, a_n, b_c, b_n, c_c, c_n, d_c, d_n, f : unsigned(31 downto 0);
@@ -267,7 +267,7 @@ architecture Behavioral of MD5 is
     signal g : integer range 0 to 15;
 
     -- the states for the main loop --
-    type state is (stage_1, stage_2, stage_3, stage_4, waiting, finished);
+    type state is (stage_1, stage_2, stage_3, stage_4, waiting, finished, set_output);
     signal state_c, state_n : state;
     
     -- Specifies the amount to shift in the main loop, use rotate_left() --
@@ -304,6 +304,7 @@ begin
 					b_c <= b_init;
 					c_c <= c_init;
 					d_c <= d_init;
+					w_c <= (others => (others => '0'));
 				else
 					state_c <= state_n;
 					i_c <= i_n;
@@ -311,6 +312,7 @@ begin
 					b_c <= b_n;
 					c_c <= c_n;
 					d_c <= d_n;
+					w_c <= w_n;
 				end if;
         end if;
     end process;
@@ -318,7 +320,10 @@ begin
     -- the state control --
     FSM: process(state_c, i_start, i_c)
     begin
+	 
+		-- defaults --
 		state_n <= state_c;
+		
         case state_c is
             when waiting =>
 			
@@ -357,7 +362,7 @@ begin
                 end if;
 
             when finished =>
-                state_n <= waiting;
+					state_n <= waiting;
                 
             when others =>
                 null;
@@ -366,7 +371,7 @@ begin
     end process;
 
     -- set the outputs and update f & g --
-    data_path: process(a_c, b_c, c_c, d_c, f, g, i_c, w, state_c, i_data_0, i_data_1, i_length)
+    data_path: process(a_c, b_c, c_c, d_c, f, g, i_c, w_c, state_c, i_data_0, i_data_1, i_length)
     begin
         -- set standard values --
 			o_done <= '0';
@@ -377,28 +382,33 @@ begin
 			f <= (others => '0');
 			g <= 0;
 			
+			w_n <= w_c;
+			
 					-- set init vector-data values --
-			w(0) <= i_data_0;
-			w(1) <= i_data_1;
-			w(2) <= (others => '0');
-			w(3) <= (others => '0');
-			w(4) <= (others => '0');
-			w(5) <= (others => '0');
-			w(6) <= (others => '0');
-			w(7) <= (others => '0');
-			w(8) <= (others => '0');
-			w(9) <= (others => '0');
-			w(10) <= (others => '0');
-			w(11) <= (others => '0');
-			w(12) <= (others => '0');
-			w(13) <= (others => '0');
-			w(14) <= unsigned(x"000000" & i_length);
-			w(15) <= (others => '0');
+--			--w(0) <= i_data_0;
+--			--w(1) <= i_data_1;
+--			w_n(0) <= (others => '0');
+--			w_n(1) <= (others => '0');
+--			w_n(2) <= (others => '0');
+--			w_n(3) <= (others => '0');
+--			w_n(4) <= (others => '0');
+--			w_n(5) <= (others => '0');
+--			w_n(6) <= (others => '0');
+--			w_n(7) <= (others => '0');
+--			w_n(8) <= (others => '0');
+--			w_n(9) <= (others => '0');
+--			w_n(10) <= (others => '0');
+--			w_n(11) <= (others => '0');
+--			w_n(12) <= (others => '0');
+--			w_n(13) <= (others => '0');
+--			w_n(14) <= (others => '0');
+--			--w_n(14) <= unsigned(x"000000" & i_length);
+--			w_n(15) <= (others => '0');
 
         -- main loop signals calc set as standard values --
 			d_n <= c_c;
 			c_n <= b_c;
-			b_n <= b_c + rotate_left(a_c + k(i_c) + w(g) + f, to_integer(s(i_c)));
+			b_n <= b_c + rotate_left(a_c + k(i_c) + w_c(g) + f, to_integer(s(i_c)));
 					
 			a_n <= d_c;
 			if i_c < 63 then 
@@ -415,10 +425,14 @@ begin
 				b_n <= b_init;
 				c_n <= c_init;
 				d_n <= d_init;
-            when stage_1 =>
+				
+				w_n(0) <= i_data_0;
+				w_n(1) <= i_data_1;
+				w_n(14) <= unsigned(x"000000" & i_length);
+         when stage_1 =>
                 f <= (b_c and c_c) or ((not b_c) and d_c);
                 g <= i_c;-- mod 16;								CHECK THIS!!
-				when stage_2 =>
+		when stage_2 =>
                 f <= (d_c and b_c) or ((not d_c) and c_c);
                 g <= ((5 * i_c) + 1) mod 16;
             when stage_3 =>

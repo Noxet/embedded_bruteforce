@@ -1,4 +1,4 @@
-// File: C:\Users\ael10jso\Xilinx\brutus\implementation\system.bmm
+// File: C:\Users\ael10jso\Xilinx\embedded_bruteforce\brutus_system\implementation\system.bmm
 
 ADDRESS_MAP microblaze_0 MICROBLAZE-LE 100
 	ADDRESS_SPACE microblaze_0_bram_block_combined COMBINED [0x00000000:0x00007fff]

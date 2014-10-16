@@ -1,0 +1,20 @@
+Running: C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/fsl_test/tb_fsl_test_isim_beh.exe -prj C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/fsl_test/tb_fsl_test_beh.prj work.tb_fsl_test 
+ISim P.28xd (signature 0xa0883be4)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/fsl_test/../../pcores/test_v1_00_a/hdl/vhdl/test.vhd" into library work
+Parsing VHDL file "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/fsl_test/tb_fsl_test.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture example of entity test [test_default]
+Compiling architecture behavior of entity tb_fsl_test
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 6 VHDL Units
+Built simulation executable C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/fsl_test/tb_fsl_test_isim_beh.exe
+Fuse Memory Usage: 34960 KB
+Fuse CPU Usage: 452 ms

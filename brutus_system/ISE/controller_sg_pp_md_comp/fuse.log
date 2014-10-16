@@ -1,0 +1,36 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "secureip" -o "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/controller_sg_pp_md_comp/tb_brutus_dual_isim_beh.exe" -prj "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/controller_sg_pp_md_comp/tb_brutus_dual_beh.prj" "work.tb_brutus_dual" 
+ISim P.28xd (signature 0xa0883be4)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/controller_sg_pp_md_comp/../../../vhdl/hash_array_pkg.vhd" into library work
+Parsing VHDL file "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/controller_sg_pp_md_comp/../../../vhdl/string_generator.vhd" into library work
+Parsing VHDL file "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/controller_sg_pp_md_comp/../../../vhdl/pre_process.vhd" into library work
+Parsing VHDL file "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/controller_sg_pp_md_comp/../../../vhdl/md5_working.vhd" into library work
+Parsing VHDL file "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/controller_sg_pp_md_comp/../../../vhdl/md5_mux.vhd" into library work
+Parsing VHDL file "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/controller_sg_pp_md_comp/../../../vhdl/md5_demux.vhd" into library work
+Parsing VHDL file "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/controller_sg_pp_md_comp/../../../vhdl/controller.vhd" into library work
+Parsing VHDL file "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/controller_sg_pp_md_comp/../../../vhdl/comp.vhd" into library work
+Parsing VHDL file "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/controller_sg_pp_md_comp/../../../vhdl/brutus_top.vhd" into library work
+Parsing VHDL file "C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/controller_sg_pp_md_comp/tb_brutus_dual.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package hash_array_pkg
+Compiling architecture behavioral of entity controller [\controller(2)\]
+Compiling architecture behavioral of entity comp [comp_default]
+Compiling architecture behavioral of entity string_generator [string_generator_default]
+Compiling architecture behavioral of entity pre_process [pre_process_default]
+Compiling architecture behavioral of entity md5_demux [\md5_demux(2)\]
+Compiling architecture behavioral of entity MD5 [md5_default]
+Compiling architecture behavioral of entity md5_mux [\md5_mux(2)\]
+Compiling architecture behavioral of entity brutus_top [\brutus_top(2)\]
+Compiling architecture behavior of entity tb_brutus_dual
+Time Resolution for simulation is 1ps.
+Waiting for 4 sub-compilation(s) to finish...
+Compiled 21 VHDL Units
+Built simulation executable C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/controller_sg_pp_md_comp/tb_brutus_dual_isim_beh.exe
+Fuse Memory Usage: 35632 KB
+Fuse CPU Usage: 529 ms

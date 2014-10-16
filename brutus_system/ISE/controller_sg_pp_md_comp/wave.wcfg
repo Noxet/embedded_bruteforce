@@ -3,208 +3,178 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="/home/noxet/vhdl/embedded_bruteforce/brutus_system/ISE/controller_sg_pp_md_comp/tb_brutus_isim_beh.wdb" id="1" type="auto">
+      <db_ref path="C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/ISE/controller_sg_pp_md_comp/brutus_top_isim_beh.wdb" id="1" type="auto">
          <top_modules>
+            <top_module name="brutus_top" />
+            <top_module name="hash_array_pkg" />
             <top_module name="numeric_std" />
             <top_module name="std_logic_1164" />
-            <top_module name="tb_brutus" />
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="9" />
-   <wvobject fp_name="/tb_brutus/clk" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">clk</obj_property>
-      <obj_property name="ObjectShortName">clk</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
-      <obj_property name="CustomSignalColor">#ff0000</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_brutus/rstn" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">rstn</obj_property>
-      <obj_property name="ObjectShortName">rstn</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
-      <obj_property name="CustomSignalColor">#ffffff</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_brutus/i_fsl_data_recv" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">i_fsl_data_recv</obj_property>
-      <obj_property name="ObjectShortName">i_fsl_data_recv</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_brutus/i_fsl_hash" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">i_fsl_hash[127:0]</obj_property>
-      <obj_property name="ObjectShortName">i_fsl_hash[127:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_brutus/o_pw_found" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">o_pw_found</obj_property>
-      <obj_property name="ObjectShortName">o_pw_found</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_brutus/o_passwd" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">o_passwd[47:0]</obj_property>
-      <obj_property name="ObjectShortName">o_passwd[47:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
+   <WVObjectSize size="3" />
    <wvobject fp_name="group15" type="group">
       <obj_property name="label">Controller</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <wvobject fp_name="/tb_brutus/uut/controller_inst/state_c" type="other" db_ref_id="1">
-         <obj_property name="ElementShortName">state_c</obj_property>
-         <obj_property name="ObjectShortName">state_c</obj_property>
+      <wvobject fp_name="/brutus_top/controller_inst/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb_brutus/uut/controller_inst/state_n" type="other" db_ref_id="1">
-         <obj_property name="ElementShortName">state_n</obj_property>
-         <obj_property name="ObjectShortName">state_n</obj_property>
+      <wvobject fp_name="/brutus_top/controller_inst/rstn" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rstn</obj_property>
+         <obj_property name="ObjectShortName">rstn</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb_brutus/uut/controller_inst/i_comp_eq" type="logic" db_ref_id="1">
+      <wvobject fp_name="/brutus_top/controller_inst/i_fsl_data_recv" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">i_fsl_data_recv</obj_property>
+         <obj_property name="ObjectShortName">i_fsl_data_recv</obj_property>
+      </wvobject>
+      <wvobject fp_name="/brutus_top/controller_inst/i_fsl_hash" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i_fsl_hash[127:0]</obj_property>
+         <obj_property name="ObjectShortName">i_fsl_hash[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/brutus_top/controller_inst/i_comp_eq" type="logic" db_ref_id="1">
          <obj_property name="ElementShortName">i_comp_eq</obj_property>
          <obj_property name="ObjectShortName">i_comp_eq</obj_property>
-         <obj_property name="UseCustomSignalColor">true</obj_property>
-         <obj_property name="CustomSignalColor">#ff00ff</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb_brutus/uut/controller_inst/i_sg_string" type="array" db_ref_id="1">
+      <wvobject fp_name="/brutus_top/controller_inst/i_sg_done" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">i_sg_done</obj_property>
+         <obj_property name="ObjectShortName">i_sg_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/brutus_top/controller_inst/i_sg_string" type="array" db_ref_id="1">
          <obj_property name="ElementShortName">i_sg_string[47:0]</obj_property>
          <obj_property name="ObjectShortName">i_sg_string[47:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb_brutus/uut/controller_inst/i_sg_done" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">i_sg_done</obj_property>
-         <obj_property name="ObjectShortName">i_sg_done</obj_property>
-         <obj_property name="UseCustomSignalColor">true</obj_property>
-         <obj_property name="CustomSignalColor">#ffa500</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_brutus/uut/controller_inst/i_md5_done" type="logic" db_ref_id="1">
+      <wvobject fp_name="/brutus_top/controller_inst/i_md5_done" type="logic" db_ref_id="1">
          <obj_property name="ElementShortName">i_md5_done</obj_property>
          <obj_property name="ObjectShortName">i_md5_done</obj_property>
-         <obj_property name="UseCustomSignalColor">true</obj_property>
-         <obj_property name="CustomSignalColor">#ffff00</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb_brutus/uut/controller_inst/pw_buff_c" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">pw_buff_c[0:0]</obj_property>
-         <obj_property name="ObjectShortName">pw_buff_c[0:0]</obj_property>
+      <wvobject fp_name="/brutus_top/controller_inst/o_passwd_hash" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">o_passwd_hash[127:0]</obj_property>
+         <obj_property name="ObjectShortName">o_passwd_hash[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/brutus_top/controller_inst/o_pw_found" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">o_pw_found</obj_property>
+         <obj_property name="ObjectShortName">o_pw_found</obj_property>
+      </wvobject>
+      <wvobject fp_name="/brutus_top/controller_inst/o_passwd" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">o_passwd[47:0]</obj_property>
+         <obj_property name="ObjectShortName">o_passwd[47:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/brutus_top/controller_inst/o_start_sg_comp" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">o_start_sg_comp</obj_property>
+         <obj_property name="ObjectShortName">o_start_sg_comp</obj_property>
+      </wvobject>
+      <wvobject fp_name="/brutus_top/controller_inst/o_start_md5" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">o_start_md5</obj_property>
+         <obj_property name="ObjectShortName">o_start_md5</obj_property>
+      </wvobject>
+      <wvobject fp_name="/brutus_top/controller_inst/o_halt_sg" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">o_halt_sg</obj_property>
+         <obj_property name="ObjectShortName">o_halt_sg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/brutus_top/controller_inst/o_demux_sel" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">o_demux_sel[1:0]</obj_property>
+         <obj_property name="ObjectShortName">o_demux_sel[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/brutus_top/controller_inst/o_mux_sel" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">o_mux_sel[1:0]</obj_property>
+         <obj_property name="ObjectShortName">o_mux_sel[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/brutus_top/controller_inst/state_c" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">state_c</obj_property>
+         <obj_property name="ObjectShortName">state_c</obj_property>
+      </wvobject>
+      <wvobject fp_name="/brutus_top/controller_inst/state_n" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">state_n</obj_property>
+         <obj_property name="ObjectShortName">state_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/brutus_top/controller_inst/dm_count_c" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dm_count_c[1:0]</obj_property>
+         <obj_property name="ObjectShortName">dm_count_c[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/brutus_top/controller_inst/dm_count_n" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dm_count_n[1:0]</obj_property>
+         <obj_property name="ObjectShortName">dm_count_n[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/brutus_top/controller_inst/m_count_c" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">m_count_c[1:0]</obj_property>
+         <obj_property name="ObjectShortName">m_count_c[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/brutus_top/controller_inst/m_count_n" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">m_count_n[1:0]</obj_property>
+         <obj_property name="ObjectShortName">m_count_n[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/brutus_top/controller_inst/pw_buff_c" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">pw_buff_c[1:0]</obj_property>
+         <obj_property name="ObjectShortName">pw_buff_c[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/brutus_top/controller_inst/pw_buff_n" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">pw_buff_n[1:0]</obj_property>
+         <obj_property name="ObjectShortName">pw_buff_n[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/brutus_top/controller_inst/n" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">n</obj_property>
+         <obj_property name="ObjectShortName">n</obj_property>
       </wvobject>
    </wvobject>
    <wvobject fp_name="group54" type="group">
       <obj_property name="label">Sg</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <wvobject fp_name="/tb_brutus/uut/sg_inst/i_start" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">i_start</obj_property>
-         <obj_property name="ObjectShortName">i_start</obj_property>
-         <obj_property name="UseCustomSignalColor">true</obj_property>
-         <obj_property name="CustomSignalColor">#ffa500</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_brutus/uut/sg_inst/i_halt" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">i_halt</obj_property>
-         <obj_property name="ObjectShortName">i_halt</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_brutus/uut/sg_inst/o_md5_start" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">o_md5_start</obj_property>
-         <obj_property name="ObjectShortName">o_md5_start</obj_property>
-         <obj_property name="UseCustomSignalColor">true</obj_property>
-         <obj_property name="CustomSignalColor">#ffff00</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_brutus/uut/sg_inst/o_done" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">o_done</obj_property>
-         <obj_property name="ObjectShortName">o_done</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_brutus/uut/sg_inst/o_length" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">o_length[2:0]</obj_property>
-         <obj_property name="ObjectShortName">o_length[2:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_brutus/uut/sg_inst/o_string" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">o_string[47:0]</obj_property>
-         <obj_property name="ObjectShortName">o_string[47:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_brutus/uut/sg_inst/chr0_c" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">chr0_c[7:0]</obj_property>
-         <obj_property name="ObjectShortName">chr0_c[7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-         <obj_property name="UseCustomSignalColor">true</obj_property>
-         <obj_property name="CustomSignalColor">#00ffff</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_brutus/uut/sg_inst/chr1_c" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">chr1_c[7:0]</obj_property>
-         <obj_property name="ObjectShortName">chr1_c[7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-         <obj_property name="UseCustomSignalColor">true</obj_property>
-         <obj_property name="CustomSignalColor">#00ffff</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_brutus/uut/sg_inst/chr2_c" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">chr2_c[7:0]</obj_property>
-         <obj_property name="ObjectShortName">chr2_c[7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-         <obj_property name="UseCustomSignalColor">true</obj_property>
-         <obj_property name="CustomSignalColor">#00ffff</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_brutus/uut/sg_inst/chr3_c" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">chr3_c[7:0]</obj_property>
-         <obj_property name="ObjectShortName">chr3_c[7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-         <obj_property name="UseCustomSignalColor">true</obj_property>
-         <obj_property name="CustomSignalColor">#00ffff</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_brutus/uut/sg_inst/chr4_c" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">chr4_c[7:0]</obj_property>
-         <obj_property name="ObjectShortName">chr4_c[7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-         <obj_property name="UseCustomSignalColor">true</obj_property>
-         <obj_property name="CustomSignalColor">#00ffff</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_brutus/uut/sg_inst/chr5_c" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">chr5_c[7:0]</obj_property>
-         <obj_property name="ObjectShortName">chr5_c[7:0]</obj_property>
-         <obj_property name="Radix">ASCIIRADIX</obj_property>
-         <obj_property name="UseCustomSignalColor">true</obj_property>
-         <obj_property name="CustomSignalColor">#00ffff</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_brutus/uut/sg_inst/low_chr" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">low_chr[7:0]</obj_property>
-         <obj_property name="ObjectShortName">low_chr[7:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_brutus/uut/sg_inst/high_chr" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">high_chr[7:0]</obj_property>
-         <obj_property name="ObjectShortName">high_chr[7:0]</obj_property>
-      </wvobject>
    </wvobject>
    <wvobject fp_name="group27" type="group">
       <obj_property name="label">Comp</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <wvobject fp_name="/tb_brutus/uut/comp_inst/i_hash_0" type="array" db_ref_id="1">
+      <wvobject fp_name="/brutus_top/comp_inst/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/brutus_top/comp_inst/rstn" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rstn</obj_property>
+         <obj_property name="ObjectShortName">rstn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/brutus_top/comp_inst/i_hash_0" type="array" db_ref_id="1">
          <obj_property name="ElementShortName">i_hash_0[31:0]</obj_property>
          <obj_property name="ObjectShortName">i_hash_0[31:0]</obj_property>
-         <obj_property name="Radix">HEXRADIX</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb_brutus/uut/comp_inst/i_hash_1" type="array" db_ref_id="1">
+      <wvobject fp_name="/brutus_top/comp_inst/i_hash_1" type="array" db_ref_id="1">
          <obj_property name="ElementShortName">i_hash_1[31:0]</obj_property>
          <obj_property name="ObjectShortName">i_hash_1[31:0]</obj_property>
-         <obj_property name="Radix">HEXRADIX</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb_brutus/uut/comp_inst/i_hash_2" type="array" db_ref_id="1">
+      <wvobject fp_name="/brutus_top/comp_inst/i_hash_2" type="array" db_ref_id="1">
          <obj_property name="ElementShortName">i_hash_2[31:0]</obj_property>
          <obj_property name="ObjectShortName">i_hash_2[31:0]</obj_property>
-         <obj_property name="Radix">HEXRADIX</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb_brutus/uut/comp_inst/i_hash_3" type="array" db_ref_id="1">
+      <wvobject fp_name="/brutus_top/comp_inst/i_hash_3" type="array" db_ref_id="1">
          <obj_property name="ElementShortName">i_hash_3[31:0]</obj_property>
          <obj_property name="ObjectShortName">i_hash_3[31:0]</obj_property>
-         <obj_property name="Radix">HEXRADIX</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb_brutus/uut/comp_inst/i_cmp_hash" type="array" db_ref_id="1">
+      <wvobject fp_name="/brutus_top/comp_inst/i_cmp_hash" type="array" db_ref_id="1">
          <obj_property name="ElementShortName">i_cmp_hash[127:0]</obj_property>
          <obj_property name="ObjectShortName">i_cmp_hash[127:0]</obj_property>
-         <obj_property name="Radix">HEXRADIX</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb_brutus/uut/comp_inst/i_start" type="logic" db_ref_id="1">
+      <wvobject fp_name="/brutus_top/comp_inst/i_start" type="logic" db_ref_id="1">
          <obj_property name="ElementShortName">i_start</obj_property>
          <obj_property name="ObjectShortName">i_start</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb_brutus/uut/comp_inst/o_equal" type="logic" db_ref_id="1">
+      <wvobject fp_name="/brutus_top/comp_inst/o_equal" type="logic" db_ref_id="1">
          <obj_property name="ElementShortName">o_equal</obj_property>
          <obj_property name="ObjectShortName">o_equal</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb_brutus/uut/comp_inst/cmp_hash_c" type="array" db_ref_id="1">
+      <wvobject fp_name="/brutus_top/comp_inst/cmp_hash_c" type="array" db_ref_id="1">
          <obj_property name="ElementShortName">cmp_hash_c[127:0]</obj_property>
          <obj_property name="ObjectShortName">cmp_hash_c[127:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb_brutus/uut/comp_inst/cmp_hash_n" type="array" db_ref_id="1">
+      <wvobject fp_name="/brutus_top/comp_inst/cmp_hash_n" type="array" db_ref_id="1">
          <obj_property name="ElementShortName">cmp_hash_n[127:0]</obj_property>
          <obj_property name="ObjectShortName">cmp_hash_n[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/brutus_top/comp_inst/eq_c" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">eq_c</obj_property>
+         <obj_property name="ObjectShortName">eq_c</obj_property>
+      </wvobject>
+      <wvobject fp_name="/brutus_top/comp_inst/eq_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">eq_n</obj_property>
+         <obj_property name="ObjectShortName">eq_n</obj_property>
       </wvobject>
    </wvobject>
 </wave_config>

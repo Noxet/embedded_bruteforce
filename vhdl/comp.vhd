@@ -45,7 +45,9 @@ architecture Behavioral of comp is
 
 	-- the register signals --
 	signal cmp_hash_c, cmp_hash_n : std_logic_vector(127 downto 0);
-	
+
+	-- for delaying equal signal, to controller --
+	--signal eq_c, eq_n : std_logic;
 
 begin
 
@@ -55,19 +57,25 @@ begin
 		if rising_edge(clk) then				
 			if rstn = '0' then
 				cmp_hash_c <= (others => '0');
+				--eq_c <= '0';
 			else
 				cmp_hash_c <= cmp_hash_n;
+				--eq_c <= eq_n;
 			end if;
 		end if;
 	end process;
 	
 	-- data path --
-	data_proc: process(i_start, i_cmp_hash, i_hash_0, i_hash_1, i_hash_2, i_hash_3, cmp_hash_c)
+	data_proc: process(i_start, i_cmp_hash, i_hash_0, i_hash_1, i_hash_2, i_hash_3, cmp_hash_c)--, eq_c)
 	
 		-- the i_hash_1-3 have to be converted to little endian --
 		variable little_endian_0, little_endian_1, little_endian_2, little_endian_3 : unsigned(31 downto 0);
 	
 	begin
+	
+		-- defaults --
+		--eq_n <= eq_c;
+	
 		-- converts the md5-hashes to little endian --
  		little_endian_0 := i_hash_0(7 downto 0) & i_hash_0(15 downto 8) & i_hash_0(23 downto 16) & i_hash_0(31 downto 24);
 		little_endian_1 := i_hash_1(7 downto 0) & i_hash_1(15 downto 8) & i_hash_1(23 downto 16) & i_hash_1(31 downto 24);
@@ -83,13 +91,15 @@ begin
 		
 		-- have we found a matching hash or not? --
 		if (little_endian_0 & little_endian_1 & little_endian_2 & little_endian_3) = unsigned(cmp_hash_c) then
-			o_equal <= '1';
+			--eq_n <= '1';
+			o_equal <= '1'; --TEST
 		else
-			o_equal <= '0';
+			--eq_n <= '0';
+			o_equal <= '0'; --TEST
 		end if;
 	end process;
 	
-	
+	--o_equal <= eq_c;
 		
 end Behavioral;
 

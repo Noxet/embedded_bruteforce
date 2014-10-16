@@ -1681,23 +1681,6 @@ architecture STRUCTURE of system is
     );
   end component;
 
-  component system_brutus_0_wrapper is
-    port (
-      FSL_Clk : in std_logic;
-      FSL_Rst : in std_logic;
-      FSL_S_Clk : in std_logic;
-      FSL_S_Read : out std_logic;
-      FSL_S_Data : in std_logic_vector(0 to 31);
-      FSL_S_Control : in std_logic;
-      FSL_S_Exists : in std_logic;
-      FSL_M_Clk : in std_logic;
-      FSL_M_Write : out std_logic;
-      FSL_M_Data : out std_logic_vector(0 to 31);
-      FSL_M_Control : out std_logic;
-      FSL_M_Full : in std_logic
-    );
-  end component;
-
   component system_fsl_v20_0_wrapper is
     port (
       FSL_Clk : in std_logic;
@@ -1737,6 +1720,23 @@ architecture STRUCTURE of system is
       FSL_Full : out std_logic;
       FSL_Has_Data : out std_logic;
       FSL_Control_IRQ : out std_logic
+    );
+  end component;
+
+  component system_bajsd_0_wrapper is
+    port (
+      FSL_Clk : in std_logic;
+      FSL_Rst : in std_logic;
+      FSL_S_Clk : in std_logic;
+      FSL_S_Read : out std_logic;
+      FSL_S_Data : in std_logic_vector(0 to 31);
+      FSL_S_Control : in std_logic;
+      FSL_S_Exists : in std_logic;
+      FSL_M_Clk : in std_logic;
+      FSL_M_Write : out std_logic;
+      FSL_M_Data : out std_logic_vector(0 to 31);
+      FSL_M_Control : out std_logic;
+      FSL_M_Full : in std_logic
     );
   end component;
 
@@ -1808,7 +1808,6 @@ architecture STRUCTURE of system is
   signal fsl_v20_0_FSL_S_Data : std_logic_vector(0 to 31);
   signal fsl_v20_0_FSL_S_Exists : std_logic;
   signal fsl_v20_0_FSL_S_Read : std_logic;
-  signal fsl_v20_0_LMB_Rst : std_logic;
   signal fsl_v20_1_FSL_M_Control : std_logic;
   signal fsl_v20_1_FSL_M_Data : std_logic_vector(0 to 31);
   signal fsl_v20_1_FSL_M_Full : std_logic;
@@ -1817,6 +1816,7 @@ architecture STRUCTURE of system is
   signal fsl_v20_1_FSL_S_Data : std_logic_vector(0 to 31);
   signal fsl_v20_1_FSL_S_Exists : std_logic;
   signal fsl_v20_1_FSL_S_Read : std_logic;
+  signal fsl_v20_1_LMB_Rst : std_logic;
   signal microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr : std_logic_vector(0 to 31);
   signal microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Clk : std_logic;
   signal microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Din : std_logic_vector(0 to 31);
@@ -1915,9 +1915,9 @@ architecture STRUCTURE of system is
   attribute BOX_TYPE of system_push_buttons_4bits_wrapper : component is "user_black_box";
   attribute BOX_TYPE of system_leds_8bits_wrapper : component is "user_black_box";
   attribute BOX_TYPE of system_dip_switches_8bits_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of system_brutus_0_wrapper : component is "user_black_box";
   attribute BOX_TYPE of system_fsl_v20_0_wrapper : component is "user_black_box";
   attribute BOX_TYPE of system_fsl_v20_1_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of system_bajsd_0_wrapper : component is "user_black_box";
 
 begin
 
@@ -2575,15 +2575,15 @@ begin
       Trace_MB_Halted => open,
       Trace_Jump_Hit => open,
       FSL0_S_CLK => open,
-      FSL0_S_READ => fsl_v20_0_FSL_S_Read,
-      FSL0_S_DATA => fsl_v20_0_FSL_S_Data,
-      FSL0_S_CONTROL => fsl_v20_0_FSL_S_Control,
-      FSL0_S_EXISTS => fsl_v20_0_FSL_S_Exists,
+      FSL0_S_READ => fsl_v20_1_FSL_S_Read,
+      FSL0_S_DATA => fsl_v20_1_FSL_S_Data,
+      FSL0_S_CONTROL => fsl_v20_1_FSL_S_Control,
+      FSL0_S_EXISTS => fsl_v20_1_FSL_S_Exists,
       FSL0_M_CLK => open,
-      FSL0_M_WRITE => fsl_v20_1_FSL_M_Write,
-      FSL0_M_DATA => fsl_v20_1_FSL_M_Data,
-      FSL0_M_CONTROL => fsl_v20_1_FSL_M_Control,
-      FSL0_M_FULL => fsl_v20_1_FSL_M_Full,
+      FSL0_M_WRITE => fsl_v20_0_FSL_M_Write,
+      FSL0_M_DATA => fsl_v20_0_FSL_M_Data,
+      FSL0_M_CONTROL => fsl_v20_0_FSL_M_Control,
+      FSL0_M_FULL => fsl_v20_0_FSL_M_Full,
       FSL1_S_CLK => open,
       FSL1_S_READ => open,
       FSL1_S_DATA => net_gnd32,
@@ -3586,27 +3586,11 @@ begin
       GPIO2_IO_T => open
     );
 
-  brutus_0 : system_brutus_0_wrapper
-    port map (
-      FSL_Clk => pgassign1(4),
-      FSL_Rst => fsl_v20_0_LMB_Rst,
-      FSL_S_Clk => net_gnd0,
-      FSL_S_Read => fsl_v20_1_FSL_S_Read,
-      FSL_S_Data => fsl_v20_1_FSL_S_Data,
-      FSL_S_Control => fsl_v20_1_FSL_S_Control,
-      FSL_S_Exists => fsl_v20_1_FSL_S_Exists,
-      FSL_M_Clk => net_gnd0,
-      FSL_M_Write => fsl_v20_0_FSL_M_Write,
-      FSL_M_Data => fsl_v20_0_FSL_M_Data,
-      FSL_M_Control => fsl_v20_0_FSL_M_Control,
-      FSL_M_Full => fsl_v20_0_FSL_M_Full
-    );
-
   fsl_v20_0 : system_fsl_v20_0_wrapper
     port map (
       FSL_Clk => pgassign1(4),
       SYS_Rst => proc_sys_reset_0_BUS_STRUCT_RESET(0),
-      FSL_Rst => fsl_v20_0_LMB_Rst,
+      FSL_Rst => open,
       FSL_M_Clk => net_gnd0,
       FSL_M_Data => fsl_v20_0_FSL_M_Data,
       FSL_M_Control => fsl_v20_0_FSL_M_Control,
@@ -3626,7 +3610,7 @@ begin
     port map (
       FSL_Clk => pgassign1(4),
       SYS_Rst => proc_sys_reset_0_BUS_STRUCT_RESET(0),
-      FSL_Rst => open,
+      FSL_Rst => fsl_v20_1_LMB_Rst,
       FSL_M_Clk => net_gnd0,
       FSL_M_Data => fsl_v20_1_FSL_M_Data,
       FSL_M_Control => fsl_v20_1_FSL_M_Control,
@@ -3640,6 +3624,22 @@ begin
       FSL_Full => open,
       FSL_Has_Data => open,
       FSL_Control_IRQ => open
+    );
+
+  bajsd_0 : system_bajsd_0_wrapper
+    port map (
+      FSL_Clk => pgassign1(4),
+      FSL_Rst => fsl_v20_1_LMB_Rst,
+      FSL_S_Clk => net_gnd0,
+      FSL_S_Read => fsl_v20_0_FSL_S_Read,
+      FSL_S_Data => fsl_v20_0_FSL_S_Data,
+      FSL_S_Control => fsl_v20_0_FSL_S_Control,
+      FSL_S_Exists => fsl_v20_0_FSL_S_Exists,
+      FSL_M_Clk => net_gnd0,
+      FSL_M_Write => fsl_v20_1_FSL_M_Write,
+      FSL_M_Data => fsl_v20_1_FSL_M_Data,
+      FSL_M_Control => fsl_v20_1_FSL_M_Control,
+      FSL_M_Full => fsl_v20_1_FSL_M_Full
     );
 
 end architecture STRUCTURE;

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="16" version="2.0">
+<workbench progressCount="23" version="2.0">
 <workbenchAdvisor/>
-<window height="768" maximized="true" width="1024" x="50" y="50">
+<window height="768" maximized="true" width="1024" x="817" y="57">
 <fastViewData fastViewLocation="1024"/>
 <intro standby="true"/>
 <perspectiveBar>
@@ -22,6 +22,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -45,9 +46,9 @@
 <editor id="com.xilinx.sdk.sw.MSSEditor" name="system.mss" partName="system.mss" path="C:/Users/ael10jso/Xilinx/brutus/software/brutus_bsp_0/system.mss" title="system.mss" tooltip="brutus_bsp_0/system.mss" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/brutus_bsp_0/system.mss"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="brutus.c" partName="brutus.c" path="C:/Users/ael10jso/Xilinx/brutus/software/brutus_sw/src/brutus.c" title="brutus.c" tooltip="brutus_sw/src/brutus.c" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="brutus.c" partName="brutus.c" path="C:/Users/ael10jso/Xilinx/embedded_bruteforce/brutus_system/software/brutus_sw/src/brutus.c" title="brutus.c" tooltip="brutus_sw/src/brutus.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/brutus_sw/src/brutus.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1209" selectionTopPixel="372"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2869" selectionTopPixel="1902"/>
 </editor>
 </editors>
 <views>
@@ -57,14 +58,14 @@
 <view id="org.eclipse.ui.views.PropertySheet" partName="Properties"/>
 <view id="org.eclipse.cdt.make.ui.views.MakeView" partName="Make Target"/>
 <view id="org.eclipse.tm.terminal.view.TerminalView" partName="Terminal 1">
-<viewState ConnectionType="org.eclipse.tm.internal.terminal.serial.SerialConnector" Title="Terminal 1" _keys_="ConnectionType,Title,connectionManageractive,connectionManagerconnection0ConnectionType,connectionManagerconnection0HasCommandInputField,connectionManagerconnection0PartName,connectionManagerconnection0Summary,connectionManagerconnection0org.eclipse.tm.internal.terminal.serial.SerialConnector.BaudRate,connectionManagerconnection0org.eclipse.tm.internal.terminal.serial.SerialConnector.DataBits,connectionManagerconnection0org.eclipse.tm.internal.terminal.serial.SerialConnector.FlowControl,connectionManagerconnection0org.eclipse.tm.internal.terminal.serial.SerialConnector.Parity,connectionManagerconnection0org.eclipse.tm.internal.terminal.serial.SerialConnector.SerialPort,connectionManagerconnection0org.eclipse.tm.internal.terminal.serial.SerialConnector.StopBits,connectionManagerconnection0org.eclipse.tm.internal.terminal.telnet.TelnetConnector.NetworkPort,connectionManagerconnection0org.eclipse.tm.internal.terminal.telnet.TelnetConnector.Timeout,connectionManagersize,org.eclipse.tm.internal.terminal.serial.SerialConnector.BaudRate,org.eclipse.tm.internal.terminal.serial.SerialConnector.DataBits,org.eclipse.tm.internal.terminal.serial.SerialConnector.FlowControl,org.eclipse.tm.internal.terminal.serial.SerialConnector.Parity,org.eclipse.tm.internal.terminal.serial.SerialConnector.SerialPort,org.eclipse.tm.internal.terminal.serial.SerialConnector.StopBits" connectionManageractive="connection0" connectionManagerconnection0ConnectionType="org.eclipse.tm.internal.terminal.serial.SerialConnector" connectionManagerconnection0HasCommandInputField="false" connectionManagerconnection0PartName="Terminal 1" connectionManagerconnection0Summary="COM3, 9600, 8, 1, None, None" connectionManagersize="1">
+<viewState ConnectionType="org.eclipse.tm.internal.terminal.serial.SerialConnector" Title="Terminal 1" _keys_="ConnectionType,Title,connectionManageractive,connectionManagerconnection0ConnectionType,connectionManagerconnection0HasCommandInputField,connectionManagerconnection0PartName,connectionManagerconnection0Summary,connectionManagerconnection0org.eclipse.tm.internal.terminal.serial.SerialConnector.BaudRate,connectionManagerconnection0org.eclipse.tm.internal.terminal.serial.SerialConnector.DataBits,connectionManagerconnection0org.eclipse.tm.internal.terminal.serial.SerialConnector.FlowControl,connectionManagerconnection0org.eclipse.tm.internal.terminal.serial.SerialConnector.Parity,connectionManagerconnection0org.eclipse.tm.internal.terminal.serial.SerialConnector.SerialPort,connectionManagerconnection0org.eclipse.tm.internal.terminal.serial.SerialConnector.StopBits,connectionManagerconnection0org.eclipse.tm.internal.terminal.telnet.TelnetConnector.NetworkPort,connectionManagerconnection0org.eclipse.tm.internal.terminal.telnet.TelnetConnector.Timeout,connectionManagersize,org.eclipse.tm.internal.terminal.serial.SerialConnector.BaudRate,org.eclipse.tm.internal.terminal.serial.SerialConnector.DataBits,org.eclipse.tm.internal.terminal.serial.SerialConnector.FlowControl,org.eclipse.tm.internal.terminal.serial.SerialConnector.Parity,org.eclipse.tm.internal.terminal.serial.SerialConnector.SerialPort,org.eclipse.tm.internal.terminal.serial.SerialConnector.StopBits" connectionManageractive="connection0" connectionManagerconnection0ConnectionType="org.eclipse.tm.internal.terminal.serial.SerialConnector" connectionManagerconnection0HasCommandInputField="false" connectionManagerconnection0PartName="Terminal 1" connectionManagerconnection0Summary="COM6, 9600, 8, 1, None, None" connectionManagersize="1">
 <connectionManagerconnection0org>
 <eclipse>
 <tm>
 <internal>
 <terminal>
 <serial>
-<SerialConnector BaudRate="9600" DataBits="8" FlowControl="None" Parity="None" SerialPort="COM3" StopBits="1"/>
+<SerialConnector BaudRate="9600" DataBits="8" FlowControl="None" Parity="None" SerialPort="COM6" StopBits="1"/>
 </serial>
 <telnet>
 <TelnetConnector NetworkPort="23" Timeout="10"/>
@@ -80,7 +81,7 @@
 <internal>
 <terminal>
 <serial>
-<SerialConnector BaudRate="9600" DataBits="8" FlowControl="None" Parity="None" SerialPort="COM3" StopBits="1"/>
+<SerialConnector BaudRate="9600" DataBits="8" FlowControl="None" Parity="None" SerialPort="COM6" StopBits="1"/>
 </serial>
 </terminal>
 </internal>
@@ -91,10 +92,10 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
+<expanded>&#x0A;<category IMemento.internal.id="Warnings"/>
 <category IMemento.internal.id="Errors"/>
 </expanded>
-<columnWidths org.eclipse.ui.ide.locationField="64" org.eclipse.ui.ide.markerType="94" org.eclipse.ui.ide.pathField="124" org.eclipse.ui.ide.resourceField="94" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
+<columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
@@ -116,7 +117,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="org.eclipse.cdt.ui.CPerspective">
+<perspectives activePart="org.eclipse.tm.terminal.view.TerminalView" activePerspective="org.eclipse.cdt.ui.CPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.cdt.internal.ui.CPerspectiveFactory" id="org.eclipse.cdt.ui.CPerspective" label="C/C++"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -197,7 +198,7 @@
 </presentation>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="250" ratioRight="750" relationship="2" relative="topLeft"/>
+<info part="org.eclipse.ui.editorss" ratio="0.1557971" ratioLeft="258" ratioRight="1398" relationship="2" relative="topLeft"/>
 <info folder="true" part="bottom" ratio="0.6758555" ratioLeft="711" ratioRight="341" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.tm.terminal.view.TerminalView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
@@ -231,24 +232,158 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" path="/brutus_hw_platform/system.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" path="/brutus_bsp_0/system.mss"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/brutus_sw/src/helloworld.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/brutus_sw/src/brutus.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/brutus_hw_platform/download.bit"/>
 </editors>
-<item historyLabel="system.xml" index="0"/>
-<item historyLabel="system.mss" index="1"/>
-<item historyLabel="helloworld.c" index="2">
+<item historyLabel="brutus.c" index="0">
+<position info="not_deleted" x="1863" y="0"/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position info="not_deleted" x="1830" y="0"/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position info="not_deleted" x="1890" y="0"/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position info="not_deleted" x="1891" y="0"/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position info="not_deleted" x="1804" y="0"/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position info="not_deleted" x="979" y="0"/>
+</item>
+<item historyLabel="download.bit" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="brutus.c" index="3">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="brutus.c" index="0">
+<position info="not_deleted" x="979" y="0"/>
 </item>
-<item historyLabel="brutus.c" index="3">
-<position info="not_deleted" x="1532" y="0"/>
+<item historyLabel="brutus.c" index="0">
+<position info="not_deleted" x="2297" y="0"/>
 </item>
-<item active="true" historyLabel="brutus.c" index="3">
-<position info="not_deleted" x="1539" y="0"/>
+<item historyLabel="brutus.c" index="0">
+<position/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position info="not_deleted" x="2131" y="0"/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position info="not_deleted" x="2128" y="0"/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position info="not_deleted" x="2252" y="0"/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position info="not_deleted" x="2412" y="0"/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position info="not_deleted" x="929" y="0"/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position info="not_deleted" x="2695" y="0"/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position info="not_deleted" x="2669" y="0"/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position info="not_deleted" x="1826" y="0"/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position/>
+</item>
+<item historyLabel="brutus.c" index="0">
+<position info="not_deleted" x="2507" y="0"/>
+</item>
+<item active="true" historyLabel="brutus.c" index="0">
+<position info="not_deleted" x="2542" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -267,6 +402,9 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="download.bit" tooltip="brutus_hw_platform/download.bit">
+<persistable path="/brutus_hw_platform/download.bit"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="helloworld.c" tooltip="brutus_sw/src/helloworld.c">
 <persistable path="/brutus_sw/src/helloworld.c"/>
 </file>

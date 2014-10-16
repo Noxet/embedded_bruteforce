@@ -1,0 +1,7 @@
+vhdl isim_temp "../../../vhdl/string_generator.vhd"
+vhdl isim_temp "../../../vhdl/pre_process.vhd"
+vhdl isim_temp "../../../vhdl/md5_working.vhd"
+vhdl isim_temp "../../../vhdl/controller.vhd"
+vhdl isim_temp "../../../vhdl/comp.vhd"
+vhdl isim_temp "../../../vhdl/brutus_top.vhd"
+vhdl isim_temp "../../../vhdl/tb_brutus.vhd"
